@@ -1,62 +1,114 @@
-import React from 'react'
-import { FaArrowRightLong } from 'react-icons/fa6'
+import React, { useState } from 'react'
+import { FiMinus, FiPlus } from 'react-icons/fi'
+
+const accordion = [
+    {
+        heading: 'What types of insurance do you offer?',
+        text: 'tempus eu. Integer placerat mi sem, vel imperdiet nunc bibendu m eget. Nunc luctus quam vitae facilisis.'
+    },
+    {
+        heading: 'How do I choose the right policy?',
+        text: 'We help you choose the right policy by assessing your needs, budget, and circumstances. Our experts provide personalized recommendations based on thorough analysis.'
+    },
+    {
+        heading: 'What happens if I miss a premium payment?',
+        text: 'Missing a premium payment may result in a grace period. Contact us immediately to discuss payment options and maintain your coverage without interruption.'
+    },
+    {
+        heading: 'How does the claims process work?',
+        text: 'Our claims process is straightforward. Report the incident, submit required documentation, and our dedicated team will guide you through each step to ensure quick resolution.'
+    },
+]
 
 const SectionSix = () => {
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    const toggleAccordion = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    }
     return (
-        <div className=' bg-gradient-to-b from-[#fff] to-[#D9D5D5]'>
-            <section className='py-40 w-full max-w-max mx-auto'>
-                <h1 className="w-[291.73px] h-[72px] text-[#00b050] text-6xl font-bold font-['Montserrat'] leading-[72px]">Claims </h1>
-                <p className="w-[626px] mt-9 text-[#5a5a5a] text-2xl font-normal font-['Inter'] leading-[34px]">Our claims process is designed to make things simple, efficient, and supportive during times of need.</p>
-
-                <div className='mt-20 flex gap-[127px]'>
-                    <div className="w-[532px] h-[296px] p-12 relative bg-[#d8d4d4] rounded-[48px] flex flex-col justify-between">
-
-                        <div className=''>
-                            <h2 className="text-[#060606] text-2xl font-extrabold font-['Inter'] leading-[30px]">How to File a Claim:</h2>
-                            <p className="w-[441px] mt-6 text-[#060606] text-xl font-normal font-['Inter'] leading-normal">Our claims process is designed to make things simple, efficient, and supportive during times of need.</p>
-                        </div>
-
-                        <button className="w-[173px] text-white hover:text-primaryGreen hover:bg-white border border-primaryGreen h-[51px] px-[30px] bg-[#00b050] rounded-[50px] justify-between items-center inline-flex">
-                            <span className="text-center  text-base font-semibold font-['Inter'] leading-none">Read More </span>
-                            <span><FaArrowRightLong /></span>
-                        </button>
+        <section className='bg-[#F5F5F5] pb-40'>
+            <div className='relative z-[1] bg-black w-[80%] rounded-[30px] px-[120px] max-w-max mx-auto py-[100px] flex gap-[54px]'>
+                <div className='relative   ' >
+                    <div className='w-[367px] top-[30px] left-[25px]'>
+                        <img src="/images/menoutline.svg" alt="people" className='w-full object-cover' />
                     </div>
-                    <div className="w-[532px] h-[296px] p-12 relative bg-white rounded-[48px] flex flex-col justify-between">
-
-                        <div className=''>
-                            <h2 className="text-[#060606] text-2xl font-extrabold font-['Inter'] leading-[30px]">Support Team</h2>
-                            <p className="w-[441px] mt-6 text-[#060606] text-xl font-normal font-['Inter'] leading-normal">Our dedicated claims team is available to guide you through the entire process, from start to finish.</p>
-                        </div>
-
-                        <button className="w-[183px] hover:text-white text-primaryGreen bg-white border border-primaryGreen h-[51px] px-[30px] hover:bg-[#00b050] rounded-[50px] justify-center items-center inline-flex">
-                            <span className="text-center  text-base font-semibold font-['Inter'] leading-none">Visit help center </span>
-                        </button>
+                    <div className='w-[367px] absolute top-[30px] left-[25px]'>
+                        <img src="/images/faqmen.png" alt="people" className='w-full object-cover' />
                     </div>
                 </div>
-                <div className='mt-[36px] flex gap-[127px] items-center'>
-                    <div className="w-[532px] h-[296px] p-12 relative bg-[#d8d4d4] rounded-[48px] flex flex-col justify-between">
+                <div className=''>
+                    <p className="w-[50.51px] h-5 text-primaryRed text-xl font-semibold font-['Inter'] leading-tight">FAQs</p>
+                    <h2 className="mt-1 text-white text-4xl font-extrabold font-['Inter'] leading-[45px]">Get answers to common questions about our insurance products and services.</h2>
 
-                        <div className=''>
-                            <h2 className="text-[#060606] text-2xl font-extrabold font-['Inter'] leading-[30px]">Documents Required:</h2>
-                            <p className="w-[441px] mt-6 text-[#060606] text-xl font-normal font-['Inter'] leading-normal">An outline of necessary documents and evidence needed to initiate a claim.</p>
-                        </div>
-
-                        <button className="w-[173px] text-white hover:text-primaryGreen hover:bg-white border border-primaryGreen h-[51px] px-[30px] bg-[#00b050] rounded-[50px] justify-between items-center inline-flex">
-                            <span className="text-center  text-base font-semibold font-['Inter'] leading-none">Read More </span>
-                            <span><FaArrowRightLong /></span>
-                        </button>
-                    </div>
-                    <div className=" p-12 relative bg-white rounded-[48px] flex flex-col justify-between">
-
-                        <div className=''>
-                            <p className="w-[469px]"><span class="text-[#060606] text-xl font-normal font-['Inter'] leading-normal">For immediate assistance, <br />contact our Claims Support Line <br />at </span><span class="text-[#060606] text-xl font-bold font-['Inter'] leading-normal">09062979787,09062979786,<br />09062979782.</span></p>
-                        </div>
-
-
+                    <div className='mt-9 flex flex-col gap-4'>
+                        {accordion.map((item, index) => (
+                            <div key={index}>
+                                <button
+                                    className={`w-full bg-[#F5F5F5] px-[30px] py-5  flex justify-between items-center cursor-pointer ${activeIndex === index ? 'rounded-t-[10px]' : 'rounded-[10px]'}`}
+                                    onClick={() => toggleAccordion(index)}
+                                >
+                                    <h3 className="text-black text-[17px] font-semibold font-['Inter'] leading-[17px]">
+                                        {item.heading}
+                                    </h3>
+                                    <span className='transition-transform duration-300'>
+                                        {activeIndex === index ? <FiMinus /> : <FiPlus />}
+                                    </span>
+                                </button>
+                                <div
+                                    className={`px-[30px] bg-[#F5F5F5] rounded-b-[10px] overflow-hidden transition-all duration-300 ${activeIndex === index ? 'max-h-[1000px] pb-5 opacity-100' : 'max-h-0 opacity-0'
+                                        }`}
+                                >
+                                    <p className="text-[#7a7a7a] text-base font-normal font-['Roboto'] leading-relaxed">
+                                        {item.text}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
-            </section>
-        </div >
+            </div>
+
+
+            <div className='relative z-[2] bg-white w-[68%] max-w-[1200px] mx-auto py-[45px] px-[60px] rounded-[30px] shadow-[0px_0px_25px_0px_rgba(0,0,0,0.10)] -translate-y-[45px] flex justify-between'>
+                <div className='flex gap-6 items-center'>
+                    <img src="/images/consultant.svg" alt="consultant" />
+                    <div>
+                        <p className="w-[92.01px] h-12 text-center text-black text-5xl font-bold font-['Lato']">100
+                            <span className="w-[15.47px] h-[22px] text-black text-[22px] font-extrabold font-['Inter'] leading-snug">+</span>
+                        </p>
+                        <p className="w-[82.06px]  text-[#666666] text-base font-normal font-['Sans'] leading-tight tracking-tight">Consultant</p>
+                    </div>
+                </div>
+                <div className='flex gap-6 items-center'>
+                    <img src="/images/clients.svg" alt="clients" />
+                    <div>
+                        <p className="w-[92.01px] h-12 text-center text-black text-5xl font-bold font-['Lato']">651
+                            <span className="w-[15.47px] h-[22px] text-black text-[22px] font-extrabold font-['Inter'] leading-snug">+</span>
+                        </p>
+                        <p className="  text-[#666666] text-base font-normal font-['Sans'] leading-tight tracking-tight">Active Clients</p>
+                    </div>
+                </div>
+                <div className='flex gap-6 items-center'>
+                    <img src="/images/coffee.svg" alt="coffee" />
+                    <div>
+                        <p className="w-[92.01px] h-12 text-center text-black text-5xl font-bold font-['Lato']">768
+                            <span className="w-[15.47px] h-[22px] text-black text-[22px] font-extrabold font-['Inter'] leading-snug">+</span>
+                        </p>
+                        <p className="  text-[#666666] text-base font-normal font-['Sans'] leading-tight tracking-tight">Cup of Coffee</p>
+                    </div>
+                </div>
+                <div className='flex gap-6 items-center'>
+                    <img src="/images/smiley.svg" alt="smiley" />
+                    <div>
+                        <p className="w-[92.01px] h-12 text-center text-black text-5xl font-bold font-['Lato']">90
+                            <span className="w-[15.47px] h-[22px] text-black text-[22px] font-extrabold font-['Inter'] leading-snug">+</span>
+                        </p>
+                        <p className="  text-[#666666] text-base font-normal font-['Sans'] leading-tight tracking-tight">Award Winning</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     )
 }
 

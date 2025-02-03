@@ -1,4 +1,6 @@
+import Footer from "./components/Footer";
 import Banner from "./components/Landing/Banner";
+import SectionEight from "./components/Landing/SectionEight";
 import SectionFive from "./components/Landing/SectionFive";
 import SectionFour from "./components/Landing/SectionFour";
 import SectionSeven from "./components/Landing/SectionSeven";
@@ -9,7 +11,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Navbar />
       <Banner />
       <SectionTwo />
@@ -18,6 +20,8 @@ function App() {
       <SectionFive />
       <SectionSix />
       <SectionSeven />
+      <SectionEight />
+      <Footer />
     </div>
   );
 }

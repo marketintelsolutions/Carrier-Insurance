@@ -1,67 +1,37 @@
 import React, { useState } from 'react'
-import { FiMinus, FiPlus } from 'react-icons/fi'
 
-const accordion = [
-    {
-        heading: 'What types of insurance do you offer?',
-        text: 'tempus eu. Integer placerat mi sem, vel imperdiet nunc bibendu m eget. Nunc luctus quam vitae facilisis.'
-    },
-    {
-        heading: 'How do I choose the right policy?',
-        text: 'We help you choose the right policy by assessing your needs, budget, and circumstances. Our experts provide personalized recommendations based on thorough analysis.'
-    },
-    {
-        heading: 'What happens if I miss a premium payment?',
-        text: 'Missing a premium payment may result in a grace period. Contact us immediately to discuss payment options and maintain your coverage without interruption.'
-    },
-    {
-        heading: 'How does the claims process work?',
-        text: 'Our claims process is straightforward. Report the incident, submit required documentation, and our dedicated team will guide you through each step to ensure quick resolution.'
-    },
-]
 
 const SectionSeven = () => {
-    const [activeIndex, setActiveIndex] = useState(null);
 
-    const toggleAccordion = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
-    }
 
     return (
-        <section className='w-full max-w-max mx-auto py-40 flex gap-[194px]'>
-            <div className='relative border-[10px] border-primaryGreen w-full h-[517px] max-w-[443px]'>
-                <div className='w-[517px] absolute top-[30px] left-[25px]'>
-                    <img src="/images/people.png" alt="people" className='w-full object-cover' />
-                </div>
-            </div>
-            <div className='w-full'>
-                <p className="w-[50.51px] h-5 text-[#00b050] text-xl font-semibold font-['Inter'] leading-tight">FAQs</p>
-                <h2 className="mt-1 text-[#282828] text-4xl font-extrabold font-['Inter'] leading-[45px]">Get answers to common questions about our insurance products and services.</h2>
+        <section className='bg-white py-[120px]'>
+            <div className='bg-[#E6E4E4]  rounded-[30px] w-[80%] max-w-max mx-auto pt-[130px] pb-[63px] flex flex-col gap-5 items-center'>
+                <h3 className="w-[136.92px] h-[22px] text-center text-[#cc1517] text-[22px] font-normal font-['Inter'] leading-snug">News</h3>
+                <p className="w-[924px] text-center text-[#282828] text-4xl font-extrabold font-['Inter'] leading-[42px]">Read about our recent achievements, partnerships, and community initiatives.</p>
 
-                <div className='mt-9 flex flex-col gap-4'>
-                    {accordion.map((item, index) => (
-                        <div key={index}>
-                            <button
-                                className='w-full bg-[#F5F5F5] px-[30px] py-5 rounded-t-[10px] flex justify-between items-center cursor-pointer'
-                                onClick={() => toggleAccordion(index)}
-                            >
-                                <h3 className="text-black text-[17px] font-semibold font-['Inter'] leading-[17px]">
-                                    {item.heading}
-                                </h3>
-                                <span className='transition-transform duration-300'>
-                                    {activeIndex === index ? <FiMinus /> : <FiPlus />}
-                                </span>
-                            </button>
-                            <div
-                                className={`px-[30px] bg-[#F5F5F5] rounded-b-[10px] overflow-hidden transition-all duration-300 ${activeIndex === index ? 'max-h-[1000px] pb-5 opacity-100' : 'max-h-0 opacity-0'
-                                    }`}
-                            >
-                                <p className="text-[#7a7a7a] text-base font-normal font-['Roboto'] leading-relaxed">
-                                    {item.text}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
+                <div className='mt-[229px] grid grid-cols-3 gap-5 w-[90%] max-w-[1200px] mx-auto'>
+                    <div className="relative h-[327.19px] px-[45px] pt-[136px] pb-[60.01px] bg-white rounded-[15px] flex-col justify-start items-start gap-[21.18px] inline-flex">
+                        <img src="/images/life.png" alt="life" className='absolute -top-[150px] left-0 w-[95%] ' />
+                        <h3 className="text-[#282828] text-2xl font-semibold font-['Inter'] leading-loose">Life Insurance</h3>
+                        <p className=" h-[78px] text-[#1e1e1e] text-base font-normal font-['Inter'] leading-relaxed">Protect your loved ones with customized life insurance solutions.</p>
+                    </div>
+                    <div className="relative h-[327.19px] px-[45px] pt-[136px] pb-[60.01px] bg-white rounded-[15px] flex-col justify-start items-start gap-[21.18px] inline-flex">
+                        <img src="/images/health.png" alt="life" className='absolute -top-[150px] left-0 w-[95%] ' />
+                        <h3 className="text-[#282828] text-2xl font-semibold font-['Inter'] leading-loose">Health Insurance</h3>
+                        <p className=" h-[78px] text-[#1e1e1e] text-base font-normal font-['Inter'] leading-relaxed">Comprehensive health coverage for individuals, families, and groups.</p>
+                    </div>
+                    <div className="relative h-[327.19px] px-[45px] pt-[136px] pb-[60.01px] bg-white rounded-[15px] flex-col justify-start items-start gap-[21.18px] inline-flex">
+                        <img src="/images/auto.png" alt="life" className='absolute -top-[150px] left-0 w-[95%] ' />
+                        <h3 className="text-[#282828] text-2xl font-semibold font-['Inter'] leading-loose">Auto Insurance</h3>
+                        <p className=" h-[78px] text-[#1e1e1e] text-base font-normal font-['Inter'] leading-relaxed">Secure and flexible plans for personal and commercial vehicles.</p>
+                    </div>
+                </div>
+
+                <div className='flex gap-2.5 mt-10'>
+                    <div className="w-3 h-3 relative bg-white rounded-xl" />
+                    <div className="w-3 h-3 relative bg-[#cc1517] rounded-xl" />
+                    <div className="w-3 h-3 relative bg-white rounded-xl" />
                 </div>
             </div>
         </section>

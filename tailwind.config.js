@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryGreen: '#00B050'
+        primaryRed: '#CC1517',
+        primaryBlack: '#060606'
       },
       maxWidth: {
-        max: '1200px'
+        max: '1438px'
       }
     },
   },

@@ -13,6 +13,10 @@ const links = [
         path: '/services',
     },
     {
+        text: 'Products',
+        path: '/products',
+    },
+    {
         text: 'Careers',
         path: '/careers',
     },
@@ -29,15 +33,15 @@ const links = [
 const Navbar = () => {
     return (
         <>
-            <div className='w-full flex relative'>
-                <div className=' flex  h-[82px] w-full max-w-[33%] bg-[#00B050]'>
+            <div className='w-[95%] max-w-[1782px] mx-auto flex relative  rounded-b-[50px] overflow-hidden'>
+                <div className=' flex  h-[82px] w-full max-w-[33%] rounded-bl-[50px] bg-primaryRed'>
                 </div>
-                <div className='bg-black w-full h-[82px]'>
+                <div className='bg-primaryBlack w-full h-[82px]'>
                 </div>
 
-                <div className='absolute w-full h-full left-0'>
-                    <div className='w-full max-w-max mx-auto  h-full flex justify-between'>
-                        <div className='flex gap-[30px] py-4 bg-[#00B050] h-full'>
+                <div className='absolute w-full rounded-b-[50px] h-full left-0'>
+                    <div className='w-[85%] max-w-max mx-auto  h-full flex justify-between'>
+                        <div className='flex gap-[30px] py-4 bg-primaryRed h-full'>
                             <span><MdOutlineLocationOn size={40} /></span>
                             <p className="w-[252px]  text-white text-base font-normal font-['Sans'] leading-tight">
                                 Plot 22, Akiogun New Market Road, Oniru Victoria Island, Lagos
@@ -58,25 +62,20 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <nav className='bg-white relative flex items-center justify-end  h-[130px]'>
-                <div className='absolute w-full h-[130px] top-0 left-0'>
-                    <div className=' py-[18px] w-full h-[130px] max-w-max mx-auto flex items-center justify-between gap-[90px]'>
-                        <div className='w-full max-w-[295px]'>
-                            <img src="/images/logo.svg" alt="logos" className='w-full ' />
-                        </div>
-                        <div className=' bg-gradient-to-r rounded-l-full from-[rgba(231,224,224,0.87)] border to-[rgba(230,223,223,0.84)] w-full h-[43px] flex gap-[50px] items-center pl-[74px] justify-between'>
-                            {
-                                links.map((item, index) => <p className="text-[#5a5a5a] text-base font-bold font-['Sans']  tracking-tight">{item.text}</p>)
-                            }
-                            <button className="w-28 h-[43px] px-[15px] py-3.5 bg-[#00b050] rounded-[10px] justify-center items-center gap-2.5 inline-flex">
-                                <span className="text-[#fffefe] text-sm font-bold font-['Sans'] tracking-tight">Log In </span>
-                            </button>
-                        </div>
-                    </div>
+            <nav className='bg-[#F8F8F8] translate-y-[50%] px-10 w-[80%] rounded-full mx-auto max-w-max relative flex items-center  h-[96px] z-[99] '>
+                <div className='w-[35%] flex  justify-start  '>
+                    <img src="/images/logo.svg" alt="logos" className='w-full max-w-[240px]' />
                 </div>
-                <div className='bg-[rgba(230,223,223,0.84)] h-[43px] w-full max-w-[50%] flex justify-end items-center pr-16'>
+                <div className=' h-[43px] w-[65%] flex gap-[20px] items-center justify-between'>
+                    {
+                        links.map((item, index) => <p className="text-[#5a5a5a] w-max text-base font-bold font-['Sans']  tracking-tight">{item.text}</p>)
+                    }
+                    <button className="w-28 h-[43px] px-[15px] py-3.5 bg-primaryRed rounded-[10px] justify-center items-center gap-2.5 inline-flex">
+                        <span className="text-[#fffefe] text-sm font-bold font-['Sans'] tracking-tight">Log In </span>
+                    </button>
                     <span><IoSearch size={25} /></span>
                 </div>
+
             </nav>
         </>
     )
