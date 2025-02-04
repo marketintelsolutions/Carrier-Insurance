@@ -8,14 +8,14 @@ const Footer = () => {
         <footer className='bg-gradient-to-b pb-[140px] from-[#666] to-[#CCC] '>
             <div className='bg-[#D9D9D9] flex py-6 px-[40px] justify-between items-center rounded-[30px] w-[75%] max-w-[1248px] translate-y-[50px] mx-auto '>
                 <div className='flex flex-col gap-4 px-[50px] items-center'>
-                    <span className='text-[45px]'><FaLocationDot /></span>
+                    <span className='text-[45px] text-primaryRed'><FaLocationDot /></span>
                     <p className="h-[45px] text-center text-black text-base font-normal font-['Sans'] leading-tight tracking-tight">Plot 22, Akiogun New Market Road, <br />Oniru Victoria Island, Lagos</p>
                 </div>
 
                 <div className=' h-[139px] w-0.5  bg-[#666666]'></div>
 
                 <div className='flex flex-col gap-4 px-[50px]  items-center'>
-                    <span className='text-[45px]'><IoMail /></span>
+                    <span className='text-[45px]  text-primaryRed'><IoMail /></span>
                     <p className="h-[45px] text-center text-black text-base font-normal font-['Sans'] leading-tight tracking-tight">
                         it-@carrierinsurancebrokers.com,
                         <br />it-@carrierinsurancebrokers.com</p>
@@ -23,7 +23,7 @@ const Footer = () => {
 
                 <div className=' h-[139px] w-0.5  bg-[#666666]'></div>
                 <div className='flex flex-col gap-4 px-[50px] items-center'>
-                    <span className='text-[45px]'><PiPhoneCallFill /></span>
+                    <span className='text-[45px]  text-primaryRed'><PiPhoneCallFill /></span>
                     <p className="h-[45px] text-center text-black text-base font-normal font-['Sans'] leading-tight tracking-tight">+234 906 297 9782   |  +234 906 297 9786 <br />+234 906 244 7811   |  +234 707 452 1825</p>
                 </div>
             </div>

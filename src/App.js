@@ -1,27 +1,38 @@
 import Footer from "./components/Footer";
-import Banner from "./components/Landing/Banner";
-import SectionEight from "./components/Landing/SectionEight";
-import SectionFive from "./components/Landing/SectionFive";
-import SectionFour from "./components/Landing/SectionFour";
-import SectionSeven from "./components/Landing/SectionSeven";
-import SectionSix from "./components/Landing/SectionSix";
-import SectionThree from "./components/Landing/SectionThree";
-import SectionTwo from "./components/Landing/SectionTwo";
+import MainLayout from "./components/MainLayout";
 import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Landing from "./pages/Landing";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <MainLayout>
+          <Landing />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/about",
+      element: (
+        <MainLayout>
+          <About />
+        </MainLayout>
+      ),
+    },
+
+  ]);
+
   return (
     <div className="overflow-x-hidden">
-      <Navbar />
-      <Banner />
-      <SectionTwo />
-      <SectionThree />
-      <SectionFour />
-      <SectionFive />
-      <SectionSix />
-      <SectionSeven />
-      <SectionEight />
-      <Footer />
+      <RouterProvider router={router} />
     </div>
   );
 }

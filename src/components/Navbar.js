@@ -2,6 +2,7 @@ import React from 'react'
 import { IoSearch } from 'react-icons/io5'
 import { MdEmail, MdOutlineLocationOn } from 'react-icons/md'
 import { TbPhoneCall } from 'react-icons/tb'
+import { Link } from 'react-router-dom'
 
 const links = [
     {
@@ -68,7 +69,14 @@ const Navbar = () => {
                 </div>
                 <div className=' h-[43px] w-[65%] flex gap-[20px] items-center justify-between'>
                     {
-                        links.map((item, index) => <p className="text-[#5a5a5a] w-max text-base font-bold font-['Sans']  tracking-tight">{item.text}</p>)
+                        links.map((item, index) =>
+                            <Link
+                                to={item.path}
+                                key={index}
+                                className="text-[#5a5a5a] w-max text-base font-bold font-['Sans']  tracking-tight">
+                                {item.text}
+                            </Link>
+                        )
                     }
                     <button className="w-28 h-[43px] px-[15px] py-3.5 bg-primaryRed rounded-[10px] justify-center items-center gap-2.5 inline-flex">
                         <span className="text-[#fffefe] text-sm font-bold font-['Sans'] tracking-tight">Log In </span>
