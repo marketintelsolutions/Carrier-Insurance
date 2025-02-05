@@ -188,3 +188,56 @@ export const services = [
         <div className="opacity-40"><span class="text-[#060606] text-2xl font-normal font-['Inter'] leading-[30px]">Household insurance policy is a type of insurance that provides financial protection for your home and its contents against various risks and unforeseen events. It is designed to cover losses or damages that can impact the structure of your home or the personal belongings inside it. This type of policy is essential for homeowners and renters who want to safeguard their property and possessions.<br/><br/></span><span class="text-[#060606] text-2xl font-bold font-['Inter'] leading-[30px]">CONPONENT OF HOUSEHOLD INSURANCE<br/></span><span class="text-[#060606] text-2xl font-normal font-['Inter'] leading-[30px]">·        Building insurance to cover the structure of the building<br/>·        Content insurance cover the content in the building such as furniture, electronic, appliances, clothing and other household items<br/><br/></span><span class="text-[#060606] text-2xl font-bold font-['Inter'] leading-[30px]">Professional indemnity insurance (PI),</span><span class="text-[#060606] text-2xl font-normal font-['Inter'] leading-[30px]"> also known as </span><span class="text-[#060606] text-2xl font-bold font-['Inter'] leading-[30px]">professional liability insurance</span><span class="text-[#060606] text-2xl font-normal font-['Inter'] leading-[30px]"> or</span><span class="text-[#060606] text-2xl font-bold font-['Inter'] leading-[30px]"> errors and omissions insurance (E&O)</span><span class="text-[#060606] text-2xl font-normal font-['Inter'] leading-[30px]">, is a type of insurance policy that provides coverage to professionals and businesses against claims made by clients or third parties for financial losses caused by negligence, errors, or omissions in the services or advice they provide. It is particularly important for professionals who provide expert advice or services that, if mishandled, could result in significant<br/><br/></span><span class="text-[#060606] text-2xl font-bold font-['Inter'] leading-[30px]">KEY ASPECT OF PROFESSIONAL INDEMNITY<br/></span><span class="text-[#060606] text-2xl font-normal font-['Inter'] leading-[30px]">·        Coverage of Negligence – claims arising from mistake, professional negligence or failure to perform professional duties.<br/>·        Financial protection – cover legal costs, court fees and any settlement that may be required if the professional or business found liable.</span></div>`
     },
 ]
+
+export const products = [
+    {
+        icon: 'life',
+        heading: 'Life Insurance',
+        text: 'Life insurance provides financial security for loved ones in the event of the policyholder’s death. It ensures dependents are protected from financial hardships and can also serve as a savings or investment tool.',
+    },
+    {
+        icon: 'health',
+        heading: 'Health Insurance',
+        text: 'Covers medical expenses, including hospitalization, medications, and preventive care, ensuring individuals and families can access quality healthcare without financial strain.',
+    },
+    {
+        icon: 'car',
+        heading: 'Motor Insurance',
+        text: 'Third-Party Liability Insurance covers damages or injuries caused to a third party by the policyholder’s vehicle (mandatory in most countries), while Comprehensive Insurance provides broader coverage, including damages to the insured vehicle and third-party liabilities.',
+    },
+    {
+        icon: 'property',
+        heading: 'Property Insurance',
+        text: 'Protects homes, offices, and other properties against risks like fire, theft, and natural disasters, ensuring peace of mind for property owners.',
+    },
+    {
+        icon: 'travel',
+        heading: 'Travel Insurance',
+        text: 'Provides coverage for travel-related risks, such as trip cancellations, lost luggage, or medical emergencies while traveling.',
+    },
+    {
+        icon: 'marine',
+        heading: 'Marine Insurance',
+        text: 'Secures goods, ships, and cargo against losses or damages during transit by sea, ensuring businesses involved in trade are protected.',
+    },
+    {
+        icon: 'fireinsurance',
+        heading: 'Fire Insurance',
+        text: 'Covers property damages caused by fire, explosions, or lightning, safeguarding individuals and businesses from significant financial loss.',
+    },
+    {
+        icon: 'liability',
+        heading: 'Liability Insurance',
+        text: 'Protects against legal liabilities arising from accidental harm or negligence, offering coverage for compensation claims.',
+    },
+    {
+        icon: 'crop',
+        heading: 'Crop Insurance',
+        text: 'Designed for farmers, this policy protects against losses caused by natural calamities, pests, or diseases affecting crops.',
+    },
+    {
+        icon: 'home',
+        heading: 'Home Insurance',
+        text: 'Provides financial protection for homes and belongings against risks like fire, theft, or natural disasters.',
+    },
+]

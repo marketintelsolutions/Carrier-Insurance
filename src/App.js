@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import TeamMember from "./pages/TeamMember";
 import ServiceItem from "./pages/ServiceItem";
+import Products from "./pages/Products";
 
 function App() {
 
@@ -42,6 +43,14 @@ function App() {
       element: (
         <MainLayout>
           <ServiceItem />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/products",
+      element: (
+        <MainLayout>
+          <Products />
         </MainLayout>
       ),
     },
