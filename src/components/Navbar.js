@@ -64,9 +64,9 @@ const Navbar = () => {
                 </div>
             </div>
             <nav className='bg-[#F8F8F8] translate-y-[50%] px-10 w-[80%] rounded-full mx-auto max-w-max relative flex items-center  h-[96px] z-[99] '>
-                <div className='w-[35%] flex  justify-start  '>
+                <Link to={'/'} className='w-[35%] flex  justify-start  '>
                     <img src="/images/logo.svg" alt="logos" className='w-full max-w-[240px]' />
-                </div>
+                </Link>
                 <div className=' h-[43px] w-[65%] flex gap-[20px] items-center justify-between'>
                     {
                         links.map((item, index) =>

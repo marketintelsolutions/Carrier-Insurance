@@ -8,6 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import TeamMember from "./pages/TeamMember";
+import ServiceItem from "./pages/ServiceItem";
 
 function App() {
 
@@ -33,6 +34,14 @@ function App() {
       element: (
         <MainLayout>
           <TeamMember />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/services/:id",
+      element: (
+        <MainLayout>
+          <ServiceItem />
         </MainLayout>
       ),
     },

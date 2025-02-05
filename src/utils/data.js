@@ -64,3 +64,127 @@ export const team = [
         ]
     },
 ]
+
+
+
+export const services = [
+    {
+        heading: 'Motor Insurance Policy',
+        slug: 'Motor-Insurance-Policy',
+        icon: 'motor',
+        image: 'motorimage',
+        details: `
+        <p>
+             A motor insurance policy is a type of insurance coverage specifically designed for vehicles such as cars, motorcycles, trucks, and other motorized vehicles. It provides financial protection against physical damage or loss of the vehicle and liability for any injuries or property damage caused by the vehicle to third parties.
+        <br/>
+        <br/>
+        </p>
+
+        <h2 style="font:700;text:red">
+        Key Aspects of Motor Insurance:
+        <br/>
+        </h2>
+
+        <p>
+          Comprehensive Coverage: This includes protection for damages to the insured vehicle due to accidents, theft, fire, natural disasters, and vandalism, as well as liability coverage for injuries and property damage to others.
+        <br/>
+        <br/>
+         Third-Party Liability: This type of coverage is a compulsory insurance by law and ensures that the policyholder is protected against any legal or financial responsibilities if their vehicle causes damage or injury to a third party.
+        <br/>
+        <br/>
+         Own Damage Cover: Covers the repair or replacement costs of the insured vehicle in case of an accident or damage.
+        <br/>
+        </p>
+        <p>
+        <br/>
+         Motor insurance policies ensure that vehicle owners can mitigate the financial risk of unforeseen events, providing security and assistance when needed.
+        </p>
+        `
+    },
+    {
+        icon: 'fire',
+        heading: 'Fire And Burglary Policy',
+        slug: 'Fire-And-Burglary-Policy',
+        image: 'fireimage',
+        details: `
+        <span>
+        Fire and burglary insurance is a type of property insurance that provides financial protection to individuals and businesses in case of damage or loss caused by fire, burglary, or theft. It helps safeguard your assets and property from unexpected events that could result in significant financial setbacks.<br/>Key Features of Fire and Burglary Insurance:
+        <br/>
+        <br/>
+        </span>
+        <h2>
+        Fire Coverage:
+        <br/>
+        </h2>
+        <span>
+        Protection against fire-related incidents: Covers losses or damages caused by fire, smoke, lightning, or explosions.
+        <br/>
+        Extended coverage: May also include damage due to events like electrical short circuits or other fire-related causes.
+        <br/>
+        <br/>
+        </span>
+        <h2>
+        Burglary Coverage:
+        <br/>
+        </h2>
+        <span>
+        Theft and Break-ins: Protects against loss of property or assets due to unauthorized entry or theft.
+        </span>
+        `
+    },
+    {
+        icon: 'group',
+        heading: 'Group Life Insurance',
+        slug: 'Group-Life-Insurance',
+        image: 'lifeimage',
+        details: `
+        <div>
+        <span class="text-[#191a1c] text-2xl font-normal font-['Inter'] leading-[30px]">
+        Group life insurance is a type of life insurance policy that provides coverage to a group of people under a single contract. Typically, this kind of policy is offered by employers, professional associations, or other organizations as part of a benefits package. It is designed to offer financial protection to the beneficiaries of the insured in case of death.
+        <br/>
+        <br/>
+        </span>
+        <span class="text-[#191a1c] text-2xl font-bold font-['Inter'] leading-[30px]">
+        Benefits of Group Life Insurance:
+        <br/>
+        </span>
+        <span class="text-[#191a1c] text-2xl font-bold font-['Inter'] leading-[30px]">
+        Financial Security for Beneficiaries:
+        </span>
+        <span class="text-[#191a1c] text-2xl font-normal font-['Inter'] leading-[30px]">
+        Provides a death benefit to help cover costs such as funeral expenses, debts, or living expenses for beneficiaries.
+        <br/>
+        </span>
+        <span class="text-[#191a1c] text-2xl font-bold font-['Inter'] leading-[30px]">
+        Attractive Employee Benefit:
+        </span>
+        <span class="text-[#191a1c] text-2xl font-normal font-['Inter'] leading-[30px]">
+        Helps employers attract and retain talent by including life insurance in benefits packages.
+        <br/>
+        </span>
+        <span class="text-[#191a1c] text-2xl font-bold font-['Inter'] leading-[30px]">
+        Peace of Mind: 
+        </span>
+        <span class="text-[#191a1c] text-2xl font-normal font-['Inter'] leading-[30px]">
+        Offers participants reassurance that their loved ones are financially protected in the event of their death.
+        </span>
+        </div>
+        `
+    },
+    {
+        icon: 'fidelity',
+        heading: 'Fidelity Guarantee Policy',
+        slug: 'Fidelity-Guarantee-Policy',
+        image: 'fidelityimage',
+        details: `
+        <div className="opacity-40"><span class="text-[#191a1c] text-2xl font-normal font-['Inter'] leading-[30px]">A fidelity guarantee policy is an insurance product that protects employers against financial losses incurred due to fraudulent or dishonest acts committed by their employees. This type of policy is especially important for businesses where employees handle cash, assets, or are in positions of trust that could impact the company's financial health.<br/><br/>A </span><span class="text-[#191a1c] text-2xl font-bold font-['Inter'] leading-[30px]">fidelity guarantee policy</span><span class="text-[#191a1c] text-2xl font-normal font-['Inter'] leading-[30px]"> is an essential risk management tool for businesses that want to protect themselves from the financial impact of employee dishonesty, ensuring that even in unfortunate circumstances, the company's stability is maintained.</span></div>`
+    },
+    {
+        icon: 'fire',
+        heading: 'Household Insurance',
+        slug: 'Household-Insurance',
+        image: 'householdimage',
+        details: `
+        <div className="opacity-40"><span class="text-[#060606] text-2xl font-normal font-['Inter'] leading-[30px]">Household insurance policy is a type of insurance that provides financial protection for your home and its contents against various risks and unforeseen events. It is designed to cover losses or damages that can impact the structure of your home or the personal belongings inside it. This type of policy is essential for homeowners and renters who want to safeguard their property and possessions.<br/><br/></span><span class="text-[#060606] text-2xl font-bold font-['Inter'] leading-[30px]">CONPONENT OF HOUSEHOLD INSURANCE<br/></span><span class="text-[#060606] text-2xl font-normal font-['Inter'] leading-[30px]">·        Building insurance to cover the structure of the building<br/>·        Content insurance cover the content in the building such as furniture, electronic, appliances, clothing and other household items<br/><br/></span><span class="text-[#060606] text-2xl font-bold font-['Inter'] leading-[30px]">Professional indemnity insurance (PI),</span><span class="text-[#060606] text-2xl font-normal font-['Inter'] leading-[30px]"> also known as </span><span class="text-[#060606] text-2xl font-bold font-['Inter'] leading-[30px]">professional liability insurance</span><span class="text-[#060606] text-2xl font-normal font-['Inter'] leading-[30px]"> or</span><span class="text-[#060606] text-2xl font-bold font-['Inter'] leading-[30px]"> errors and omissions insurance (E&O)</span><span class="text-[#060606] text-2xl font-normal font-['Inter'] leading-[30px]">, is a type of insurance policy that provides coverage to professionals and businesses against claims made by clients or third parties for financial losses caused by negligence, errors, or omissions in the services or advice they provide. It is particularly important for professionals who provide expert advice or services that, if mishandled, could result in significant<br/><br/></span><span class="text-[#060606] text-2xl font-bold font-['Inter'] leading-[30px]">KEY ASPECT OF PROFESSIONAL INDEMNITY<br/></span><span class="text-[#060606] text-2xl font-normal font-['Inter'] leading-[30px]">·        Coverage of Negligence – claims arising from mistake, professional negligence or failure to perform professional duties.<br/>·        Financial protection – cover legal costs, court fees and any settlement that may be required if the professional or business found liable.</span></div>`
+    },
+]
