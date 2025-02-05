@@ -7,6 +7,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import TeamMember from "./pages/TeamMember";
 
 function App() {
 
@@ -24,6 +25,14 @@ function App() {
       element: (
         <MainLayout>
           <About />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/about/team/:id",
+      element: (
+        <MainLayout>
+          <TeamMember />
         </MainLayout>
       ),
     },

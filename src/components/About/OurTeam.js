@@ -1,11 +1,13 @@
 import React from 'react'
 import { team } from '../../utils/data'
 import { FaChevronRight } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 
 const OurTeam = () => {
+
     return (
-        <section className='relative pb-[80px]'>
-            <div className='bg-[#EFEFEF] h-[35%] w-full absolute top-0 left-0 '></div>
+        <section id='team' className='relative pb-[80px]'>
+            <div className='bg-[#EFEFEF] h-[20%] w-full absolute top-0 left-0 '></div>
             <div className='relative z-2 bg-[#E6E4E4] w-[80%] max-w-max mx-auto rounded-[30px] p-[120px]'>
                 <h2 className="w-[301px] h-[83px] text-[#5a5a5a] text-5xl font-bold font-['Lato']">Our Team</h2>
 
@@ -30,9 +32,9 @@ const OurTeam = () => {
                                             <h3 className=" text-[#1e1f21] text-2xl font-bold font-['Lato'] tracking-tight">{item.name}</h3>
                                             <div className='h-[30px] w-full flex justify-between items-center' >
                                                 <p className=" text-[#666666] text-base font-normal font-['Sans']">{item.title}</p>
-                                                <button className="w-[30px] h-[30px] pl-[15.63px] pr-[15.62px] py-[13px] bg-[#cc1517] rounded-[20px] justify-center items-center flex text-white">
+                                                <Link to={`/about/team/${item.slug}`} className="w-[30px] h-[30px] pl-[15.63px] pr-[15.62px] py-[13px] bg-[#cc1517] rounded-[20px] justify-center items-center flex text-white">
                                                     <span><FaChevronRight /></span>
-                                                </button>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
