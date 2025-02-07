@@ -10,6 +10,8 @@ import {
 import TeamMember from "./pages/TeamMember";
 import ServiceItem from "./pages/ServiceItem";
 import Products from "./pages/Products";
+import Careers from "./pages/Careers";
+import Contact from "./pages/Contact";
 
 function App() {
 
@@ -51,6 +53,22 @@ function App() {
       element: (
         <MainLayout>
           <Products />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/careers",
+      element: (
+        <MainLayout>
+          <Careers />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/contact",
+      element: (
+        <MainLayout>
+          <Contact />
         </MainLayout>
       ),
     },

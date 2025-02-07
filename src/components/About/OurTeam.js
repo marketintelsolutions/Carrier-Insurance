@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom'
 const OurTeam = () => {
 
     return (
-        <section id='team' className='relative pb-[80px]'>
+        <section className='relative pb-[80px]'>
             <div className='bg-[#EFEFEF] h-[20%] w-full absolute top-0 left-0 '></div>
             <div className='relative z-2 bg-[#E6E4E4] w-[80%] max-w-max mx-auto rounded-[30px] p-[120px]'>
                 <h2 className="w-[301px] h-[83px] text-[#5a5a5a] text-5xl font-bold font-['Lato']">Our Team</h2>
 
-                <div className='grid grid-cols-3 gap-x-[53px] gap-y-[124px]'>
+                <div id='team' className='grid grid-cols-3 gap-x-[53px] gap-y-[124px]'>
                     {
                         team.map((item) => {
                             if (!item.slug) {

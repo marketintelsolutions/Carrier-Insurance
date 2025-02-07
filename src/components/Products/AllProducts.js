@@ -15,7 +15,7 @@ const AllProducts = () => {
                             </div>
                             <p className=" text-[#666666] text-xl font-normal font-['Sans'] leading-normal">{item.text}</p>
                         </div>
-                        <button className="mt-5 self-end justify-between w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] justify-start items-center inline-flex">
+                        <button className="mt-5 self-end justify-between w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] items-center inline-flex">
                             <span className="text-center text-white text-base font-normal font-['Sans'] leading-tight tracking-tight">
                                 Get Started
                             </span>
