@@ -1,4 +1,5 @@
 import React from 'react'
+import BannerAnimation from '../BannerAnimation'
 
 const TeamMemberBanner = () => {
     return (
@@ -11,7 +12,7 @@ const TeamMemberBanner = () => {
             <div className='flex justify-between gap-[50px] items-end w-[80%] max-w-max mx-auto '>
                 <div className='w-[372px]'><img src="/images/tick.svg" alt="tick" className='w-full' /></div>
 
-                <div className=''><img src="/images/spherecurve.svg" alt="tick" /></div>
+                <div className=''><BannerAnimation size={500} /></div>
             </div>
 
         </section>

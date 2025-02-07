@@ -2,6 +2,7 @@ import React from 'react'
 import { FaArrowRight, FaChevronRight, FaFacebook, FaInstagram, FaLocationDot, FaTwitter } from 'react-icons/fa6'
 import { IoMail } from 'react-icons/io5'
 import { PiPhoneCallFill } from 'react-icons/pi'
+import BannerAnimation from './BannerAnimation'
 
 const Footer = () => {
     return (
@@ -31,7 +32,7 @@ const Footer = () => {
                 <div className='flex justify-between gap-[50px]'>
                     <div className='flex flex-col justify-between'>
                         <img src="/images/whitelogo.svg" alt="logo" />
-
+                        <BannerAnimation size={294} />
                     </div>
                     <div>
                         <h2 className="pb-[15px] mb-5 border-b border-white w-[143.09px] text-[#fffefe] text-2xl font-bold font-['Lato'] tracking-tight">Useful Links</h2>

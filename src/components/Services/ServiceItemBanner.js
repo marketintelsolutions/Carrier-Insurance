@@ -1,4 +1,5 @@
 import React from 'react'
+import BannerAnimation from '../BannerAnimation'
 
 const ServiceItemBanner = ({ serviceItem }) => {
     return (
@@ -9,7 +10,7 @@ const ServiceItemBanner = ({ serviceItem }) => {
             }}
         >
             <div className='flex justify-end gap-[50px] items-end w-[95%] max-w-max mx-auto '>
-                <div className=''><img src="/images/spherecurve.svg" alt="tick" /></div>
+                <div className=''><BannerAnimation size={500} /></div>
             </div>
 
             <div className='w-full absolute -bottom-[180px] flex justify-center'>

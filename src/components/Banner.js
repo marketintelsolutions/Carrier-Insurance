@@ -1,4 +1,5 @@
 import React from 'react'
+import BannerAnimation from './BannerAnimation'
 
 const Banner = ({ image }) => {
     return (
@@ -8,7 +9,9 @@ const Banner = ({ image }) => {
                     <img src="/images/tick.svg" alt="tick" className='w-full' />
                 </div>
 
-                <div className=''><img src="/images/spherecurve.svg" alt="tick" /></div>
+                <div className=''>
+                    <BannerAnimation size={500} />
+                </div>
             </div>
 
         </section>
