@@ -12,6 +12,7 @@ import ServiceItem from "./pages/ServiceItem";
 import Products from "./pages/Products";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
+import Media from "./pages/Media";
 
 function App() {
 
@@ -61,6 +62,14 @@ function App() {
       element: (
         <MainLayout>
           <Careers />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/media",
+      element: (
+        <MainLayout>
+          <Media />
         </MainLayout>
       ),
     },
