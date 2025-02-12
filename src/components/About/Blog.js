@@ -3,7 +3,7 @@ import { FaChevronRight } from 'react-icons/fa6'
 
 const Blog = () => {
     return (
-        <div className='w-[70%] max-w-[1200px] mx-auto mt-[150px]'>
+        <div className='w-[70%] max-w-[1200px] mx-auto mt-[0px]'>
             <div className='flex gap-6'>
                 <div className='w-[45%]'>
                     <p className=" h-5 text-[#cc1517] text-xl font-semibold font-['Inter'] leading-tight">Blog</p>

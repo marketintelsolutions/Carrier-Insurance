@@ -46,7 +46,7 @@ const OurTeam = () => {
                 </div>
             </div>
 
-            <div className='mt-[180px] flex justify-between  items-center gap-10 bg-primaryRed py-[60px] px-[80px] w-[80%] max-w-max mx-auto rounded-[30px]'>
+            <div className='my-[180px] flex justify-between  items-center gap-10 bg-primaryRed py-[60px] px-[80px] w-[80%] max-w-max mx-auto rounded-[30px]'>
                 <div>
                     <p className=" text-black/80 text-2xl font-normal font-['Montserrat'] leading-[50px]">Do you wish to be part of a forward looking team?</p>
                     <p className="">
