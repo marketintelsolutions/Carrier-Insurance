@@ -2,7 +2,7 @@ import React from 'react'
 
 const Blog = () => {
     return (
-        <div className='w-[80%] max-w-[1200px] mx-auto flex flex-col items-center my-[180px]'>
+        <div className='w-[80%] max-w-[1200px] mx-auto flex flex-col items-center my-[100px]'>
             <h3 className="w-[102px] h-[53px] text-center text-[#cc1517] text-[22px] font-normal font-['Inter'] leading-snug">Blog</h3>
             <h1 className="h-[74px] text-center text-[#282828] text-[32px] font-extrabold font-['Inter'] leading-[39px]">Tips and advice on managing risks, choosing policies, and more.</h1>
             <div className='grid grid-cols-4 w-full mt-[50px]'>

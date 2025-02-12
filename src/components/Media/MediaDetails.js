@@ -18,7 +18,7 @@ const MediaDetails = () => {
             <div className='mt-20 w-full flex gap-[60px]'>
                 <article className='flex flex-col gap-[50px]'>
                     {
-                        Array.from({ length: 5 }, (_, index) => <MediaItem key={index} />)
+                        Array.from({ length: 5 }, (_, index) => <MediaItem id={index + 1} key={index} />)
                     }
                 </article>
                 <div className='flex flex-col gap-4'>

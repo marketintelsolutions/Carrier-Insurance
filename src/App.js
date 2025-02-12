@@ -13,6 +13,7 @@ import Products from "./pages/Products";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import Media from "./pages/Media";
+import SingleMedia from "./pages/SingleMedia";
 
 function App() {
 
@@ -70,6 +71,14 @@ function App() {
       element: (
         <MainLayout>
           <Media />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/media/:id",
+      element: (
+        <MainLayout>
+          <SingleMedia />
         </MainLayout>
       ),
     },
