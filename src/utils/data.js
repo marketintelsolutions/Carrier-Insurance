@@ -241,3 +241,22 @@ export const products = [
         text: 'Provides financial protection for homes and belongings against risks like fire, theft, or natural disasters.',
     },
 ]
+
+export const accordion = [
+    {
+        heading: 'What types of insurance do you offer?',
+        text: 'tempus eu. Integer placerat mi sem, vel imperdiet nunc bibendu m eget. Nunc luctus quam vitae facilisis.'
+    },
+    {
+        heading: 'How do I choose the right policy?',
+        text: 'We help you choose the right policy by assessing your needs, budget, and circumstances. Our experts provide personalized recommendations based on thorough analysis.'
+    },
+    {
+        heading: 'What happens if I miss a premium payment?',
+        text: 'Missing a premium payment may result in a grace period. Contact us immediately to discuss payment options and maintain your coverage without interruption.'
+    },
+    {
+        heading: 'How does the claims process work?',
+        text: 'Our claims process is straightforward. Report the incident, submit required documentation, and our dedicated team will guide you through each step to ensure quick resolution.'
+    },
+]

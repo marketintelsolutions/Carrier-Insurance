@@ -47,19 +47,19 @@ const Navbar = () => {
                     <div className='w-[85%] max-w-max mx-auto  h-full flex justify-between'>
                         <div className='flex gap-[30px] py-4 bg-primaryRed h-full'>
                             <span><MdOutlineLocationOn size={40} /></span>
-                            <p className="w-[252px]  text-white text-base font-normal font-['Sans'] leading-tight">
+                            <p className="w-[252px]  text-white text-[14px] font-normal font-sans leading-tight">
                                 Plot 22, Akiogun New Market Road, Oniru Victoria Island, Lagos
                             </p>
                         </div>
                         <div className='flex gap-[30px] py-4'>
                             <span><MdEmail color='#FF0000' size={40} /></span>
-                            <p className="w-[250px]  text-white text-base font-normal font-['Sans'] leading-tight">
+                            <p className="w-[250px]  text-white text-[14px] font-normal font-sans leading-tight">
                                 info@carrierinsurancebrokers.com, <br /> it-@carrierinsurancebrokers.com
                             </p>
                         </div>
                         <div className='flex gap-[30px] py-4'>
                             <span><TbPhoneCall color='#FF0000' size={40} /></span>
-                            <p className="w-[271px]  text-white text-base font-normal font-['Sans'] leading-tight">
+                            <p className="w-[271px]  text-white text-[14px] font-normal font-sans leading-tight">
                                 +234 906 297 9782   |  +234 906 297 9786 <br /> +234 906 244 7811    | +234 707 452 1825
                             </p>
                         </div>
@@ -76,13 +76,13 @@ const Navbar = () => {
                             <Link
                                 to={item.path}
                                 key={index}
-                                className="text-[#5a5a5a] w-max text-base font-bold font-['Sans']  tracking-tight">
+                                className="text-[#5a5a5a] w-max text-base font-bold font-sans  tracking-tight">
                                 {item.text}
                             </Link>
                         )
                     }
                     <button className="w-28 h-[43px] px-[15px] py-3.5 bg-primaryRed rounded-[10px] justify-center items-center gap-2.5 inline-flex">
-                        <span className="text-[#fffefe] text-sm font-bold font-['Sans'] tracking-tight">Log In </span>
+                        <span className="text-[#fffefe] text-sm font-bold font-sans tracking-tight">Log In </span>
                     </button>
                     <span><IoSearch size={25} /></span>
                 </div>

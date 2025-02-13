@@ -9,11 +9,11 @@ const SectionTwo = () => {
                 <div className="w-[65%] relative h-96 pl-[159px] pr-[60px] py-[70px] bg-black rounded-[50px] justify-end items-center gap-2.5 inline-flex">
                     <div className="">
                         <img src="/images/motherchild.png" alt="woman" className='absolute -top-[20px] -left-[250px] w-full max-w-[376px] ' />
-                        <span className="text-white text-xl font-normal font-['Sans'] leading-[37px] tracking-tight">At </span>
-                        <span className="text-white text-xl font-bold font-['Sans'] leading-[37px] tracking-tight">
+                        <span className="text-white text-xl font-normal font-sans leading-[37px] tracking-tight">At </span>
+                        <span className="text-white text-xl font-bold font-sans leading-[37px] tracking-tight">
                             Truebond Insurance Brokers Limited
                         </span>
-                        <span className="text-white text-xl font-normal font-['Sans'] leading-[37px] tracking-tight">
+                        <span className="text-white text-xl font-normal font-sans leading-[37px] tracking-tight">
                             , where we specialize in providing comprehensive insurance solutions tailored to meet the diverse needs of our clients. Our team is dedicated to ensuring individuals and businesses are protected against unforeseen risks by offering a wide range of life insurance and non-life insurance products
                         </span>
                     </div>
@@ -62,7 +62,7 @@ const SectionTwo = () => {
                     </p>
                     <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] border-2 border-[#fffefe] justify-start items-center inline-flex gap-6">
                         <span
-                            className="text-center text-white text-base font-normal font-['Sans'] leading-tight tracking-tight">
+                            className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">
                             Get Started
                         </span>
                         <span><FaArrowRightLong color='white' /></span>

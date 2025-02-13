@@ -9,10 +9,10 @@ const SectionThree = () => {
                 <div className='relative flex justify-between items-end'>
                     <div className='flex flex-col gap-[27px] w-full max-w-[452px]'>
                         <h3 className="h-[23px] text-[#cc1517] text-2xl font-bold font-['Lato'] tracking-tight">Services</h3>
-                        <p className="text-[#191a1c] text-2xl font-normal font-['Sans'] leading-7 tracking-wide">Explore our wide range of insurance products, designed to meet the diverse needs of individuals, families, and businesses.</p>
+                        <p className="text-[#191a1c] text-2xl font-normal font-sans leading-7 tracking-wide">Explore our wide range of insurance products, designed to meet the diverse needs of individuals, families, and businesses.</p>
                     </div>
                     <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] justify-start items-center inline-flex">
-                        <span className="text-center text-white text-base font-normal font-['Sans'] leading-tight tracking-tight">View All Service</span>
+                        <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">View All Service</span>
                     </button>
                     <img src="/images/calculator.svg" alt="calculator" className='absolute -top-[155px] -right-[46px]' />
                 </div>
@@ -23,9 +23,9 @@ const SectionThree = () => {
                             <img src="/images/life.svg" alt="life" />
                             <h2 className=" text-[#060606] text-[22.19px] font-semibold font-['Lato']">Life Insurance</h2>
                         </div>
-                        <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-['Sans'] leading-[14.90px]">Life insurance provides financial security for loved ones in the event of the policyholder’s death. It ensures dependents are protected from financial hardships and can also serve as a savings or investment tool.</p>
+                        <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-sans leading-[14.90px]">Life insurance provides financial security for loved ones in the event of the policyholder’s death. It ensures dependents are protected from financial hardships and can also serve as a savings or investment tool.</p>
                         <button className="w-[106.65px] self-end h-[31.44px] px-[18.49px] py-[9.25px] bg-[#cc1517] rounded-[30.82px] items-center inline-flex justify-between">
-                            <span className="text-center text-white text-[9.86px] font-normal font-['Sans'] leading-3 tracking-tight">Get Started </span>
+                            <span className="text-center text-white text-[9.86px] font-normal font-sans leading-3 tracking-tight">Get Started </span>
                             <span className='text-[10px] text-white'><FaArrowRightLong /></span>
                         </button>
                     </div>
@@ -35,11 +35,11 @@ const SectionThree = () => {
                             <img src="/images/health.svg" alt="health" />
                             <h2 className="w-max text-[#060606] text-[22.19px] font-semibold font-['Lato']">Health Insurance</h2>
                         </div>
-                        <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-['Sans'] leading-[14.90px]">
+                        <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-sans leading-[14.90px]">
                             Covers medical expenses, including hospitalization, medications, and preventive care, ensuring individuals and families can access quality healthcare without financial strain.
                         </p>
                         <button className="w-[106.65px] self-end h-[31.44px] px-[18.49px] py-[9.25px] bg-[#cc1517] rounded-[30.82px] items-center inline-flex justify-between">
-                            <span className="text-center text-white text-[9.86px] font-normal font-['Sans'] leading-3 tracking-tight">Get Started </span>
+                            <span className="text-center text-white text-[9.86px] font-normal font-sans leading-3 tracking-tight">Get Started </span>
                             <span className='text-[10px] text-white'><FaArrowRightLong /></span>
                         </button>
                     </div>
@@ -48,9 +48,9 @@ const SectionThree = () => {
                             <img src="/images/car.svg" alt="car" />
                             <h2 className=" text-[#060606] text-[22.19px] font-semibold font-['Lato']">Motor Insurance</h2>
                         </div>
-                        <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-['Sans'] leading-[14.90px]">Life insurance provides financial security for loved ones in the event of the policyholder’s death. It ensures dependents are protected from financial hardships and can also serve as a savings or investment tool.</p>
+                        <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-sans leading-[14.90px]">Life insurance provides financial security for loved ones in the event of the policyholder’s death. It ensures dependents are protected from financial hardships and can also serve as a savings or investment tool.</p>
                         <button className="w-[106.65px] self-end h-[31.44px] px-[18.49px] py-[9.25px] bg-[#cc1517] rounded-[30.82px] items-center inline-flex justify-between">
-                            <span className="text-center text-white text-[9.86px] font-normal font-['Sans'] leading-3 tracking-tight">Get Started </span>
+                            <span className="text-center text-white text-[9.86px] font-normal font-sans leading-3 tracking-tight">Get Started </span>
                             <span className='text-[10px] text-white'><FaArrowRightLong /></span>
                         </button>
                     </div>

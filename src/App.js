@@ -14,6 +14,9 @@ import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import Media from "./pages/Media";
 import SingleMedia from "./pages/SingleMedia";
+import Claims from "./pages/Claims";
+import Faq from "./pages/Faq";
+import Quote from "./pages/Quote";
 
 function App() {
 
@@ -87,6 +90,30 @@ function App() {
       element: (
         <MainLayout>
           <Contact />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/claims",
+      element: (
+        <MainLayout>
+          <Claims />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/faq",
+      element: (
+        <MainLayout>
+          <Faq />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/quote",
+      element: (
+        <MainLayout>
+          <Quote />
         </MainLayout>
       ),
     },

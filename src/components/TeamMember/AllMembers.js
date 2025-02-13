@@ -22,7 +22,7 @@ const AllMembers = ({ teammember }) => {
                                         <div className=" w-full flex-col justify-start items-start gap-3 flex">
                                             <h3 className="h-[36px] text-[#1e1f21] text-[15.13px] font-bold font-['Lato'] tracking-tight">{item.name}</h3>
                                             <div className='h-[30px] w-full flex justify-between items-center' >
-                                                <p className=" text-[#666666] text-[10.09px] font-normal font-['Sans']">{item.title}</p>
+                                                <p className=" text-[#666666] text-[10.09px] font-normal font-sans">{item.title}</p>
                                                 <Link to={`/about/team/${item.slug}`} className="w-[15px] h-[15px] pl-[5.63px] pr-[5.62px] py-[5px] bg-[#cc1517] rounded-[20px] text-[9px] justify-center items-center flex text-white">
                                                     <span><FaChevronRight /></span>
                                                 </Link>

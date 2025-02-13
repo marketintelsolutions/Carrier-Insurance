@@ -6,7 +6,7 @@ const SectionEight = () => {
         <section className='py-[120px] bg-[#666] '>
             <div className='w-[80%] max-w-max mx-auto rounded-[30px] bg-white py-[60px] flex flex-col items-center gap-[18px]'>
                 <h2 className="text-[#cc1517] text-5xl font-bold font-['Lato']">Our Clients:</h2>
-                <p className="text-center text-[#666666] text-base font-normal font-['Sans'] leading-tight tracking-tight">
+                <p className="text-center text-[#666666] text-base font-normal font-sans leading-tight tracking-tight">
                     A look at some of the individuals and businesses we’re proud to serve.
                 </p>
                 <div className='flex justify-between items-center gap-10'>
@@ -23,7 +23,7 @@ const SectionEight = () => {
             <div className=' bg-[#F5F5F5] w-[80%] mt-[106px] max-w-max mx-auto rounded-[30px] px-[100px] pt-[130px] pb-[90px]'>
                 <div className='relative'>
                     <h2 className="w-[184.39px] h-5 text-[#cc1517] text-xl font-semibold font-['Inter'] leading-tight">Testimonials</h2>
-                    <p className="w-[509px] mt-[14px] text-[#282828] text-4xl font-extrabold font-['Inter'] leading-[42px]">Read what our clients have to say about working with Truebond Insurance Brokers Limited.</p>
+                    <p className="w-[479px] mt-[14px] text-[#282828] text-4xl font-extrabold font-['Inter'] leading-[42px]">Read what our clients have to say about working with Truebond Insurance Brokers Limited.</p>
 
                     <div className=' mt-[100px] py-[40px] px-[90px] bg-[#CC1517] rounded-[30px] max-w-[650px]'>
                         <p className="relative w-[443.46px] h-[104px] text-white text-base font-normal font-['Inter'] leading-relaxed">

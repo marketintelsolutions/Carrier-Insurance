@@ -9,6 +9,12 @@ module.exports = {
       },
       maxWidth: {
         max: '1438px'
+      },
+      fontFamily: {
+        inter: "Inter",
+        sans: "Open Sans",
+        lato: "Lato",
+        montserrat: "Montserrat"
       }
     },
   },
