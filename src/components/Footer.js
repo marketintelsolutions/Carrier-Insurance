@@ -134,7 +134,7 @@ const Footer = () => {
                 <p className="mt-[70px] text-[#999999] text-base font-normal font-sans leading-tight tracking-tight">Designed & developed by Ziltchone Technology </p>
 
                 <div className='mt-[24px] border-t-4 border-primaryRed pt-[22px] flex justify-between'>
-                    <p className="text-[#fffefe] text-base font-normal font-sans leading-relaxed">© Truebond Insurance Brokers Limited 2024. All Right Reserved.</p>
+                    <p className="text-[#fffefe] text-base font-normal font-sans leading-relaxed">© Truebond Insurance Brokers Limited {new Date().getFullYear()}. All Right Reserved.</p>
                     <div className='flex gap-[38px] text-white text-2xl'>
                         <span><FaInstagram /></span>
                         <span><FaTwitter /></span>

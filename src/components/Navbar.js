@@ -37,7 +37,7 @@ const links = [
 const Navbar = () => {
     return (
         <>
-            <div className='w-[95%] max-w-[1782px] mx-auto flex relative  rounded-b-[50px] overflow-hidden'>
+            <div className='w-[92%] max-w-[1782px] mx-auto flex relative  rounded-b-[50px] overflow-hidden'>
                 <div className=' flex  h-[82px] w-full max-w-[33%] rounded-bl-[50px] bg-primaryRed'>
                 </div>
                 <div className='bg-primaryBlack w-full h-[82px]'>
