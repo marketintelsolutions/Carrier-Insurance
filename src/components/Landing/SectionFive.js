@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaChevronRight } from 'react-icons/fa'
 import { FaArrowRightLong } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 
 const services = [
     {
@@ -38,7 +39,7 @@ const SectionFive = () => {
                     <div className='flex gap-4'>
                         <div className="w-full max-w-[468px] h-[297px] bg-[#666666] py-[54px] px-[33px] rounded-[30px]" >
                             <h3 className="text-white text-2xl font-bold font-['Lato'] tracking-tight">How to File a Claim:</h3>
-                            <p className=" h-[82px] mt-[18px] mb-[25px] text-white text-xl font-normal font-sans leading-normal">Our claims process is designed to make things simple, efficient, and supportive during times of need.</p>
+                            <p className=" h-[82px] mt-[18px] mb-[25px] text-white text-lg font-normal font-sans leading-normal">Our claims process is designed to make things simple, efficient, and supportive during times of need.</p>
                             <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] items-center inline-flex justify-between">
                                 <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">Read More </span>
                                 <span className='text-white'><FaArrowRightLong /></span>
@@ -46,7 +47,7 @@ const SectionFive = () => {
                         </div>
                         <div className="w-full max-w-[468px] h-[297px] bg-[#666666] py-[54px] px-[33px] rounded-[30px]" >
                             <h3 className="text-white text-2xl font-bold font-['Lato'] tracking-tight">Documents Required:</h3>
-                            <p className=" h-[82px] mt-[18px] mb-[25px] text-white text-xl font-normal font-sans leading-normal">An outline of necessary documents and evidence needed to initiate a claim.</p>
+                            <p className=" h-[82px] mt-[18px] mb-[25px] text-white text-lg font-normal font-sans leading-normal">An outline of necessary documents and evidence needed to initiate a claim.</p>
                             <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] items-center inline-flex justify-between">
                                 <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">Read More </span>
                                 <span className='text-white'><FaArrowRightLong /></span>
@@ -68,9 +69,9 @@ const SectionFive = () => {
                 <div className="w-[468px]  bg-[#cc1517] rounded-[30px] pb-[99px] flex gap-11 items-center justify-end flex-col " >
                     <div className='flex flex-col gap-11'>
                         <p className="w-[257px] h-[110px] text-white text-xl font-normal font-sans leading-normal">Our dedicated claims team is available to guide you through the entire process, from start to finish.</p>
-                        <button className="w-[173px] h-[46px] px-[30px] py-[15px] bg-primaryRed rounded-[50px] border-2 border-white justify-center items-center inline-flex">
+                        <Link to={'/contact'} className="w-[173px] h-[46px] px-[20px] py-[15px] bg-primaryRed rounded-[50px] border-2 border-white justify-center items-center inline-flex">
                             <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">Visit help center</span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
 

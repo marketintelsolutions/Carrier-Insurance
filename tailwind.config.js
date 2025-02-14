@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       colors: {
         primaryRed: '#CC1517',
-        primaryBlack: '#060606'
+        primaryBlack: '#060606',
+        primaryGrey: '#999999',
+        primaryBlue: '#131730'
       },
       maxWidth: {
         max: '1438px'

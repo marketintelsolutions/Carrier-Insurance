@@ -3,6 +3,8 @@ import { FaArrowRight, FaChevronRight, FaFacebook, FaInstagram, FaLocationDot, F
 import { IoMail } from 'react-icons/io5'
 import { PiPhoneCallFill } from 'react-icons/pi'
 import BannerAnimation from './BannerAnimation'
+import { Link } from 'react-router-dom'
+import { services } from '../utils/data'
 
 const Footer = () => {
     return (
@@ -37,83 +39,65 @@ const Footer = () => {
                     <div>
                         <h2 className="pb-[15px] mb-5 border-b border-white w-[143.09px] text-[#fffefe] text-2xl font-bold font-['Lato'] tracking-tight">Useful Links</h2>
                         <div className='flex flex-col gap-2.5'>
-                            <div className="h-[30px] justify-start items-baseline gap-5 inline-flex">
+                            <Link to={'/'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
                                 <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
                                 <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Home</p>
-                            </div>
-                            <div className="h-[30px] justify-start items-baseline gap-5 inline-flex">
+                            </Link>
+                            <Link to={'/about'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
                                 <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
                                 <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">About Us</p>
-                            </div>
-                            <div className="h-[30px] justify-start items-baseline gap-5 inline-flex">
+                            </Link>
+                            <Link to={'/products'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
                                 <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
                                 <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Products</p>
-                            </div>
-                            <div className="h-[30px] justify-start items-baseline gap-5 inline-flex">
+                            </Link>
+                            <Link to={'/faq'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
                                 <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
                                 <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">FAQ</p>
-                            </div>
-                            <div className="h-[30px] justify-start items-baseline gap-5 inline-flex">
+                            </Link>
+                            <Link to={'/careers'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
                                 <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
                                 <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Careers</p>
-                            </div>
-                            <div className="h-[30px] justify-start items-baseline gap-5 inline-flex">
+                            </Link>
+                            <Link to={'/contact'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
                                 <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
                                 <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Contact Us</p>
-                            </div>
-                            <div className="h-[30px] justify-start items-baseline gap-5 inline-flex">
+                            </Link>
+                            <Link to={'/media'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
                                 <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
                                 <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Media</p>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                     <div>
                         <h2 className="pb-[15px] mb-5 border-b border-white w-[143.09px] text-[#fffefe] text-2xl font-bold font-['Lato'] tracking-tight">Our Services</h2>
-                        <div className='flex flex-col gap-2.5'>
-                            <div className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
-                                    <FaChevronRight size={11} />
-                                </span>
-                                <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Motor Insurance Policy</p>
-                            </div>
-                            <div className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
-                                    <FaChevronRight size={11} />
-                                </span>
-                                <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Fire and Burglary Policy</p>
-                            </div>
-                            <div className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
-                                    <FaChevronRight size={11} />
-                                </span>
-                                <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Group Life Insurance</p>
-                            </div>
-                            <div className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
-                                    <FaChevronRight size={11} />
-                                </span>
-                                <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Fidelity Guarantee Policy</p>
-                            </div>
-                            <div className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
-                                    <FaChevronRight size={11} />
-                                </span>
-                                <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Household Insurance</p>
-                            </div>
+                        <div className='flex flex-col gap-3'>
+                            {
+                                services.map((item) => (
+                                    <Link to={`/services/${item.slug}`} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
+                                        <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
+                                            <FaChevronRight size={11} />
+                                        </span>
+                                        <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">{item.heading}</p>
+                                    </Link>
+                                ))
+                            }
+
+
 
                         </div>
                     </div>

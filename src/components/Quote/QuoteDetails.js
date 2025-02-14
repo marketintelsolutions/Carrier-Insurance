@@ -42,8 +42,8 @@ const QuoteDetails = () => {
                         </div>
                     </div>
                     <div className='flex mt-6 flex-col gap-6'>
-                        <label htmlFor="duration" className="text-[#5a5a5a] text-xl font-normal font-sans tracking-tight">Duration</label>
-                        <textarea id='duration' type="text" className='h-[165px] resize-none rounded-[5px] px-6 py-4 bg-white' />
+                        <label htmlFor="description" className="text-[#5a5a5a] text-xl font-normal font-sans tracking-tight">Description</label>
+                        <textarea id='description' type="text" className='h-[165px] resize-none rounded-[5px] px-6 py-4 bg-white' />
                     </div>
                     <div className='flex justify-center'>
                         <button className="mx-auto mt-[100px] text-white hover:text-primaryRed border border-primaryRed hover:bg-white rounded-[10px] w-[275px] h-[69px]  bg-[#cc1517] justify-center items-center gap-2.5 inline-flex">

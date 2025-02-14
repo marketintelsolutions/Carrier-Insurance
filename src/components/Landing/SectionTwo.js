@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaArrowRightLong } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 
 const SectionTwo = () => {
     return (
@@ -60,13 +61,13 @@ const SectionTwo = () => {
                     >
                         Contact us today to learn more or get a free consultation.
                     </p>
-                    <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] border-2 border-[#fffefe] justify-start items-center inline-flex gap-6">
+                    <Link to={'/contact'} className="w-[173px] text-white hover:bg-primaryBlue h-[51px] px-[20px] py-[15px] bg-[#cc1517] rounded-[50px] border-2 border-[#fffefe] justify-start items-center inline-flex gap-6">
                         <span
-                            className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">
+                            className="text-center text-base font-normal font-sans leading-tight tracking-tight">
                             Get Started
                         </span>
                         <span><FaArrowRightLong color='white' /></span>
-                    </button>
+                    </Link>
                 </div>
             </div>
 

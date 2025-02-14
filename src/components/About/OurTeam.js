@@ -48,20 +48,20 @@ const OurTeam = () => {
 
             <div className='my-[180px] flex justify-between  items-center gap-10 bg-primaryRed py-[60px] px-[80px] w-[80%] max-w-max mx-auto rounded-[30px]'>
                 <div>
-                    <p className=" text-black/80 text-2xl font-normal font-['Montserrat'] leading-[50px]">Do you wish to be part of a forward looking team?</p>
+                    <p className=" text-black/80 text-[22px] font-normal font-['Montserrat'] leading-[50px]">Do you wish to be part of a forward looking team?</p>
                     <p className="">
-                        <span className="text-[#fffefe] text-5xl font-bold font-['Montserrat'] leading-[50px]">Insurance </span>
-                        <span className="text-black/80 text-5xl font-bold font-['Montserrat'] leading-[50px]">Claims Skills.</span>
+                        <span className="text-[#fffefe] text-[44px] font-bold font-['Montserrat'] leading-[50px]">Insurance </span>
+                        <span className="text-black/80 text-[44px] font-bold font-['Montserrat'] leading-[50px]">Claims Skills.</span>
                     </p>
                     <p className=" h-[47px] text-black/80 text-2xl font-normal font-['Montserrat'] leading-[50px]">Infinite possibilities. Endless opportunities.</p>
                 </div>
                 <div className='flex gap-[15px]'>
-                    <button className="w-48 h-[52px] relative bg-[#fffefe] rounded-md">
-                        <span className=" text-center text-[#cc1517] text-[17px] font-medium font-['Montserrat']">Join Today</span>
-                    </button>
-                    <button className="w-48 h-[52px] relative border rounded-md">
-                        <span className=" text-center text-white text-[17px] font-medium font-['Montserrat']">Contact us</span>
-                    </button>
+                    <Link to={'/claims'} className="w-48 h-[52px] flex justify-center items-center relative text-[#cc1517] hover:text-white hover:bg-primaryRed border border-white bg-[#fffefe] rounded-md">
+                        <span className=" text-center  text-[17px] font-medium font-['Montserrat']">Join Today</span>
+                    </Link>
+                    <Link to={'/contact'} className="w-48 h-[52px] flex justify-center items-center text-white  hover:bg-primaryBlue relative border rounded-md">
+                        <span className=" text-center text-[17px] font-medium font-['Montserrat']">Contact us</span>
+                    </Link>
                 </div>
             </div>
 
