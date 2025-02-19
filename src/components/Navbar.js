@@ -58,7 +58,9 @@ const links = [
 const Navbar = () => {
     const [isDropdown, setIsDropdown] = useState(false)
 
+    const path = window.location.pathname
 
+    console.log('sliced', path.includes('services'));
 
     return (
         <>
@@ -105,7 +107,7 @@ const Navbar = () => {
                                     key={index}
                                     onMouseEnter={() => setIsDropdown(true)}
                                     onClick={() => setIsDropdown((prev) => !prev)}
-                                    className={`relative  cursor-pointer w-max flex gap-2 items-center text-base font-bold font-sans  tracking-tight ${isDropdown ? 'text-primaryRed' : 'text-[#5a5a5a]'}`}>
+                                    className={`relative  cursor-pointer w-max flex gap-2 items-center text-base font-bold font-sans  tracking-tight ${path.includes('services') && 'text-primaryRed'} ${isDropdown ? 'text-primaryRed' : 'text-[#5a5a5a]'}`}>
                                     <span>{item.text}</span>
                                     <span className={`${isDropdown && 'rotate-180'}`}><FaAngleDown /></span>
                                     {isDropdown && <div className='absolute top-[130%] left-0 rounded-[12px] overflow-hidden bg-[#D9D9D9]'>
@@ -125,7 +127,7 @@ const Navbar = () => {
                             return <Link
                                 to={item.path}
                                 key={index}
-                                className="text-[#5a5a5a] hover:text-primaryRed w-max text-base font-bold font-sans  tracking-tight">
+                                className={`text-[#5a5a5a] hover:text-primaryRed w-max text-base font-bold font-sans  tracking-tight ${path === item.path && 'text-primaryRed'}`}>
                                 {item.text}
                             </Link>
                         })
