@@ -1,5 +1,37 @@
 import React from 'react'
+import Marquee from 'react-fast-marquee'
 import { FaChevronLeft, FaChevronRight, FaQuoteLeft } from 'react-icons/fa6'
+
+
+const clients = [
+    'polaris',
+    'providus',
+    'tgi',
+    'heyden',
+    'keystone',
+    'webzen',
+    'sage',
+    'zkt',
+    'gartmore',
+    'legend',
+    'oti',
+    'pacholdings',
+    'nahco',
+    'kada',
+    'fsc',
+    'rainoil',
+    'lifeline',
+    'tempo',
+    'zmax',
+    'nobelguard',
+    'pacific',
+    'mikano',
+    'trapezoid',
+    'tak',
+    'jite',
+    'triumph',
+    'prime',
+]
 
 const SectionEight = () => {
     return (
@@ -9,18 +41,20 @@ const SectionEight = () => {
                 <p className="text-center text-[#666666] text-base font-normal font-sans leading-tight tracking-tight">
                     A look at some of the individuals and businesses we’re proud to serve.
                 </p>
-                <div className='flex justify-between items-center gap-10'>
-                    <span><FaChevronLeft /></span>
-                    <img src="/images/walmart.svg" alt="walmart" />
-                    <img src="/images/cisco.svg" alt="cisco" />
-                    <img src="/images/volvo.svg" alt="volvo" />
-                    <img src="/images/deloitte.svg" alt="deloitte" />
-                    <img src="/images/okta.svg" alt="okta" />
-                    <span><FaChevronRight /></span>
+                <div className='px-4 w-full'>
+                    <Marquee>
+                        <div className='flex px-5 justify-between items-center gap-10'>
+                            {
+                                clients.map((item, index) => (
+                                    <img key={index} src={`/images/partners/${item}.png`} alt="walmart" className='max-w-[150px]' />
+                                ))
+                            }
+                        </div>
+                    </Marquee>
                 </div>
             </div>
 
-            <div className=' bg-[#F5F5F5] w-[80%] mt-[106px] max-w-max mx-auto rounded-[30px] px-[100px] pt-[130px] pb-[90px]'>
+            {/* <div className=' bg-[#F5F5F5] w-[80%] mt-[106px] max-w-max mx-auto rounded-[30px] px-[100px] pt-[130px] pb-[90px]'>
                 <div className='relative'>
                     <h2 className="w-[184.39px] h-5 text-[#cc1517] text-xl font-semibold font-['Inter'] leading-tight">Testimonials</h2>
                     <p className="w-[479px] mt-[14px] text-[#282828] text-4xl font-extrabold font-['Inter'] leading-[42px]">Read what our clients have to say about working with Truebond Insurance Brokers Limited.</p>
@@ -48,7 +82,7 @@ const SectionEight = () => {
                     </div>
                     <img src="/images/menbig.png" alt="menbig" className='absolute right-0 top-[0px] w-[50%]  max-w-[529px]' />
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }

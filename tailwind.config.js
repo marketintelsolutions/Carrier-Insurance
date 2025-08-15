@@ -7,10 +7,10 @@ module.exports = {
         primaryRed: '#CC1517',
         primaryBlack: '#060606',
         primaryGrey: '#999999',
-        primaryBlue: '#131730'
       },
       maxWidth: {
-        max: '1438px'
+        max: '1438px',
+        sub: '1350px'
       },
       fontFamily: {
         inter: "Inter",

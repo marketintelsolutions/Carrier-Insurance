@@ -5,23 +5,24 @@ import { Link } from 'react-router-dom'
 const SectionTwo = () => {
     return (
         <section className='relative py-[190px] w-full flex flex-col gap-[100px] bg-[#EFEFEF]'>
-            {/* <div className='relative  w-[80%] max-w-max mx-auto flex gap-[120px] '>
-                <div className="w-[30%] h-96 bg-[#cc1517] rounded-[50px]" />
-                <div className="w-[65%] relative h-96 pl-[159px] pr-[60px] py-[70px] bg-black rounded-[50px] justify-end items-center gap-2.5 inline-flex">
+            <div className='relative  w-[80%] max-w-max mx-auto flex gap-[40px] '>
+                {/* <div className="w-[30%] h-96 bg-[#cc1517] rounded-[50px]" /> */}
+                <img src="/images/nightcity.jpg" alt="night city" className='max-w-[40%] rounded-[20px]' />
+                <div className="w-[55%] relative h-96 pl-[39px] pr-[60px] py-[70px]  border rounded-[50px] justify-end items-center gap-2.5 inline-flex">
                     <div className="">
-                        <img src="/images/motherchild.png" alt="woman" className='absolute -top-[20px] -left-[250px] w-full max-w-[376px] ' />
-                        <span className="text-white text-xl font-normal font-sans leading-[37px] tracking-tight">At </span>
-                        <span className="text-white text-xl font-bold font-sans leading-[37px] tracking-tight">
+
+                        <span className="text-black text-xl font-normal font-sans leading-[37px] tracking-tight">At </span>
+                        <span className="text-black text-xl font-bold font-sans leading-[37px] tracking-tight">
                             Truebond Insurance Brokers Limited
                         </span>
-                        <span className="text-white text-xl font-normal font-sans leading-[37px] tracking-tight">
+                        <span className="text-black text-xl font-normal font-sans leading-[37px] tracking-tight">
                             , where we specialize in providing comprehensive insurance solutions tailored to meet the diverse needs of our clients. Our team is dedicated to ensuring individuals and businesses are protected against unforeseen risks by offering a wide range of life insurance and non-life insurance products
                         </span>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
-            {/* <div className='relative z-[3] w-[70%] max-w-[1100px] mx-auto flex gap-[120px]'>
+            <div className='relative z-[3] w-[70%] max-w-[1100px] mx-auto flex gap-[120px]'>
                 <div className='flex items-start gap-[48px]'>
                     <img src="/images/vision.png" alt="vision" className='w-[91px] object-contain' />
                     <div className='flex flex-col gap-[14px]'>
@@ -39,7 +40,7 @@ const SectionTwo = () => {
                         </p>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
             <div className='relative z-[3] w-[80%] max-w-max mx-auto flex gap-[15px] '>
                 <div
@@ -55,9 +56,9 @@ const SectionTwo = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-[35%] h-96 border rounded-[50px] flex flex-col gap-[60px] px-24 py-[100px]" >
+                <div className="w-[35%] h-96 bg-[#cc1517] rounded-[50px] flex flex-col gap-[60px] px-24 py-[100px]" >
                     <p
-                        className="w-[236px] text-black text-2xl font-normal font-['Albert Sans'] leading-[29.01px]"
+                        className="w-[236px] text-[#fffefe] text-2xl font-normal font-['Albert Sans'] leading-[29.01px]"
                     >
                         Contact us today to learn more or get a free consultation.
                     </p>

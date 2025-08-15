@@ -8,12 +8,12 @@ const MediaDetails = () => {
             <h3 className="text-center text-[#cc1517] text-[22px] font-normal font-['Inter'] leading-snug">Media</h3>
             <h1 className="mt-4 w-full max-w-[1082px] text-center text-[#282828] text-4xl font-extrabold font-['Inter'] leading-[42px]">Stay informed with the latest updates and insights from Carrier Insurance Brokerage.</h1>
 
-            <div className='flex gap-5 mt-10 w-full'>
+            {/* <div className='flex gap-5 mt-10 w-full'>
                 <div><img src="/images/mediaone.png" alt="mediaone" className='w-full object-cover' /></div>
                 <div> <img src="/images/mediatwo.png" alt="mediatwo" className='w-full object-cover' /></div>
                 <div> <img src="/images/mediathree.png" alt="mediathree" className='w-full object-cover' /></div>
                 <div> <img src="/images/mediafour.png" alt="mediafour" className='w-full object-cover' /></div>
-            </div>
+            </div> */}
 
             <div className='mt-20 w-full flex gap-[60px]'>
                 <article className='flex flex-col gap-[50px]'>

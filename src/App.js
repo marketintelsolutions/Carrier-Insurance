@@ -17,6 +17,12 @@ import SingleMedia from "./pages/SingleMedia";
 import Claims from "./pages/Claims";
 import Faq from "./pages/Faq";
 import Quote from "./pages/Quote";
+import GeneralBusinessInsurance from "./pages/GeneralBusinessInsurance";
+import LifeBusinessInsurance from "./pages/LifeBusinessInsurance";
+import HealthInsurance from "./pages/HealthInsurance";
+import ClaimsManagement from "./pages/ClaimsManagement";
+import InsuranceIndustrySectors from "./pages/InsuranceIndustrySectors";
+import CareerPage from "./pages/CareerPage";
 
 function App() {
 
@@ -114,6 +120,54 @@ function App() {
       element: (
         <MainLayout>
           <Quote />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/services/general-business-insurance",
+      element: (
+        <MainLayout>
+          <GeneralBusinessInsurance />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/services/life-business-insurance",
+      element: (
+        <MainLayout>
+          <LifeBusinessInsurance />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/services/health-insurance",
+      element: (
+        <MainLayout>
+          <HealthInsurance />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/services/claims-management",
+      element: (
+        <MainLayout>
+          <ClaimsManagement />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/services/insurance-industry",
+      element: (
+        <MainLayout>
+          <InsuranceIndustrySectors />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/career",
+      element: (
+        <MainLayout>
+          <CareerPage />
         </MainLayout>
       ),
     },

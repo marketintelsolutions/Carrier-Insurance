@@ -3,18 +3,17 @@ import { FaArrowRightLong, FaChevronRight } from 'react-icons/fa6'
 
 const SectionThree = () => {
     return (
-        <section className='bg-white py-[140px]'>
+        <section className='bg-white py-[100px]'>
 
-            <div className='w-[80%] max-w-max mx-auto py-[100px] px-[60px]'>
+            <div className='w-[80%] max-w-max mx-auto py-[40px] px-[60px]'>
                 <div className='relative flex justify-between items-end'>
-                    <div className='flex flex-col gap-[27px] w-full max-w-[452px]'>
+                    <div className='flex flex-col gap-[27px] w-full max-w-[552px]'>
                         <h3 className="h-[23px] text-[#cc1517] text-2xl font-bold font-['Lato'] tracking-tight">Services</h3>
                         <p className="text-[#191a1c] text-2xl font-normal font-sans leading-7 tracking-wide">Explore our wide range of insurance products, designed to meet the diverse needs of individuals, families, and businesses.</p>
                     </div>
                     <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] justify-start items-center inline-flex">
-                        <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">View All Service</span>
+                        <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">View All Services</span>
                     </button>
-                    <img src="/images/calculator.svg" alt="calculator" className='absolute -top-[155px] -right-[46px]' />
                 </div>
 
                 <div className='mt-[72px] grid grid-cols-3 gap-[30px]'>

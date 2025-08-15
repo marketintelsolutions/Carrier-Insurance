@@ -75,9 +75,6 @@ const SectionFive = () => {
                     </div>
                 </div>
 
-                <div className='absolute -right-[132px] -top-[285px] '>
-                    <img src="/images/motherchildtwo.png" alt="motherchildtwo" className='max-w-[405px]' />
-                </div>
             </div>
 
         </section>

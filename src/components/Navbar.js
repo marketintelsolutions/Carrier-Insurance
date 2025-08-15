@@ -1,70 +1,25 @@
 import React, { useState } from 'react'
 import { IoSearch } from 'react-icons/io5'
-import { MdEmail, MdOutlineLocationOn } from 'react-icons/md'
-import { TbPhoneCall } from 'react-icons/tb'
 import { Link } from 'react-router-dom'
-import { services } from '../utils/data'
+import { navData, services } from '../utils/data'
 import { FaAngleDown } from 'react-icons/fa6'
 
-const links = [
-    {
-        text: 'About Us',
-        path: '/about',
-    },
-    {
-        text: 'Services',
-        path: '/services',
-        items: [
-            {
-                text: 'MOTOR INSURANCE POLICY',
-                path: 'motor-insurance-policy'
-            },
-            {
-                text: 'Fire And Burglary Policy',
-                path: 'Fire-And-Burglary-Policy'
-            },
-            {
-                text: 'Group Life Insurance',
-                path: 'Group-Life-Insurance'
-            },
-            {
-                text: 'Fidelity Guarantee Policy',
-                path: 'Fidelity-Guarantee-Policy'
-            },
-            {
-                text: 'Household Insurance',
-                path: 'Household-Insurance'
-            },
-        ]
-    },
-    {
-        text: 'Products',
-        path: '/products',
-    },
-    {
-        text: 'Careers',
-        path: '/careers',
-    },
-    {
-        text: 'Media',
-        path: '/media',
-    },
-    {
-        text: 'Contact Us',
-        path: '/contact',
-    },
-]
-
 const Navbar = () => {
-    const [isDropdown, setIsDropdown] = useState(false)
+    const [isNavDropdown, setIsNavDropdown] = useState(false);
+    const [activeItem, setActiveItem] = useState(null);
+    const [isMenu, setIsMenu] = useState(false);
+
 
     const path = window.location.pathname
 
-    console.log('sliced', path.includes('services'));
+    const handleSelect = (item) => {
+        setActiveItem(item);
+        setIsNavDropdown(true);
+    };
 
     return (
-        <>
-            <div className='w-[92%] max-w-[1782px] mx-auto flex relative  rounded-b-[50px] overflow-hidden'>
+        <div className='fixed z-[9999] top-5 left-0 w-full'>
+            {/* <div className='w-[92%] max-w-[1782px] mx-auto flex relative  rounded-b-[50px] overflow-hidden'>
                 <div className=' flex  h-[82px] w-full max-w-[33%] rounded-bl-[50px] bg-primaryRed'>
                 </div>
                 <div className='bg-primaryBlack w-full h-[82px]'>
@@ -92,35 +47,71 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <nav className='sticky top-0 left-0 bg-[#F8F8F8]  translate-y-[50%] px-10 w-[80%] rounded-full mx-auto max-w-max flex items-center  h-[96px] z-[99] '>
+            </div> */}
+            <nav
+
+                onMouseLeave={() => setIsNavDropdown(false)}
+                className={`bg-[#F8F8F8]  translate-y-[0%] px-10 w-full  mx-auto max-w-sub flex items-center justify-between  h-[96px] z-[999] ${isNavDropdown ? 'rounded-t-[40px]' : 'rounded-full'}`}>
                 <Link to={'/'} className='w-[35%] flex  justify-start  '>
                     <img src="/images/logo.svg" alt="logos" className='w-full max-w-[240px]' />
                 </Link>
                 <div
-                    onMouseLeave={() => setIsDropdown(false)}
-                    className=' h-[43px] w-[65%] flex gap-[20px] items-center justify-between'>
+                    className=' h-[43px] w-[65%] flex gap-[20px] items-center justify-between max-w-[50%]'>
                     {
-                        links.map((item, index) => {
+                        navData.map((item, index) => {
                             if (item.items) {
-                                return <div
-                                    key={index}
-                                    onMouseEnter={() => setIsDropdown(true)}
-                                    onClick={() => setIsDropdown((prev) => !prev)}
-                                    className={`relative  cursor-pointer w-max flex gap-2 items-center text-base font-bold font-sans  tracking-tight ${path.includes('services') && 'text-primaryRed'} ${isDropdown ? 'text-primaryRed' : 'text-[#5a5a5a]'}`}>
-                                    <span>{item.text}</span>
-                                    <span className={`${isDropdown && 'rotate-180'}`}><FaAngleDown /></span>
-                                    {isDropdown && <div className='absolute top-[130%] left-0 rounded-[12px] overflow-hidden bg-[#D9D9D9]'>
-                                        {
-                                            services.map((item) =>
-                                                <Link
-                                                    to={`/services/${item.slug}`}
-                                                    className="w-[225px]  px-4 py-4 text-[#282828] hover:bg-primaryRed hover:text-[#060606] justify-start items-center  inline-flex">
-                                                    <span className=" text-[13px] font-semibold font-['Inter'] uppercase leading-normal">{item.heading}</span>
-                                                </Link>
-                                            )
-                                        }
-                                    </div>}
+                                return <div key={index}>
+                                    <p
+                                        onMouseEnter={() => handleSelect(item)}
+                                        onClick={() => handleSelect(item)}
+                                        key={index}
+                                        className="text-black text-sm md:text-base cursor-pointer"
+                                    >
+                                        {item.text}
+                                    </p>
+
+                                    {isNavDropdown && activeItem?.text === item.text && (
+                                        <div className="z-[999] md:absolute left-0 top-full w-full bg-white rounded-b-[40px] py-10">
+                                            <div className="w-full max-w-[95%] mx-auto px-6 xl:px-0 flex gap-5">
+                                                <div className="hidden md:flex flex-col gap-5">
+                                                    <h2 className="text-[35px]">{activeItem?.text}</h2>
+                                                    <p className="w-full max-w-[250px] text-sm md:text-base">
+                                                        {activeItem?.desc}
+                                                    </p>
+                                                    <Link
+                                                        to={"/contact"}
+                                                        className="py-3 px-10 border border-primaryBlack rounded-[5px] text-center text-sm md:text-base w-fit"
+                                                    >
+                                                        Contact Us
+                                                    </Link>
+                                                </div>
+                                                <div className="grid grid-cols-5 gap-0">
+                                                    {activeItem?.items.map((item, index) => (
+                                                        <div key={index} className="flex flex-col gap-8">
+                                                            <h3 className="text-[10px] h-5 md:text-xs font-light max-w-[200px]">
+                                                                {item.heading}
+                                                            </h3>
+                                                            <div className="flex flex-col gap-4">
+                                                                {item.subItems.map((subItem, index) => (
+                                                                    <Link
+                                                                        key={index}
+                                                                        to={subItem.path}
+                                                                        className="text-xs md:text-sm font-medium"
+                                                                        onClick={() => {
+                                                                            setIsNavDropdown(false);
+                                                                            setIsMenu(false);
+                                                                        }}
+                                                                    >
+                                                                        {subItem.text}
+                                                                    </Link>
+                                                                ))}
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
 
                             }
@@ -132,14 +123,14 @@ const Navbar = () => {
                             </Link>
                         })
                     }
-                    <button className="w-28 h-[43px] text-[#fffefe] hover:text-primaryRed border border-primaryRed hover:bg-white px-[15px] py-3.5 bg-primaryRed rounded-[10px] justify-center items-center gap-2.5 inline-flex">
+                    {/* <button className="w-28 h-[43px] text-[#fffefe] hover:text-primaryRed border border-primaryRed hover:bg-white px-[15px] py-3.5 bg-primaryRed rounded-[10px] justify-center items-center gap-2.5 inline-flex">
                         <span className=" text-sm font-bold font-sans tracking-tight">Log In </span>
-                    </button>
+                    </button> */}
                     <span><IoSearch size={25} /></span>
                 </div>
 
             </nav>
-        </>
+        </div>
     )
 }
 
