@@ -300,7 +300,7 @@ const CareerPage = () => {
                     </div>
                 </div>
 
-                {/* Why Join Us Section */}
+
                 <div className="bg-gradient-to-r from-primaryBlack to-primaryGrey rounded-xl shadow-lg py-24 p-8 mb-16 text-white">
                     <div className="text-center mb-8">
                         <h2 className="text-5xl font-montserrat font-bold mb-4">
