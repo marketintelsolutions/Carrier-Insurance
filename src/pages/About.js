@@ -11,8 +11,8 @@ const About = () => {
             <AboutBanner />
             <SectionTwo />
             <OurTeam />
-            <Testimonials />
-            <Portfolio />
+            {/* <Testimonials /> */}
+            {/* <Portfolio /> */}
         </>
     )
 }

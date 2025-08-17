@@ -1,7 +1,57 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaArrowRightLong, FaChevronRight } from 'react-icons/fa6'
 
+const services = [
+    {
+        title: 'General Business Insurance',
+        items: [
+            'Individual Insurance',
+            'Corporate Insurance',
+        ]
+    },
+    {
+        title: 'Life Business Insurance',
+        items: [
+            'Group Life Insurance',
+            'Individual life Insurance',
+            'Group Personal Accident Insurance',
+        ]
+    },
+    {
+        title: 'Health Insurance',
+        items: [
+            'Private Individuals',
+            'Corporate Employees',
+        ]
+    },
+    {
+        title: 'Claims Management',
+        items: [
+            'Aviation Sector',
+            'Construction Sector',
+            'Construction Sector',
+            'Oil and Gas',
+            'Manufacturing Sector',
+            'Agricultural Sector',
+            'Transportation Sector',
+        ]
+    },
+]
+
 const SectionThree = () => {
+    const [activeIndex, setActiveIndex] = useState(0)
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            if (activeIndex === services.length - 1) {
+                setActiveIndex(0)
+                return
+            }
+            setActiveIndex((prev) => prev + 1)
+        }, 4000)
+
+        return () => clearTimeout(timeout)
+    }, [activeIndex])
     return (
         <section className='bg-white py-[100px]'>
 
@@ -16,87 +66,40 @@ const SectionThree = () => {
                     </button>
                 </div>
 
-                <div className='mt-[72px] grid grid-cols-3 gap-[30px]'>
-                    <div className='bg-[#D9D9D9]  flex flex-col gap-[13px] rounded-[18px] pt-3 pb-[30px] px-[46px]'>
-                        <div className='flex gap-[22px] items-center'>
-                            <img src="/images/life.svg" alt="life" />
-                            <h2 className=" text-[#060606] text-[22.19px] font-semibold font-['Lato']">Life Insurance</h2>
-                        </div>
-                        <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-sans leading-[14.90px]">Life insurance provides financial security for loved ones in the event of the policyholder’s death. It ensures dependents are protected from financial hardships and can also serve as a savings or investment tool.</p>
-                        <button className="w-[106.65px] self-end h-[31.44px] px-[18.49px] py-[9.25px] bg-[#cc1517] rounded-[30.82px] items-center inline-flex justify-between">
-                            <span className="text-center text-white text-[9.86px] font-normal font-sans leading-3 tracking-tight">Get Started </span>
-                            <span className='text-[10px] text-white'><FaArrowRightLong /></span>
-                        </button>
+                <div className='mt-[72px] flex flex-wrap gap-[30px]'>
+                    {
+                        services.map((item, index) => (
+                            <div
+                                key={index}
+                                className={`bg-[#D9D9D9] max-w-[30%] flex flex-col gap-[13px] rounded-[18px] pt-3 pb-[30px] px-[26px] ${activeIndex === index && 'border border-black'}`}>
+                                <div className='flex gap-[22px] items-center'>
+                                    <img src="/images/life.svg" alt="life" />
+                                    <h2 className=" text-[#060606] h-16 text-[22.19px] font-semibold font-['Lato']">{item.title}</h2>
+                                </div>
+                                <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-sans leading-[14.90px]">Life insurance provides financial security for loved ones in the event of the policyholder’s death. It ensures dependents are protected from financial hardships and can also serve as a savings or investment tool.</p>
+                                <button className="w-[106.65px] self-end h-[31.44px] px-[18.49px] py-[9.25px] bg-[#cc1517] rounded-[30.82px] items-center inline-flex justify-between">
+                                    <span className="text-center text-white text-[9.86px] font-normal font-sans leading-3 tracking-tight">Get Started </span>
+                                    <span className='text-[10px] text-white'><FaArrowRightLong /></span>
+                                </button>
+                            </div>
+                        ))
+                    }
+
+                    <div className='mt-[30px] max-w-[63%]  grid grid-cols-2 gap-5 '>
+                        {
+                            services[activeIndex].items.map((item, index) => (
+                                <div key={index} className="w-max min-w-[180px] flex items-center gap-[13px] px-5 h-[47px] bg-[#D9D9D9] rounded-[30px]" >
+                                    <span className='p-1 rounded-full bg-primaryRed text-white text-[12px]'><FaChevronRight /></span>
+                                    <p className="w-max text-black text-[15px] font-semibold font-['Inter'] leading-relaxed">{item}</p>
+                                </div>
+                            ))
+                        }
                     </div>
 
-                    <div className='bg-[#D9D9D9]  flex flex-col gap-[13px] rounded-[18px] pt-3 pb-[30px] px-[46px]'>
-                        <div className='flex gap-[16px] items-center'>
-                            <img src="/images/health.svg" alt="health" />
-                            <h2 className="w-max text-[#060606] text-[22.19px] font-semibold font-['Lato']">Health Insurance</h2>
-                        </div>
-                        <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-sans leading-[14.90px]">
-                            Covers medical expenses, including hospitalization, medications, and preventive care, ensuring individuals and families can access quality healthcare without financial strain.
-                        </p>
-                        <button className="w-[106.65px] self-end h-[31.44px] px-[18.49px] py-[9.25px] bg-[#cc1517] rounded-[30.82px] items-center inline-flex justify-between">
-                            <span className="text-center text-white text-[9.86px] font-normal font-sans leading-3 tracking-tight">Get Started </span>
-                            <span className='text-[10px] text-white'><FaArrowRightLong /></span>
-                        </button>
-                    </div>
-                    <div className='bg-[#D9D9D9]  flex flex-col gap-[13px] rounded-[18px] pt-3 pb-[30px] px-[46px]'>
-                        <div className='flex gap-[16px] items-center'>
-                            <img src="/images/car.svg" alt="car" />
-                            <h2 className=" text-[#060606] text-[22.19px] font-semibold font-['Lato']">Motor Insurance</h2>
-                        </div>
-                        <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-sans leading-[14.90px]">Life insurance provides financial security for loved ones in the event of the policyholder’s death. It ensures dependents are protected from financial hardships and can also serve as a savings or investment tool.</p>
-                        <button className="w-[106.65px] self-end h-[31.44px] px-[18.49px] py-[9.25px] bg-[#cc1517] rounded-[30.82px] items-center inline-flex justify-between">
-                            <span className="text-center text-white text-[9.86px] font-normal font-sans leading-3 tracking-tight">Get Started </span>
-                            <span className='text-[10px] text-white'><FaArrowRightLong /></span>
-                        </button>
-                    </div>
+
                 </div>
 
-                <div className='mt-[30px] grid grid-cols-5 gap-10 gap-y-12'>
-                    <div className="w-max min-w-[180px] flex items-center gap-[13px] px-5 h-[47px] bg-[#f8f8f8] rounded-[30px]" >
-                        <span className='p-1 rounded-full bg-primaryRed text-white text-[12px]'><FaChevronRight /></span>
-                        <p className="w-max text-black text-[15px] font-semibold font-['Inter'] leading-relaxed">Life Insurance</p>
-                    </div>
-                    <div className="w-max min-w-[180px] flex items-center gap-[13px] px-5 h-[47px] rounded-[30px]" >
-                        <span className='p-1 rounded-full bg-primaryRed text-white text-[12px]'><FaChevronRight /></span>
-                        <p className="w-max text-black text-[15px] font-semibold font-['Inter'] leading-relaxed">Marine Insurance</p>
-                    </div>
-                    <div className="w-max min-w-[180px] flex items-center gap-[13px] px-5 h-[47px] rounded-[30px]" >
-                        <span className='p-1 rounded-full bg-primaryRed text-white text-[12px]'><FaChevronRight /></span>
-                        <p className="w-max text-black text-[15px] font-semibold font-['Inter'] leading-relaxed">Health Insurance</p>
-                    </div>
-                    <div className="w-max min-w-[180px] flex items-center gap-[13px] px-5 h-[47px] bg-[#D9D9D9] rounded-[30px]" >
-                        <span className='p-1 rounded-full bg-primaryRed text-white text-[12px]'><FaChevronRight /></span>
-                        <p className="w-max text-black text-[15px] font-semibold font-['Inter'] leading-relaxed">Fire Insurance</p>
-                    </div>
-                    <div className="w-max min-w-[180px] flex items-center gap-[13px] px-5 h-[47px] bg-[#D9D9D9] rounded-[30px]" >
-                        <span className='p-1 rounded-full bg-primaryRed text-white text-[12px]'><FaChevronRight /></span>
-                        <p className="w-max text-black text-[15px] font-semibold font-['Inter'] leading-relaxed">Motor Insurance</p>
-                    </div>
-                    <div className="w-max min-w-[180px] flex items-center gap-[13px] px-5 h-[47px] bg-[#D9D9D9] rounded-[30px]" >
-                        <span className='p-1 rounded-full bg-primaryRed text-white text-[12px]'><FaChevronRight /></span>
-                        <p className="w-max text-black text-[15px] font-semibold font-['Inter'] leading-relaxed">Liability Insurance</p>
-                    </div>
-                    <div className="w-max min-w-[180px] flex items-center gap-[13px] px-5 h-[47px] bg-[#D9D9D9] rounded-[30px]" >
-                        <span className='p-1 rounded-full bg-primaryRed text-white text-[12px]'><FaChevronRight /></span>
-                        <p className="w-max text-black text-[15px] font-semibold font-['Inter'] leading-relaxed">Property Insurance</p>
-                    </div>
-                    <div className="w-max min-w-[180px] flex items-center gap-[13px] px-5 h-[47px] bg-[#D9D9D9] rounded-[30px]" >
-                        <span className='p-1 rounded-full bg-primaryRed text-white text-[12px]'><FaChevronRight /></span>
-                        <p className="w-max text-black text-[15px] font-semibold font-['Inter'] leading-relaxed">Crop Insurance</p>
-                    </div>
-                    <div className="w-max min-w-[180px] flex items-center gap-[13px] px-5 h-[47px] bg-[#D9D9D9] rounded-[30px]" >
-                        <span className='p-1 rounded-full bg-primaryRed text-white text-[12px]'><FaChevronRight /></span>
-                        <p className="w-max text-black text-[15px] font-semibold font-['Inter'] leading-relaxed">Travel Insurance</p>
-                    </div>
-                    <div className="w-max min-w-[180px] flex items-center gap-[13px] px-5 h-[47px] bg-[#D9D9D9] rounded-[30px]" >
-                        <span className='p-1 rounded-full bg-primaryRed text-white text-[12px]'><FaChevronRight /></span>
-                        <p className="w-max text-black text-[15px] font-semibold font-['Inter'] leading-relaxed">Home Insurance</p>
-                    </div>
-                </div>
+
             </div>
 
         </section>

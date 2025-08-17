@@ -6,63 +6,76 @@ export const team = [
         image: ''
     },
     {
-        slug: 'christopher-oshiafi',
-        name: 'Christopher O. Oshiafi',
-        title: 'Chairman/Chief Executive Officer',
+        slug: 'chief-edward-ohore',
+        name: 'Chief Edward Ohore',
+        title: 'Chairman',
         image: 'teamperson',
         details: [
-            'Chris Oshiafi attended University of London, United Kingdom where he obtained B. Sc Accounting and Finance. He also obtained Master of Business Administration (MBA) from University of Lagos, Nigeria.',
-            'Oshiafi is a Fellow of Institute of Chartered Accountants of Nigeria, an Associate of the Chartered Insurance Institute of London, (ACII) UK, the Chartered Institute of Taxation of Nigeria (ACIT) as well as Nigeria Institute of Management. He is also a member of the Institute of Directors.',
-            'Oshiafi who has attended several courses on corporate finance and investment banking as well as leadership skills in Nigeria and abroad.',
-            'Oshiafi is a founding Director of Carrier Insurance Brokers Limited having led the founding team in 1994.',
-            'He is currently the Chief Executive Officer of Carrier Insurance Brokers Ltd'
+            'B.Sc. (Hons.) in Banking & Finance. Chartered Banker (ACIB) with over 22 years of banking experience.',
+            'Vice-President at First City Merchant Bank Limited.',
+            'Currently the Managing Consultant of Edward Consulting School of Banking.'
         ]
     },
     {
-        slug: 'omolola-oshiafi',
-        name: 'Mrs Omolola Oshiafi',
+        slug: 'lola-oshiafi',
+        name: 'Lola Oshiafi',
         title: 'GMD',
         image: 'teamperson',
         details: [
-            'BSc. (Hons) ACA, MBA',
-            'Lola holds a B.Sc. (Hons) in Accounting from the Ahmadu Bello University, Zaria and she is an alumnus of the Lagos Business School. She is an Associate of the Institute of Chartered Accountants of Nigeria (ICAN).',
-            'She is an experienced Banker with over 25 years cognate experience in the financial industry. She started her banking career with the former Nigerian American Merchant Bank now (First City Monument Bank) in 1989 for the one year mandatory National Youth Service Corp (NYSC).  She then joined the former Citizens International Bank Limited now (Enterprise Bank) where she rose to the position of Deputy Manager before moving to FSB International Bank Plc (Now Fidelity Bank Plc) and resigned as Senior Manager and Head of Corporate Banking.',
-            'She is an active participant in the insurance industry and has delivered papers in corporate governance to several organizations.',
-            'She has attended a number of specialized training in insurance and banking locally and overseas, some of which include: Citicorp Institute for Global Finance School of Banking, New York, INSEAD Business School in Fontainebleau France, and Corporate Finance, Risk Management and Investment Banking in Lagos Business School, Lagos.',
+            'Lola holds a B.Sc. in Accounting from Ahmadu Bello University, Zaria, and is an alumnus of Lagos Business School. She is an Associate of the Institute of Chartered Accountants of Nigeria (ICAN) and holds an MBA.',
+            'With over 20 years of experience in the financial industry, she began her banking career at Nigerian American Merchant Bank (now First City Monument Bank) during her NYSC. She later held senior roles at Citizens International Bank (now Enterprise Bank) and FSB International Bank (now Fidelity Bank), where she rose to Senior Manager and Head of Corporate Banking.',
+            'Since 2002, Lola has served as Managing Director of Truebond Group Limited, overseeing operations across capital markets, private equity, oil and gas, insurance, publishing and engineering.',
+            'She has attended specialized training programs at Citicorp Institute in New York, INSEAD France, and Lagos Business School.'
         ]
     },
     {
-        slug: 'adejare-semiu',
-        name: 'Adejare Semiu',
-        title: 'Relationship Manager',
+        slug: 'dr-femi-lalude',
+        name: 'Dr. Femi Lalude',
+        title: 'Director',
         image: 'teamperson',
         details: [
-            'Adejare Semiu',
-            'Relationship Manager',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut faucibus pulvinar elementum integer enim. Nibh sit amet commodo nulla facilisi. Malesuada proin libero nunc consequat interdum. Diam maecenas sed enim ut. Adipiscing diam donec adipiscing tristique risus. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Eros donec ac odio tempor orci dapibus ultrices in. Duis ultricies lacus sed turpis tincidunt. A scelerisque purus semper eget duis at tellus. Odio tempor orci dapibus ultrices in. Dignissim enim sit amet venenatis urna cursus eget.',
-        ]
-
-    },
-    {
-        slug: 'adesola-rotimi',
-        name: 'Adesola Rotimi',
-        title: 'Relationship Manager',
-        image: 'teamperson',
-        details: [
-            'Adesola Rotimi attended Lagos State Polytechnic, Where he obtained HND In Insurance.',
-            'Rotimi is an Associate of the Chartered Insurance Institute Of Nigeria (ACII), As well as several insurance courses and have over 8 years experience in the insurance industry.',
-
+            'He retired as Director and General Manager for Shell Nigeria Exploration Production Company, SNEPCO a Shell in deep offshore and fair inland oil and gas exploration.',
+            'He was one-time General Manager of Shell\'s Western Division in Warri, and prior to that the Engineering Manager for Shell Nigeria.',
+            'He also had international exposure with Shell in Holland and USA in earlier years. He was a Senior Designer (Mechanical) Engineer for Nuclear Power plants at Bechtel Corporation of US.',
+            'He is currently an oil/gas industry consultant and sits on the Board of various companies servicing Oil and Gas sector.'
         ]
     },
     {
-        slug: 'ibrahim-abubakar',
-        name: 'Ibrahim Abubakar',
-        title: 'Head of Accounts',
+        slug: 'james-olutayo-amore',
+        name: 'James Olutayo Amore',
+        title: 'Technical Adviser',
         image: 'teamperson',
         details: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut faucibus pulvinar elementum integer enim. Nibh sit amet commodo nulla facilisi. Malesuada proin libero nunc consequat interdum. Diam maecenas sed enim ut. Adipiscing diam donec adipiscing tristique risus. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Eros donec ac odio tempor orci dapibus ultrices in. Duis ultricies lacus sed turpis tincidunt. A scelerisque purus semper eget duis at tellus. Odio tempor orci dapibus ultrices in. Dignissim enim sit amet venenatis urna cursus eget.'
+            'HND, MSC, ACIIN. James Amore is the Technical Adviser of the Company.',
+            'He is an Associate of The Chartered Insurance Institute of Nigeria, a Masters degree holder in Managerial Psychology from the University of Ibadan.',
+            'An Insurance and Reinsurance practitioner with over 18 years of experience.',
+            'He has attended many courses, seminars and conferences in Reinsurance, Underwriting and claims both locally and abroad.'
         ]
     },
+    {
+        slug: 'dr-larry-osa-afiana',
+        name: 'Dr. Larry O. Osa-Afiana',
+        title: 'Director',
+        image: 'teamperson',
+        details: [
+            'Dr. Larry Osa-Afiana has over 25 years of experience in merchant, commercial, and development banking, with expertise in corporate banking and credit risk management.',
+            'He held leadership roles at the Bank of America, Citibank N.A, and was the pioneer Managing Director/CEO of Citizens International Bank and Bank of Industry.',
+            'A seasoned consultant and academic, he specializes in finance, agriculture, and industrial development, serving as an independent consultant and adjunct faculty at Lagos Business School.',
+            'Dr. Osa-Afiana holds a B.Sc. in Agriculture (First Class) from Ahmadu Bello University and advanced degrees (M.Sc and Ph.D) in Soil Science from Cornell University, USA.'
+        ]
+    },
+    {
+        slug: 'dr-deborah-elue',
+        name: 'Dr. Deborah Elue',
+        title: 'Director',
+        image: 'teamperson',
+        details: [
+            'Deborah is a seasoned finance professional with over 20 years of experience in assurance, tax, and advisory services.',
+            'As an Associate Director at Ernst & Young Nigeria, she led engagements across diverse sectors, including oil and gas, managing audits for global companies such as Seplat Energy, Mobil Oil, and Saipem.',
+            'A fellow of ICAN with a B.Sc. in Accounting from the University of Benin, she has extensive expertise in audit strategy, IFRS compliance, financial investigations, and due diligence.',
+            'Deborah has attended international training, including the Senior Managers Program in Copenhagen, and gained global experience during her secondment to EY South Africa.'
+        ]
+    }
 ]
 
 
