@@ -50,9 +50,9 @@ const ClaimsManagement = () => {
     ];
 
     return (
-        <div className="bg-gray-50">
+        <div className="bg-primaryGrey/10">
             {/* Hero Section */}
-            <div className="relative h-[70vh] bg-gradient-to-r from-green-600 to-green-800 overflow-hidden">
+            <div className="relative h-[80vh] bg-gradient-to-r from-primaryRed to-primaryRed/80 overflow-hidden">
                 <img
                     src="/images/nightcity.jpg"
                     alt="Claims Management"
@@ -60,8 +60,7 @@ const ClaimsManagement = () => {
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center text-white px-4">
-                        <FaClipboardCheck className="mx-auto text-6xl mb-4" />
-                        <h1 className="text-4xl md:text-5xl font-montserrat font-bold mb-4">
+                        <h1 className="text-4xl md:text-6xl font-montserrat font-bold mb-8">
                             Claims Management
                         </h1>
                         <p className="text-xl font-inter max-w-2xl mx-auto">
@@ -82,7 +81,7 @@ const ClaimsManagement = () => {
                         help is provided when you need it the most. The most important characteristic of an efficient
                         insurance broker is their claims management strategy.
                     </p>
-                    <div className="bg-green-50 rounded-lg p-6 max-w-3xl mx-auto">
+                    <div className="bg-primaryRed/10 rounded-lg p-6 max-w-3xl mx-auto">
                         <p className="font-inter text-primaryBlack font-semibold">
                             With Truebond, you can expect nothing short of total, comprehensive support throughout the life of a claim.
                         </p>
@@ -99,10 +98,10 @@ const ClaimsManagement = () => {
                             const IconComponent = step.icon;
                             return (
                                 <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center relative">
-                                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">
+                                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primaryRed text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">
                                         {index + 1}
                                     </div>
-                                    <IconComponent className="text-4xl text-green-600 mx-auto mb-4 mt-4" />
+                                    <IconComponent className="text-4xl text-primaryRed mx-auto mb-4 mt-4" />
                                     <h3 className="text-lg font-montserrat font-semibold text-primaryBlack mb-3">
                                         {step.title}
                                     </h3>
@@ -127,8 +126,8 @@ const ClaimsManagement = () => {
                         {keyElements.map((element, index) => {
                             const IconComponent = element.icon;
                             return (
-                                <div key={index} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-                                    <IconComponent className="text-3xl text-green-600 mb-4" />
+                                <div key={index} className="bg-white rounded-lg  p-6 hover:shadow-xl transition-shadow">
+                                    <IconComponent className="text-3xl text-primaryRed mb-4" />
                                     <h3 className="text-xl font-montserrat font-semibold text-primaryBlack mb-3">
                                         {element.title}
                                     </h3>
@@ -144,7 +143,7 @@ const ClaimsManagement = () => {
                 {/* Professional Relationships */}
                 <div className="bg-primaryBlack rounded-xl shadow-lg p-8 mb-16">
                     <div className="text-center mb-8">
-                        <FaHandshake className="mx-auto text-5xl text-green-400 mb-4" />
+                        <FaHandshake className="mx-auto text-5xl text-primaryRed mb-4" />
                         <h2 className="text-3xl font-montserrat font-bold text-white mb-4">
                             Established Professional Relationships
                         </h2>
@@ -159,7 +158,7 @@ const ClaimsManagement = () => {
                             const IconComponent = relationship.icon;
                             return (
                                 <div key={index} className="text-center p-4">
-                                    <IconComponent className="mx-auto text-3xl text-green-400 mb-3" />
+                                    <IconComponent className="mx-auto text-3xl text-primaryRed mb-3" />
                                     <h4 className="font-montserrat font-semibold text-white mb-2">{relationship.title}</h4>
                                     <p className="text-gray-300 font-inter text-sm">{relationship.desc}</p>
                                 </div>
@@ -171,7 +170,7 @@ const ClaimsManagement = () => {
                 {/* Support Features */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
                     <div className="bg-white rounded-lg shadow-lg p-8">
-                        <FaPhone className="text-4xl text-green-600 mb-4" />
+                        <FaPhone className="text-4xl text-primaryRed mb-4" />
                         <h3 className="text-2xl font-montserrat font-bold text-primaryBlack mb-4">
                             24/7 Support Available
                         </h3>
@@ -181,22 +180,22 @@ const ClaimsManagement = () => {
                         </p>
                         <ul className="space-y-2">
                             <li className="flex items-center text-primaryGrey font-inter">
-                                <FaCheckCircle className="text-green-600 mr-2" />
+                                <FaCheckCircle className="text-primaryRed mr-2" />
                                 Emergency claim reporting
                             </li>
                             <li className="flex items-center text-primaryGrey font-inter">
-                                <FaCheckCircle className="text-green-600 mr-2" />
+                                <FaCheckCircle className="text-primaryRed mr-2" />
                                 Real-time claim tracking
                             </li>
                             <li className="flex items-center text-primaryGrey font-inter">
-                                <FaCheckCircle className="text-green-600 mr-2" />
+                                <FaCheckCircle className="text-primaryRed mr-2" />
                                 Expert guidance and support
                             </li>
                         </ul>
                     </div>
 
-                    <div className="bg-green-50 rounded-lg p-8">
-                        <FaChartLine className="text-4xl text-green-600 mb-4" />
+                    <div className="bg-primaryRed/10 rounded-lg p-8">
+                        <FaChartLine className="text-4xl text-primaryRed mb-4" />
                         <h3 className="text-2xl font-montserrat font-bold text-primaryBlack mb-4">
                             Claims Performance
                         </h3>
@@ -205,11 +204,11 @@ const ClaimsManagement = () => {
                         </p>
                         <div className="grid grid-cols-2 gap-4">
                             <div className="text-center">
-                                <div className="text-2xl font-montserrat font-bold text-green-600">98%</div>
+                                <div className="text-2xl font-montserrat font-bold text-primaryRed">98%</div>
                                 <div className="text-sm font-inter text-primaryGrey">Claim Success Rate</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-2xl font-montserrat font-bold text-green-600">24hrs</div>
+                                <div className="text-2xl font-montserrat font-bold text-primaryRed">24hrs</div>
                                 <div className="text-sm font-inter text-primaryGrey">Average Response Time</div>
                             </div>
                         </div>
@@ -217,7 +216,7 @@ const ClaimsManagement = () => {
                 </div>
 
                 {/* Call to Action */}
-                <div className="text-center bg-gradient-to-r from-green-600 to-green-800 rounded-lg p-8 text-white">
+                <div className="text-center bg-gradient-to-r from-primaryRed to-primaryRed/80 rounded-lg p-8 text-white">
                     <FaShieldAlt className="mx-auto text-5xl mb-4" />
                     <h2 className="text-2xl font-montserrat font-bold mb-4">
                         Need to File a Claim?
@@ -227,10 +226,10 @@ const ClaimsManagement = () => {
                         and get the support you need.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="bg-white text-green-600 px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-100 transition-colors">
+                        <button className="bg-white text-primaryRed px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-primaryGrey/10 transition-colors">
                             File a Claim
                         </button>
-                        <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-700 transition-colors">
+                        <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-primaryBlack/80 transition-colors">
                             Emergency Hotline
                         </button>
                     </div>

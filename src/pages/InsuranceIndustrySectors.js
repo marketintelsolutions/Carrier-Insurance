@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaIndustry, FaPlane, FaBuilding, FaHospital, FaOilCan, FaCog, FaSeedling, FaTruck, FaChevronDown, FaChevronUp, FaShieldAlt, FaFire, FaUsers, FaMoneyBill } from 'react-icons/fa';
+import { FaIndustry, FaPlane, FaBuilding, FaHospital, FaOilCan, FaCog, FaSeedling, FaTruck, FaChevronDown, FaChevronUp, FaShieldAlt, FaUsers, FaMoneyBill } from 'react-icons/fa';
 
 const InsuranceIndustrySectors = () => {
     const [expandedSector, setExpandedSector] = useState(null);
@@ -13,7 +13,6 @@ const InsuranceIndustrySectors = () => {
             id: 'aviation',
             title: 'Aviation Sector',
             icon: FaPlane,
-            color: 'bg-blue-600',
             description: 'Aviation insurance is a sensitive insurance sector covering comprehensive protection for aircraft operations.',
             products: [
                 'Aircraft Hull Insurance',
@@ -27,7 +26,6 @@ const InsuranceIndustrySectors = () => {
             id: 'construction',
             title: 'Construction Sector',
             icon: FaBuilding,
-            color: 'bg-orange-600',
             description: 'Well known as C.A.R (Contractors All Risk), providing insurance for ongoing construction against fortuitous loss or damage.',
             products: [
                 'Material Damage Section',
@@ -41,7 +39,6 @@ const InsuranceIndustrySectors = () => {
             id: 'healthcare',
             title: 'Healthcare/Pharmaceutical Sector',
             icon: FaHospital,
-            color: 'bg-green-600',
             description: 'Healthcare insurance sector with specialized policies for medical and pharmaceutical industries.',
             products: [
                 'Medical Malpractice Insurance',
@@ -55,7 +52,6 @@ const InsuranceIndustrySectors = () => {
             id: 'oil-gas',
             title: 'Oil and Gas',
             icon: FaOilCan,
-            color: 'bg-gray-700',
             description: 'Comprehensive coverage for exploration & production (E&P) risk exposures in the oil and gas industry.',
             sections: [
                 {
@@ -76,7 +72,6 @@ const InsuranceIndustrySectors = () => {
             id: 'manufacturing',
             title: 'Manufacturing Sector',
             icon: FaCog,
-            color: 'bg-purple-600',
             description: 'Comprehensive insurance solutions for manufacturing industries with multiple coverage options.',
             products: [
                 'Industrial All Risk (IAR) Insurance',
@@ -92,7 +87,6 @@ const InsuranceIndustrySectors = () => {
             id: 'agriculture',
             title: 'Agricultural Sector',
             icon: FaSeedling,
-            color: 'bg-green-500',
             description: 'Specialized insurance coverage for agricultural operations and farming activities.',
             products: [
                 'Crop Insurance',
@@ -106,7 +100,6 @@ const InsuranceIndustrySectors = () => {
             id: 'transportation',
             title: 'Transportation Sector',
             icon: FaTruck,
-            color: 'bg-primaryRed',
             description: 'Regulatory insurance coverage for transportation and logistics operations.',
             products: [
                 'Motor Insurance',
@@ -119,9 +112,9 @@ const InsuranceIndustrySectors = () => {
     ];
 
     return (
-        <div className="bg-gray-50 min-h-screen">
+        <div className="bg-primaryGrey/10 min-h-screen">
             {/* Hero Section */}
-            <div className="relative h-[70vh] bg-gradient-to-r from-primaryBlack to-gray-800 overflow-hidden">
+            <div className="relative h-[80vh] bg-gradient-to-r from-primaryBlack to-primaryGrey overflow-hidden">
                 <img
                     src="/images/nightcity.jpg"
                     alt="Insurance Industry & Sectors"
@@ -129,8 +122,7 @@ const InsuranceIndustrySectors = () => {
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center text-white px-4">
-                        <FaIndustry className="mx-auto text-6xl text-primaryRed mb-4" />
-                        <h1 className="text-4xl md:text-5xl font-montserrat font-bold mb-4">
+                        <h1 className="text-4xl md:text-6xl font-montserrat font-bold mb-8">
                             Insurance Industry & Sectors
                         </h1>
                         <p className="text-xl font-inter max-w-2xl mx-auto">
@@ -154,20 +146,21 @@ const InsuranceIndustrySectors = () => {
 
                 {/* Sectors Grid */}
                 <div className="space-y-6">
-                    {sectors.map((sector) => {
+                    {sectors.map((sector, index) => {
                         const IconComponent = sector.icon;
                         const isExpanded = expandedSector === sector.id;
+                        const isEven = index % 2 === 0;
 
                         return (
                             <div key={sector.id} className="bg-white rounded-xl shadow-lg overflow-hidden">
                                 {/* Sector Header */}
                                 <div
-                                    className={`${sector.color} p-6 cursor-pointer transition-all duration-300 hover:opacity-90`}
+                                    className={`${isEven ? 'bg-primaryRed' : 'bg-primaryBlack'} p-6 cursor-pointer transition-all duration-300 hover:opacity-90`}
                                     onClick={() => toggleSector(sector.id)}
                                 >
                                     <div className="flex items-center justify-between text-white">
                                         <div className="flex items-center">
-                                            <IconComponent className="text-3xl mr-4" />
+                                            {/* <IconComponent className="text-3xl mr-4" /> */}
                                             <div>
                                                 <h3 className="text-2xl font-montserrat font-bold">{sector.title}</h3>
                                                 <p className="font-inter opacity-90 mt-1">{sector.description}</p>
@@ -187,7 +180,7 @@ const InsuranceIndustrySectors = () => {
                                                 </h4>
                                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                                     {sector.products.map((product, index) => (
-                                                        <div key={index} className="bg-gray-50 rounded-lg p-4 border-l-4 border-primaryRed">
+                                                        <div key={index} className="bg-primaryGrey/10 rounded-lg p-4 border-l-4 border-primaryRed">
                                                             <div className="flex items-center">
                                                                 <FaShieldAlt className="text-primaryRed mr-2" />
                                                                 <span className="font-inter text-primaryBlack">{product}</span>
@@ -207,7 +200,7 @@ const InsuranceIndustrySectors = () => {
                                                         </h4>
                                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                                             {section.items.map((item, itemIndex) => (
-                                                                <div key={itemIndex} className="bg-gray-50 rounded-lg p-3 border-l-4 border-primaryRed">
+                                                                <div key={itemIndex} className="bg-primaryGrey/10 rounded-lg p-3 border-l-4 border-primaryRed">
                                                                     <div className="flex items-center">
                                                                         <FaShieldAlt className="text-primaryRed mr-2 text-sm" />
                                                                         <span className="font-inter text-primaryBlack text-sm">{item}</span>
@@ -227,7 +220,7 @@ const InsuranceIndustrySectors = () => {
                 </div>
 
                 {/* Statistics Section */}
-                <div className="mt-16 bg-gradient-to-r from-primaryRed to-red-700 rounded-xl shadow-lg p-8 text-white">
+                <div className="mt-16 bg-gradient-to-r from-primaryRed to-primaryRed/80 rounded-xl shadow-lg p-8 text-white">
                     <div className="text-center mb-8">
                         <h2 className="text-3xl font-montserrat font-bold mb-4">
                             Industry Coverage Statistics
@@ -292,7 +285,7 @@ const InsuranceIndustrySectors = () => {
 
                 {/* Call to Action */}
                 <div className="mt-16 text-center bg-primaryBlack rounded-lg p-8 text-white">
-                    <FaIndustry className="mx-auto text-5xl mb-4" />
+                    <FaIndustry className="mx-auto text-5xl text-primaryRed mb-4" />
                     <h2 className="text-2xl font-montserrat font-bold mb-4">
                         Need Sector-Specific Insurance?
                     </h2>
@@ -301,10 +294,10 @@ const InsuranceIndustrySectors = () => {
                         tailored to your sector's unique requirements.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-red-700 transition-colors">
+                        <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-primaryRed/90 transition-colors">
                             Get Sector Quote
                         </button>
-                        <button className="bg-white text-primaryBlack px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-100 transition-colors">
+                        <button className="bg-white text-primaryBlack px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-primaryGrey/10 transition-colors">
                             Speak to Specialist
                         </button>
                     </div>

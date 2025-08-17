@@ -138,7 +138,7 @@ const CareerPage = () => {
     return (
         <div className="bg-white">
             {/* Hero Section */}
-            <div className="relative h-[70vh] bg-gradient-to-r from-primaryBlack to-primaryGrey overflow-hidden">
+            <div className="relative h-[80vh] bg-gradient-to-r from-primaryBlack to-primaryGrey overflow-hidden">
                 <img
                     src="/images/nightcity.jpg"
                     alt="Career Opportunities"
@@ -146,8 +146,7 @@ const CareerPage = () => {
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center text-white px-4">
-                        <FaGraduationCap className="mx-auto text-6xl text-primaryRed mb-4" />
-                        <h1 className="text-4xl md:text-5xl font-montserrat font-bold mb-4">
+                        <h1 className="text-4xl md:text-6xl font-montserrat font-bold mb-4">
                             Grow With Truebond Insurance Brokers Limited
                         </h1>
                         <p className="text-xl font-inter max-w-3xl mx-auto">
@@ -287,12 +286,12 @@ const CareerPage = () => {
                                             </div>
 
                                             {/* Apply Button */}
-                                            <div className="mt-6 pt-6 border-t border-primaryGrey/20">
+                                            <a href={`mailto:info@carrierinsurancebrokers.com?subject=Application for ${job.title}`} className="mt-6 pt-6 border-t border-primaryGrey/20">
                                                 <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-primaryRed/90 transition-colors flex items-center">
                                                     <FaEnvelope className="mr-2" />
                                                     Apply Now
                                                 </button>
-                                            </div>
+                                            </a>
                                         </div>
                                     )}
                                 </div>
@@ -302,10 +301,9 @@ const CareerPage = () => {
                 </div>
 
                 {/* Why Join Us Section */}
-                <div className="bg-gradient-to-r from-primaryBlack to-primaryGrey rounded-xl shadow-lg p-8 mb-16 text-white">
+                <div className="bg-gradient-to-r from-primaryBlack to-primaryGrey rounded-xl shadow-lg py-24 p-8 mb-16 text-white">
                     <div className="text-center mb-8">
-                        <FaTrophy className="mx-auto text-5xl text-primaryRed mb-4" />
-                        <h2 className="text-3xl font-montserrat font-bold mb-4">
+                        <h2 className="text-5xl font-montserrat font-bold mb-4">
                             Why Join Truebond?
                         </h2>
                         <p className="font-inter opacity-90 max-w-2xl mx-auto">
@@ -344,7 +342,8 @@ const CareerPage = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href="mailto:coo@truebondglobalinvestments.com"
+                            href="mailto:info@carrierinsurancebrokers.com?subject=I want to join the team"
+
                             className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-primaryRed/90 transition-colors inline-flex items-center justify-center"
                         >
                             <FaEnvelope className="mr-2" />
@@ -357,7 +356,7 @@ const CareerPage = () => {
 
                     <div className="mt-6 pt-6 border-t border-primaryGrey/30">
                         <p className="text-primaryGrey font-inter text-sm">
-                            Email your application to: <span className="font-semibold text-primaryBlack">coo@truebondglobalinvestments.com</span>
+                            Email your application to: <span className="font-semibold text-primaryBlack">info@carrierinsurancebrokers.com</span>
                         </p>
                     </div>
                 </div>

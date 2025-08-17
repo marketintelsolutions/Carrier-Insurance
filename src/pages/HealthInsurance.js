@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaHeartbeat, FaHospital, FaAmbulance, FaPills, FaStethoscope, FaUserMd, FaShieldAlt, FaUsers, FaCheckCircle, FaStar } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa6';
 
 const HealthInsurance = () => {
     const coverageAreas = [
@@ -25,7 +26,7 @@ const HealthInsurance = () => {
     return (
         <div className="bg-white">
             {/* Hero Section */}
-            <div className="relative h-[70vh] bg-gradient-to-r from-blue-600 to-blue-800 overflow-hidden">
+            <div className="relative h-[80vh] bg-gradient-to-r from-primaryRed/80 to-primaryRed overflow-hidden">
                 <img
                     src="/images/nightcity.jpg"
                     alt="Health Insurance"
@@ -33,8 +34,7 @@ const HealthInsurance = () => {
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center text-white px-4">
-                        <FaHeartbeat className="mx-auto text-6xl mb-4" />
-                        <h1 className="text-4xl md:text-5xl font-montserrat font-bold mb-4">
+                        <h1 className="text-4xl md:text-6xl font-montserrat font-bold mb-8">
                             Health Insurance
                         </h1>
                         <p className="text-xl font-inter max-w-2xl mx-auto">
@@ -72,8 +72,8 @@ const HealthInsurance = () => {
                         {coverageAreas.map((area, index) => {
                             const IconComponent = area.icon;
                             return (
-                                <div key={index} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-t-4 border-blue-500">
-                                    <IconComponent className="text-4xl text-blue-600 mb-4" />
+                                <div key={index} className="bg-white rounded-lg  p-6 hover:shadow-xl transition-shadow border-t-4 border-primaryRed">
+                                    <IconComponent className="text-4xl text-primaryRed mb-4" />
                                     <h3 className="text-xl font-montserrat font-semibold text-primaryBlack mb-3">
                                         {area.title}
                                     </h3>
@@ -87,9 +87,9 @@ const HealthInsurance = () => {
                 </div>
 
                 {/* Benefits Section */}
-                <div className="bg-gradient-to-r from-primaryBlack to-gray-800 rounded-xl shadow-lg p-8 mb-16">
+                <div className="bg-black rounded-xl shadow-lg p-8 mb-16">
                     <div className="text-center mb-8">
-                        <FaShieldAlt className="mx-auto text-5xl text-blue-400 mb-4" />
+                        <FaShieldAlt className="mx-auto text-5xl text-primaryRed mb-4" />
                         <h2 className="text-3xl font-montserrat font-bold text-white mb-4">
                             Health Insurance Benefits
                         </h2>
@@ -102,7 +102,7 @@ const HealthInsurance = () => {
                         <div>
                             {benefits.slice(0, 4).map((benefit, index) => (
                                 <div key={index} className="flex items-start mb-4">
-                                    <FaCheckCircle className="text-blue-400 mt-1 mr-3 flex-shrink-0" />
+                                    <FaCheckCircle className="text-primaryRed mt-1 mr-3 flex-shrink-0" />
                                     <p className="text-gray-300 font-inter">{benefit}</p>
                                 </div>
                             ))}
@@ -110,7 +110,7 @@ const HealthInsurance = () => {
                         <div>
                             {benefits.slice(4).map((benefit, index) => (
                                 <div key={index} className="flex items-start mb-4">
-                                    <FaCheckCircle className="text-blue-400 mt-1 mr-3 flex-shrink-0" />
+                                    <FaCheckCircle className="text-primaryRed mt-1 mr-3 flex-shrink-0" />
                                     <p className="text-gray-300 font-inter">{benefit}</p>
                                 </div>
                             ))}
@@ -120,8 +120,8 @@ const HealthInsurance = () => {
 
                 {/* Individual vs Corporate Coverage */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-                    <div className="bg-blue-50 rounded-lg p-8">
-                        <FaUsers className="text-4xl text-blue-600 mb-4" />
+                    <div className="bg-primaryRed/10 rounded-lg p-8">
+                        <FaUser className="text-4xl text-primaryRed mb-4" />
                         <h3 className="text-2xl font-montserrat font-bold text-primaryBlack mb-4">
                             Individual Coverage
                         </h3>
@@ -131,15 +131,15 @@ const HealthInsurance = () => {
                         </p>
                         <ul className="space-y-2">
                             <li className="flex items-center text-primaryGrey font-inter">
-                                <FaStar className="text-blue-600 mr-2" />
+                                <FaStar className="text-primaryRed mr-2" />
                                 Personal health coverage
                             </li>
                             <li className="flex items-center text-primaryGrey font-inter">
-                                <FaStar className="text-blue-600 mr-2" />
+                                <FaStar className="text-primaryRed mr-2" />
                                 Family plan options
                             </li>
                             <li className="flex items-center text-primaryGrey font-inter">
-                                <FaStar className="text-blue-600 mr-2" />
+                                <FaStar className="text-primaryRed mr-2" />
                                 Flexible premium payments
                             </li>
                         </ul>

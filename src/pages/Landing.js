@@ -16,7 +16,7 @@ const Landing = () => {
             <SectionThree />
             <SectionFour />
             <SectionFive />
-            <SectionSix />
+            {/* <SectionSix /> */}
             <SectionSeven />
             <SectionEight />
         </>

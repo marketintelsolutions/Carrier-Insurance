@@ -12,9 +12,9 @@ const Media = () => {
             {/* <Banner image={'mediabanner'} /> */}
             <AboutBanner />
             <MediaDetails />
-            <SectionSeven />
-            <PressRelease />
-            <Blog />
+            {/* <SectionSeven /> */}
+            {/* <PressRelease /> */}
+            {/* <Blog /> */}
         </>
     )
 }
