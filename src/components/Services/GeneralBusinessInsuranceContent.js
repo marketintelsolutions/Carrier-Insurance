@@ -153,26 +153,6 @@ const GeneralBusinessInsurance = () => {
 
     return (
         <div className="bg-white">
-            {/* Hero Section */}
-            <div className="relative h-[80vh] bg-gradient-to-r from-primaryBlack to-primaryGrey overflow-hidden">
-                <img
-                    src="/images/nightcity.jpg"
-                    alt="General Business Insurance"
-                    className="w-full h-full object-cover opacity-30"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center text-white px-4">
-
-                        <h1 className="text-4xl md:text-6xl font-montserrat font-bold mb-8">
-                            General Business Insurance
-                        </h1>
-                        <p className="text-xl font-inter max-w-2xl mx-auto">
-                            Comprehensive protection for individuals and corporations across all business sectors
-                        </p>
-                    </div>
-                </div>
-            </div>
-
             <div className="max-w-max mx-auto px-4 py-16">
                 {/* Individual Insurance Section */}
                 <div className="mb-12">
@@ -181,7 +161,7 @@ const GeneralBusinessInsurance = () => {
                         onClick={() => toggleSection('individual')}
                     >
                         <div className="flex items-center">
-                            <FaUser className="text-2xl mr-4" />
+                            {/* <FaUser className="text-2xl mr-4" /> */}
                             <h2 className="text-2xl font-montserrat font-bold">Individual Insurance</h2>
                         </div>
                         {openSections.includes('individual') ? <FaChevronUp /> : <FaChevronDown />}
@@ -230,7 +210,7 @@ const GeneralBusinessInsurance = () => {
                         onClick={() => toggleSection('corporate')}
                     >
                         <div className="flex items-center">
-                            <FaBuilding className="text-2xl mr-4" />
+                            {/* <FaBuilding className="text-2xl mr-4" /> */}
                             <h2 className="text-2xl font-montserrat font-bold">Corporate Insurance</h2>
                         </div>
                         {openSections.includes('corporate') ? <FaChevronUp /> : <FaChevronDown />}
@@ -273,20 +253,20 @@ const GeneralBusinessInsurance = () => {
                 </div>
 
                 {/* Call to Action */}
-                <div className="text-center bg-gradient-to-r from-primaryRed to-primaryRed/80 rounded-lg p-8 text-white">
-                    <FaShieldAlt className="mx-auto text-5xl mb-4" />
-                    <h2 className="text-2xl font-montserrat font-bold mb-4">
+                <div className="text-center bg-gray-50 rounded-lg p-8 text-white">
+                    <FaShieldAlt className="mx-auto text-5xl text-primaryRed mb-4" />
+                    <h2 className="text-2xl text-primaryBlack font-montserrat font-bold mb-4">
                         Need Comprehensive Business Protection?
                     </h2>
-                    <p className="font-inter max-w-2xl mx-auto mb-6">
+                    <p className="font-inter text-primaryGrey max-w-2xl mx-auto mb-6">
                         Our experienced team is ready to help you find the perfect insurance solution
                         tailored to your specific business needs and requirements.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="bg-white border border-white text-primaryRed px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-transparent hover:text-white transition-colors">
+                        <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-red-700 transition-colors">
                             Get a Quote
                         </button>
-                        <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-primaryBlack/80 transition-colors">
+                        <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-700 transition-colors">
                             Speak to Advisor
                         </button>
                     </div>
