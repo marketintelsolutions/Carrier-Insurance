@@ -3,7 +3,7 @@ import BannerAnimation from '../BannerAnimation'
 
 const AboutBanner = () => {
     return (
-        <section className='relative w-full  mx-auto h-[611px]   flex flex-col justify-center' style={{ backgroundImage: 'url(/images/nightcity.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+        <section className='relative w-full  mx-auto h-[80vh]   flex flex-col justify-center' style={{ backgroundImage: 'url(/images/nightcity.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
             <div className='absolute z-[2] top-0 left-0 w-full h-full bg-black/30'></div>
             <div className='relative z-[2] flex  justify-between gap-[50px] items-center w-[90%] max-w-max mx-auto '>
                 <div className='w-[372px]'><img src="/images/tick.svg" alt="tick" className='w-full' /></div>

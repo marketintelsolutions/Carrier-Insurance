@@ -1,10 +1,10 @@
 export const team = [
-    {
-        slug: '',
-        name: '',
-        title: '',
-        image: ''
-    },
+    // {
+    //     slug: '',
+    //     name: '',
+    //     title: '',
+    //     image: ''
+    // },
     {
         slug: 'chief-edward-ohore',
         name: 'Chief Edward Ohore',
@@ -84,7 +84,7 @@ export const services = [
     {
         heading: 'AVIATION SECTOR',
         slug: 'aviation-sector',
-        icon: 'motor',
+        icon: 'aviation',
         image: 'motorimage',
         details: `
         <p>
@@ -93,7 +93,7 @@ export const services = [
         `
     },
     {
-        icon: 'fire',
+        icon: 'construction',
         heading: 'CONSTRUCTION SECTOR',
         slug: 'construction-sector',
         image: 'fireimage',
@@ -104,8 +104,8 @@ export const services = [
         `
     },
     {
-        icon: 'group',
-        heading: 'HEALTHCARE OR PHARMACEUTICAL SECTOR',
+        icon: 'healthcare',
+        heading: 'HEALTHCARE SECTOR',
         slug: 'healthcare-pharmaceutical-sector',
         image: 'lifeimage',
         details: `
@@ -115,7 +115,7 @@ export const services = [
         `
     },
     {
-        icon: 'fidelity',
+        icon: 'gas',
         heading: 'OIL AND GAS',
         slug: 'oil-and-gas',
         image: 'fidelityimage',
@@ -126,7 +126,7 @@ export const services = [
         `
     },
     {
-        icon: 'fire',
+        icon: 'manufacturing',
         heading: 'MANUFACTURING SECTOR',
         slug: 'manufacturing-sector',
         image: 'householdimage',
@@ -137,7 +137,7 @@ export const services = [
         `
     },
     {
-        icon: 'fire',
+        icon: 'agriculture',
         heading: 'AGRICULTURAL SECTOR',
         slug: 'manufacturing-sector',
         image: 'householdimage',
@@ -148,7 +148,7 @@ export const services = [
         `
     },
     {
-        icon: 'fire',
+        icon: 'transportation',
         heading: 'TRANSPORTATION SECTOR',
         slug: 'manufacturing-sector',
         image: 'householdimage',

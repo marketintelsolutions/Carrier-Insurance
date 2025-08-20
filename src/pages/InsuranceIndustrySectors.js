@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaIndustry, FaPlane, FaBuilding, FaHospital, FaOilCan, FaCog, FaSeedling, FaTruck, FaChevronDown, FaChevronUp, FaShieldAlt, FaUsers, FaMoneyBill } from 'react-icons/fa';
+import SharedBanner from '../components/SharedBanner';
 
 const InsuranceIndustrySectors = () => {
     const [expandedSector, setExpandedSector] = useState(null);
@@ -112,198 +113,187 @@ const InsuranceIndustrySectors = () => {
     ];
 
     return (
-        <div className="bg-primaryGrey/10 min-h-screen">
-            {/* Hero Section */}
-            <div className="relative h-[80vh] bg-gradient-to-r from-primaryBlack to-primaryGrey overflow-hidden">
-                <img
-                    src="/images/nightcity.jpg"
-                    alt="Insurance Industry & Sectors"
-                    className="w-full h-full object-cover opacity-30"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center text-white px-4">
-                        <h1 className="text-4xl md:text-6xl font-montserrat font-bold mb-8">
-                            Insurance Industry & Sectors
-                        </h1>
-                        <p className="text-xl font-inter max-w-2xl mx-auto">
-                            Specialized insurance solutions across diverse industries with tailored coverage for specific sector risks
+        <>
+            <SharedBanner
+                img={'nightcity.jpg'}
+                heading={'Specialized insurance solutions across diverse industries with tailored coverage for specific sector risks'}
+                page={'Insurance Industry & Sectors'}
+            />
+            <div className="bg-white min-h-screen">
+                <div className="max-w-max mx-auto px-4 py-16">
+                    {/* Introduction */}
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-montserrat font-bold text-primaryBlack mb-6">
+                            Comprehensive Sector Coverage
+                        </h2>
+                        <p className="text-lg font-inter text-primaryGrey max-w-4xl mx-auto">
+                            We provide specialized insurance solutions across multiple industries, understanding the unique risks
+                            and requirements of each sector to deliver comprehensive protection.
                         </p>
                     </div>
-                </div>
-            </div>
 
-            <div className="max-w-max mx-auto px-4 py-16">
-                {/* Introduction */}
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl font-montserrat font-bold text-primaryBlack mb-6">
-                        Comprehensive Sector Coverage
-                    </h2>
-                    <p className="text-lg font-inter text-primaryGrey max-w-4xl mx-auto">
-                        We provide specialized insurance solutions across multiple industries, understanding the unique risks
-                        and requirements of each sector to deliver comprehensive protection.
-                    </p>
-                </div>
+                    {/* Sectors Grid */}
+                    <div className="space-y-6">
+                        {sectors.map((sector, index) => {
+                            const IconComponent = sector.icon;
+                            const isExpanded = expandedSector === sector.id;
+                            const isEven = index % 2 === 0;
 
-                {/* Sectors Grid */}
-                <div className="space-y-6">
-                    {sectors.map((sector, index) => {
-                        const IconComponent = sector.icon;
-                        const isExpanded = expandedSector === sector.id;
-                        const isEven = index % 2 === 0;
-
-                        return (
-                            <div key={sector.id} className="bg-white rounded-xl shadow-lg overflow-hidden">
-                                {/* Sector Header */}
-                                <div
-                                    className={`${isEven ? 'bg-primaryRed' : 'bg-primaryBlack'} p-6 cursor-pointer transition-all duration-300 hover:opacity-90`}
-                                    onClick={() => toggleSector(sector.id)}
-                                >
-                                    <div className="flex items-center justify-between text-white">
-                                        <div className="flex items-center">
-                                            {/* <IconComponent className="text-3xl mr-4" /> */}
-                                            <div>
-                                                <h3 className="text-2xl font-montserrat font-bold">{sector.title}</h3>
-                                                <p className="font-inter opacity-90 mt-1">{sector.description}</p>
+                            return (
+                                <div key={sector.id} className="bg-white rounded-xl shadow-lg overflow-hidden">
+                                    {/* Sector Header */}
+                                    <div
+                                        className={`bg-primaryBlack p-6 cursor-pointer transition-all duration-300 hover:opacity-90`}
+                                        onClick={() => toggleSector(sector.id)}
+                                    >
+                                        <div className="flex items-center justify-between text-white">
+                                            <div className="flex items-center">
+                                                {/* <IconComponent className="text-3xl mr-4" /> */}
+                                                <div>
+                                                    <h3 className="text-2xl font-montserrat font-bold">{sector.title}</h3>
+                                                    <p className="font-inter opacity-90 mt-1">{sector.description}</p>
+                                                </div>
                                             </div>
+                                            {isExpanded ? <FaChevronUp className="text-xl" /> : <FaChevronDown className="text-xl" />}
                                         </div>
-                                        {isExpanded ? <FaChevronUp className="text-xl" /> : <FaChevronDown className="text-xl" />}
                                     </div>
-                                </div>
 
-                                {/* Expanded Content */}
-                                {isExpanded && (
-                                    <div className="p-6">
-                                        {sector.products && (
-                                            <div>
-                                                <h4 className="text-xl font-montserrat font-semibold text-primaryBlack mb-4">
-                                                    Insurance Products & Coverage
-                                                </h4>
-                                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                                    {sector.products.map((product, index) => (
-                                                        <div key={index} className="bg-primaryGrey/10 rounded-lg p-4 border-l-4 border-primaryRed">
-                                                            <div className="flex items-center">
-                                                                <FaShieldAlt className="text-primaryRed mr-2" />
-                                                                <span className="font-inter text-primaryBlack">{product}</span>
+                                    {/* Expanded Content */}
+                                    {isExpanded && (
+                                        <div className="p-6">
+                                            {sector.products && (
+                                                <div>
+                                                    <h4 className="text-xl font-montserrat font-semibold text-primaryBlack mb-4">
+                                                        Insurance Products & Coverage
+                                                    </h4>
+                                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                                        {sector.products.map((product, index) => (
+                                                            <div key={index} className="bg-primaryGrey/10 rounded-lg p-4 border-l-4 border-primaryRed">
+                                                                <div className="flex items-center">
+                                                                    <FaShieldAlt className="text-primaryRed mr-2" />
+                                                                    <span className="font-inter text-primaryBlack">{product}</span>
+                                                                </div>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            {sector.sections && (
+                                                <div className="space-y-6">
+                                                    {sector.sections.map((section, index) => (
+                                                        <div key={index}>
+                                                            <h4 className="text-xl font-montserrat font-semibold text-primaryBlack mb-3">
+                                                                {section.title}
+                                                            </h4>
+                                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                                                {section.items.map((item, itemIndex) => (
+                                                                    <div key={itemIndex} className="bg-primaryGrey/10 rounded-lg p-3 border-l-4 border-primaryRed">
+                                                                        <div className="flex items-center">
+                                                                            <FaShieldAlt className="text-primaryRed mr-2 text-sm" />
+                                                                            <span className="font-inter text-primaryBlack text-sm">{item}</span>
+                                                                        </div>
+                                                                    </div>
+                                                                ))}
                                                             </div>
                                                         </div>
                                                     ))}
                                                 </div>
-                                            </div>
-                                        )}
+                                            )}
+                                        </div>
+                                    )}
+                                </div>
+                            );
+                        })}
+                    </div>
 
-                                        {sector.sections && (
-                                            <div className="space-y-6">
-                                                {sector.sections.map((section, index) => (
-                                                    <div key={index}>
-                                                        <h4 className="text-xl font-montserrat font-semibold text-primaryBlack mb-3">
-                                                            {section.title}
-                                                        </h4>
-                                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                                            {section.items.map((item, itemIndex) => (
-                                                                <div key={itemIndex} className="bg-primaryGrey/10 rounded-lg p-3 border-l-4 border-primaryRed">
-                                                                    <div className="flex items-center">
-                                                                        <FaShieldAlt className="text-primaryRed mr-2 text-sm" />
-                                                                        <span className="font-inter text-primaryBlack text-sm">{item}</span>
-                                                                    </div>
-                                                                </div>
-                                                            ))}
-                                                        </div>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        )}
-                                    </div>
-                                )}
+                    {/* Statistics Section */}
+                    <div className="mt-16 bg-gradient-to-r from-primaryRed to-primaryRed/80 rounded-xl shadow-lg p-8 text-white">
+                        <div className="text-center mb-8">
+                            <h2 className="text-3xl font-montserrat font-bold mb-4">
+                                Industry Coverage Statistics
+                            </h2>
+                            <p className="font-inter opacity-90 max-w-2xl mx-auto">
+                                Our comprehensive coverage across multiple sectors ensures specialized protection for diverse industry needs
+                            </p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                            <div className="text-center">
+                                <div className="text-4xl font-montserrat font-bold mb-2">7+</div>
+                                <div className="font-inter">Major Sectors</div>
                             </div>
-                        );
-                    })}
-                </div>
+                            <div className="text-center">
+                                <div className="text-4xl font-montserrat font-bold mb-2">50+</div>
+                                <div className="font-inter">Insurance Products</div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-4xl font-montserrat font-bold mb-2">100%</div>
+                                <div className="font-inter">Risk Coverage</div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-4xl font-montserrat font-bold mb-2">24/7</div>
+                                <div className="font-inter">Support Available</div>
+                            </div>
+                        </div>
+                    </div>
 
-                {/* Statistics Section */}
-                <div className="mt-16 bg-gradient-to-r from-primaryRed to-primaryRed/80 rounded-xl shadow-lg p-8 text-white">
-                    <div className="text-center mb-8">
-                        <h2 className="text-3xl font-montserrat font-bold mb-4">
-                            Industry Coverage Statistics
+                    {/* Key Features */}
+                    <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+                            <FaShieldAlt className="mx-auto text-4xl text-primaryRed mb-4" />
+                            <h3 className="text-xl font-montserrat font-semibold text-primaryBlack mb-3">
+                                Specialized Coverage
+                            </h3>
+                            <p className="text-primaryGrey font-inter">
+                                Tailored insurance solutions designed for specific industry risks and requirements
+                            </p>
+                        </div>
+
+                        <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+                            <FaUsers className="mx-auto text-4xl text-primaryRed mb-4" />
+                            <h3 className="text-xl font-montserrat font-semibold text-primaryBlack mb-3">
+                                Expert Consultation
+                            </h3>
+                            <p className="text-primaryGrey font-inter">
+                                Industry specialists who understand sector-specific challenges and insurance needs
+                            </p>
+                        </div>
+
+                        <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+                            <FaMoneyBill className="mx-auto text-4xl text-primaryRed mb-4" />
+                            <h3 className="text-xl font-montserrat font-semibold text-primaryBlack mb-3">
+                                Competitive Rates
+                            </h3>
+                            <p className="text-primaryGrey font-inter">
+                                Cost-effective insurance solutions with competitive premiums across all sectors
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Call to Action */}
+                    <div className="mt-16 text-center bg-gray-50 rounded-lg p-8 text-white">
+                        <FaIndustry className="mx-auto text-5xl text-primaryRed mb-4" />
+                        <h2 className="text-2xl text-primaryBlack font-montserrat font-bold mb-4">
+                            Need Sector-Specific Insurance?
                         </h2>
-                        <p className="font-inter opacity-90 max-w-2xl mx-auto">
-                            Our comprehensive coverage across multiple sectors ensures specialized protection for diverse industry needs
+                        <p className="font-inter text-primaryGrey max-w-2xl mx-auto mb-6">
+                            Our industry specialists are ready to help you find the perfect insurance solution
+                            tailored to your sector's unique requirements.
                         </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                        <div className="text-center">
-                            <div className="text-4xl font-montserrat font-bold mb-2">7+</div>
-                            <div className="font-inter">Major Sectors</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-4xl font-montserrat font-bold mb-2">50+</div>
-                            <div className="font-inter">Insurance Products</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-4xl font-montserrat font-bold mb-2">100%</div>
-                            <div className="font-inter">Risk Coverage</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-4xl font-montserrat font-bold mb-2">24/7</div>
-                            <div className="font-inter">Support Available</div>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-red-700 transition-colors">
+                                Get Sector Quote
+                            </button>
+                            <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-700 transition-colors">
+                                Speak to Specialist
+                            </button>
                         </div>
                     </div>
-                </div>
 
-                {/* Key Features */}
-                <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-                        <FaShieldAlt className="mx-auto text-4xl text-primaryRed mb-4" />
-                        <h3 className="text-xl font-montserrat font-semibold text-primaryBlack mb-3">
-                            Specialized Coverage
-                        </h3>
-                        <p className="text-primaryGrey font-inter">
-                            Tailored insurance solutions designed for specific industry risks and requirements
-                        </p>
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-                        <FaUsers className="mx-auto text-4xl text-primaryRed mb-4" />
-                        <h3 className="text-xl font-montserrat font-semibold text-primaryBlack mb-3">
-                            Expert Consultation
-                        </h3>
-                        <p className="text-primaryGrey font-inter">
-                            Industry specialists who understand sector-specific challenges and insurance needs
-                        </p>
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-                        <FaMoneyBill className="mx-auto text-4xl text-primaryRed mb-4" />
-                        <h3 className="text-xl font-montserrat font-semibold text-primaryBlack mb-3">
-                            Competitive Rates
-                        </h3>
-                        <p className="text-primaryGrey font-inter">
-                            Cost-effective insurance solutions with competitive premiums across all sectors
-                        </p>
-                    </div>
-                </div>
-
-                {/* Call to Action */}
-                <div className="mt-16 text-center bg-primaryBlack rounded-lg p-8 text-white">
-                    <FaIndustry className="mx-auto text-5xl text-primaryRed mb-4" />
-                    <h2 className="text-2xl font-montserrat font-bold mb-4">
-                        Need Sector-Specific Insurance?
-                    </h2>
-                    <p className="font-inter max-w-2xl mx-auto mb-6">
-                        Our industry specialists are ready to help you find the perfect insurance solution
-                        tailored to your sector's unique requirements.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-primaryRed/90 transition-colors">
-                            Get Sector Quote
-                        </button>
-                        <button className="bg-white text-primaryBlack px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-primaryGrey/10 transition-colors">
-                            Speak to Specialist
-                        </button>
-                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

@@ -6,19 +6,19 @@ import { Link } from 'react-router-dom'
 const MediaItem = ({ id }) => {
 
     return (
-        <div className='w-full max-w-[780px] p-5 flex gap-[30px] rounded-[10px] shadow-[0px_0px_20px_0px_rgba(0,0,0,0.10)]'>
-            <img src="/images/blogimage.png" alt="blogimage" />
+        <div className='w-full max-w-[780px] p-5 flex flex-wrap md:flex-nowrap gap-[30px] rounded-[10px] shadow-[0px_0px_20px_0px_rgba(0,0,0,0.10)]'>
+            <img src="/images/blogimage.png" alt="blogimage" className='w-full md:max-w-[30%]' />
             <div>
                 <div className='flex gap-1 items-center'>
-                    <span className='text-sm'><CiClock2 /></span>
-                    <p className="w-[120.82px]  text-[#333333] text-sm font-semibold font-['Inter'] leading-relaxed"> October 15, 2024</p>
-                    <span className='text-sm'><IoChatbubblesSharp /></span>
-                    <p className="w-[97.35px]  text-[#333333] text-sm font-bold font-['Inter'] underline leading-relaxed">No Comments</p>
+                    <span className='text-xs md:text-sm'><CiClock2 /></span>
+                    <p className="max-w-[120.82px]  text-[#333333] text-xs md:text-sm font-semibold font-['Inter'] leading-relaxed"> October 15, 2024</p>
+                    <span className='text-xs md:text-sm'><IoChatbubblesSharp /></span>
+                    <p className="max-w-[97.35px]  text-[#333333] text-xs md:text-sm font-bold font-['Inter'] underline leading-relaxed">No Comments</p>
                 </div>
-                <p className="mt-[14px] mb-[17px] w-[450.60px] h-[46px] text-[#484f5e] text-xl font-semibold font-['Inter'] underline leading-snug">Recently with desktop publishing software like<br />Aldus Page</p>
-                <p className="w-[405.68px] h-[46px] text-[#161616] text-base font-normal font-['Inter'] leading-relaxed">Lorem Ipsum is simply dummy text of the printing and<br />typesetting industry. Lorem Ipsum…</p>
-                <Link to={`/media/${id}`} className="mt-[18px] w-[123.55px] h-10 pl-5 pr-[19.67px] py-2.5 bg-[#cc1517] rounded-[5px] justify-center items-center inline-flex">
-                    <span className="w-[83.88px]  text-white text-base font-bold font-['Inter'] leading-relaxed">Read More</span>
+                <p className="mt-[14px] mb-[17px] max-w-[450.60px] md:h-[46px] text-[#484f5e] text-lg md:text-xl font-semibold font-['Inter'] underline leading-snug">Recently with desktop publishing software like<br />Aldus Page</p>
+                <p className="max-w-[405.68px] md:h-[46px] text-[#161616] text-sm md:text-base font-normal font-['Inter'] md:leading-relaxed">Lorem Ipsum is simply dummy text of the printing and<br />typesetting industry. Lorem Ipsum…</p>
+                <Link to={`/media/${id}`} className="mt-[18px] max-w-[123.55px] h-10 pl-5 pr-[19.67px] py-2.5 bg-[#cc1517] rounded-[5px] justify-center items-center inline-flex">
+                    <span className="max-w-[83.88px]  text-white text-base font-bold font-['Inter'] leading-relaxed">Read More</span>
                 </Link>
             </div>
         </div>

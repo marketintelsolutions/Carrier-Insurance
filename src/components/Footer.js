@@ -8,8 +8,8 @@ import { services } from '../utils/data'
 
 const Footer = () => {
     return (
-        <footer className='bg-gradient-to-b pb-[140px] from-[#666] to-[#CCC] '>
-            <div className='bg-[#D9D9D9] flex py-6 px-[40px] justify-between items-center rounded-[30px] w-[75%] max-w-[1248px] translate-y-[50px] mx-auto '>
+        <footer className='bg-gradient-to-b md:pb-[140px] from-[#666] to-[#CCC] '>
+            <div className='bg-[#D9D9D9] hidden lg:flex  py-6 px-[40px] justify-between items-center rounded-[30px] w-[75%] max-w-[1248px] translate-y-[50px] mx-auto '>
                 <div className='flex flex-col gap-4 px-[50px] items-center'>
                     <span className='text-[45px] text-primaryRed'><FaLocationDot /></span>
                     <p className="h-[45px] text-center text-black text-[14px] font-normal font-sans leading-tight tracking-tight">Plot 22, Akiogun New Market Road, <br />Oniru Victoria Island, Lagos</p>
@@ -30,69 +30,69 @@ const Footer = () => {
                     <p className="h-[45px] text-center text-black text-[14px] font-normal font-sans leading-tight tracking-tight">+234 906 297 9782   |  +234 906 297 9786 <br />+234 906 244 7811   |  +234 707 452 1825</p>
                 </div>
             </div>
-            <div className='w-[80%] max-w-max mx-auto  gap-[60px] bg-black px-[46px] pt-[130px] pb-12 rounded-[30px]'>
-                <div className='flex justify-between gap-[50px]'>
+            <div className='md:w-[90%] max-w-max mx-auto  gap-[60px] bg-black px-6 md:px-[46px] pt-[130px] pb-12 md:rounded-[30px]'>
+                <div className='flex flex-wrap lg:justify-between gap-[50px]'>
                     <div className='flex flex-col justify-between'>
-                        <img src="/images/whitelogo.svg" alt="logo" />
+                        <img src="/images/whitelogo.svg" alt="logo" className='max-w-[200px]' />
                         <BannerAnimation size={294} />
                     </div>
                     <div>
-                        <h2 className="pb-[15px] mb-5 border-b border-white w-[143.09px] text-[#fffefe] text-2xl font-bold font-['Lato'] tracking-tight">Useful Links</h2>
+                        <h2 className="pb-[15px] mb-5 border-b border-white w-[143.09px] text-[#fffefe] text-xl md:text-2xl font-bold font-['Lato'] tracking-tight">Useful Links</h2>
                         <div className='flex flex-col gap-2.5'>
                             <Link to={'/'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
+                                <span className="text-white text-sm md:text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
-                                <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Home</p>
+                                <p className="text-[#f8f8f8] text-sm md:text-base font-normal font-sans leading-tight tracking-tight">Home</p>
                             </Link>
                             <Link to={'/about'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
+                                <span className="text-white text-sm md:text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
-                                <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">About Us</p>
+                                <p className="text-[#f8f8f8] text-sm md:text-base font-normal font-sans leading-tight tracking-tight">About Us</p>
                             </Link>
                             <Link to={'/products'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
+                                <span className="text-white text-sm md:text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
-                                <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Products</p>
+                                <p className="text-[#f8f8f8] text-sm md:text-base font-normal font-sans leading-tight tracking-tight">Products</p>
                             </Link>
                             <Link to={'/faq'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
+                                <span className="text-white text-sm md:text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
-                                <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">FAQ</p>
+                                <p className="text-[#f8f8f8] text-sm md:text-base font-normal font-sans leading-tight tracking-tight">FAQ</p>
                             </Link>
                             <Link to={'/careers'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
+                                <span className="text-white text-sm md:text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
-                                <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Careers</p>
+                                <p className="text-[#f8f8f8] text-sm md:text-base font-normal font-sans leading-tight tracking-tight">Careers</p>
                             </Link>
                             <Link to={'/contact'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
+                                <span className="text-white text-sm md:text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
-                                <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Contact Us</p>
+                                <p className="text-[#f8f8f8] text-sm md:text-base font-normal font-sans leading-tight tracking-tight">Contact Us</p>
                             </Link>
                             <Link to={'/media'} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
+                                <span className="text-white text-sm md:text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                     <FaChevronRight size={11} />
                                 </span>
-                                <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">Media</p>
+                                <p className="text-[#f8f8f8] text-sm md:text-base font-normal font-sans leading-tight tracking-tight">Media</p>
                             </Link>
                         </div>
                     </div>
                     <div>
-                        <h2 className="pb-[15px] mb-5 border-b border-white w-[143.09px] text-[#fffefe] text-2xl font-bold font-['Lato'] tracking-tight">Our Services</h2>
+                        <h2 className="pb-[15px] mb-5 border-b border-white w-[143.09px] text-[#fffefe] text-xl md:text-2xl font-bold font-['Lato'] tracking-tight">Our Services</h2>
                         <div className='flex flex-col gap-3'>
                             {
                                 services.map((item) => (
                                     <Link to={`/services/${item.slug}`} className="h-[30px] justify-start items-baseline gap-5 inline-flex">
-                                        <span className="text-white text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
+                                        <span className="text-white text-sm md:text-base font-black font-['Font Awesome 5 Free'] leading-[30px]">
                                             <FaChevronRight size={11} />
                                         </span>
-                                        <p className="text-[#f8f8f8] text-base font-normal font-sans leading-tight tracking-tight">{item.heading}</p>
+                                        <p className="text-[#f8f8f8] text-sm md:text-base font-normal font-sans leading-tight tracking-tight">{item.heading}</p>
                                     </Link>
                                 ))
                             }
@@ -103,23 +103,23 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <h2 className="h-[26.40px] text-[#fffefe] text-2xl font-bold font-['Lato'] tracking-tight">Subscribe </h2>
-                        <p className="mt-1 h-[53px] text-[#999999] text-base font-normal font-sans leading-relaxed">Sign up for our weekly newsletter.</p>
+                        <h2 className="h-[26.40px] text-[#fffefe] text-xl md:text-2xl font-bold font-['Lato'] tracking-tight">Subscribe </h2>
+                        <p className="mt-1 h-[53px] text-[#999999] text-sm md:text-base font-normal font-sans leading-relaxed">Sign up for our weekly newsletter.</p>
                         <div className=" h-14  bg-white rounded-[35px] justify-between items-start inline-flex overflow-hidden">
-                            <input className="self-stretch focus:outline-none pl-[25px] py-5 text-[#666666] text-base font-normal font-sans leading-tight tracking-tight" placeholder='Your email address' />
+                            <input className="self-stretch focus:outline-none pl-[25px] py-5 text-[#666666] text-sm md:text-base font-normal font-sans leading-tight tracking-tight" placeholder='Your email address' />
                             <button className='bg-primaryRed rounded-full h-full pl-[18px] pr-[7px] inline-flex items-center gap-[14px]'>
-                                <span className="text-white text-base font-normal font-sans leading-tight tracking-tight">Send</span>
+                                <span className="text-white text-sm md:text-base font-normal font-sans leading-tight tracking-tight">Send</span>
                                 <span className='bg-white text-primaryRed p-3 rounded-full'><FaArrowRight /></span>
                             </button>
                         </div>
                     </div>
 
                 </div>
-                <p className="mt-[70px] text-[#999999] text-base font-normal font-sans leading-tight tracking-tight">Designed & developed by Ziltchone Technology </p>
+                <p className="mt-[70px] text-[#999999] text-sm md:text-base font-normal font-sans leading-tight tracking-tight">Designed & developed by Ziltchone Technology </p>
 
-                <div className='mt-[24px] border-t-4 border-primaryRed pt-[22px] flex justify-between'>
-                    <p className="text-[#fffefe] text-base font-normal font-sans leading-relaxed">© Truebond Insurance Brokers Limited {new Date().getFullYear()}. All Right Reserved.</p>
-                    <div className='flex gap-[38px] text-white text-2xl'>
+                <div className='mt-[24px] border-t-4 border-primaryRed pt-[22px] flex flex-wrap lg:flex-nowrap gap-5 justify-between'>
+                    <p className="text-[#fffefe] text-sm md:text-base font-normal font-sans leading-relaxed">© Truebond Insurance Brokers Limited {new Date().getFullYear()}. All Right Reserved.</p>
+                    <div className='flex gap-[38px] text-white text-xl md:text-2xl'>
                         <span><FaInstagram /></span>
                         <span><FaTwitter /></span>
                         <span><FaFacebook /></span>

@@ -95,7 +95,7 @@ const Banner = () => {
         // backgroundImage: "url(/images/nightcity.jpg)",
         // backgroundSize: "cover",
       }}
-      className="relative h-[60vh] lg:h-[98lvh] overflow-hidden"
+      className="relative h-[80vh] lg:h-[98lvh] overflow-hidden"
     >
       {/* Video Background Container */}
       <div className="absolute  z-[2] top-0 left-0 w-full h-[50vh] md:h-full min-h-[88lvh]">
@@ -133,7 +133,7 @@ const Banner = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 w-full px-6 xl:px-0  max-w-sub mx-auto mt-10 xl:mt-40">
+      <div className="relative z-10 w-full px-6 xl:px-0  max-w-sub mx-auto mt-20 md:mt-40 xl:mt-40">
         <div
           className={`relative w-full bg-black/70 py-8 pl-0 md:pr-40 lg:w-fit transition-all duration-500 transform ${isTransitioning
             ? "opacity-0 translate-y-4"

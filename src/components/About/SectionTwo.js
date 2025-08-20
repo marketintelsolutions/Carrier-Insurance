@@ -4,59 +4,59 @@ import { Link } from 'react-router-dom'
 
 const SectionTwo = () => {
     return (
-        <section className='relative py-[190px] w-full flex flex-col gap-[100px] bg-[#EFEFEF]'>
-            <div className='relative  w-[80%] max-w-max mx-auto flex gap-[40px] '>
+        <section className='relative py-20 md:py-[190px] px-6 xl:px-0 w-full flex flex-col gap-[100px] bg-[#EFEFEF]'>
+            <div className='relative  md:w-[80%] max-w-max mx-auto flex flex-wrap lg:flex-nowrap gap-[40px] '>
                 {/* <div className="w-[30%] h-96 bg-[#cc1517] rounded-[50px]" /> */}
-                <img src="/images/about.jpg" alt="about" className='max-w-[40%] rounded-[20px]' />
-                <div className="w-[55%] relative h-96 pl-[39px] pr-[60px] py-[70px]  border rounded-[50px] justify-end items-center gap-2.5 inline-flex">
+                <img src="/images/nightcity.jpg" alt="night city" className='md:max-w-[40%] rounded-[20px]' />
+                <div className="md:w-[55%] relative md:h-96 md:pl-[39px] md:pr-[60px] md:py-[70px]  md:border rounded-[50px] justify-end items-center gap-2.5 inline-flex">
                     <div className="">
 
-                        <span className="text-black text-xl font-normal font-sans leading-[37px] tracking-tight">At </span>
-                        <span className="text-black text-xl font-bold font-sans leading-[37px] tracking-tight">
+                        <span className="text-black text-base md:text-xl font-normal font-sans leading-[37px] tracking-tight">At </span>
+                        <span className="text-black text-base md:text-xl font-bold font-sans leading-[37px] tracking-tight">
                             Truebond Insurance Brokers Limited
                         </span>
-                        <span className="text-black text-xl font-normal font-sans leading-[37px] tracking-tight">
+                        <span className="text-black text-base md:text-xl font-normal font-sans leading-[37px] tracking-tight">
                             , where we specialize in providing comprehensive insurance solutions tailored to meet the diverse needs of our clients. Our team is dedicated to ensuring individuals and businesses are protected against unforeseen risks by offering a wide range of life insurance and non-life insurance products
                         </span>
                     </div>
                 </div>
             </div>
 
-            <div className='relative z-[3] w-[70%] max-w-[1100px] mx-auto flex gap-[120px]'>
-                <div className='flex items-start gap-[48px]'>
+            <div className='relative z-[3] md:w-[70%] max-w-[1100px] mx-auto flex flex-wrap lg:flex-nowrap gap-[120px]'>
+                <div className='flex flex-wrap lg:flex-nowrap items-start gap-[48px]'>
                     <img src="/images/vision.png" alt="vision" className='w-[91px] object-contain' />
                     <div className='flex flex-col gap-[14px]'>
                         <h2 className="text-[#cc1517] text-4xl font-semibold font-['Lato']">Our Vision</h2>
-                        <p className=" text-[#666666] text-xl font-normal font-['Inter'] leading-normal tracking-tight">
+                        <p className=" text-[#666666] text-base md:text-xl font-normal font-['Inter'] leading-normal tracking-tight">
                             To be the foremost choice for <br /> insurance, trusted by individuals,<br /> families, and businesses alike.</p>
                     </div>
                 </div>
-                <div className='flex items-start gap-[48px]'>
+                <div className='flex flex-wrap lg:flex-nowrap items-start gap-[48px]'>
                     <img src="/images/value.png" alt="value" className='w-[91px] object-contain' />
                     <div className='flex flex-col gap-[14px]'>
                         <h2 className="text-[#cc1517] text-4xl font-semibold font-['Lato']">Our Values</h2>
-                        <p className=" text-[#666666] text-xl font-normal font-['Inter'] leading-normal tracking-tight">
+                        <p className=" text-[#666666] text-base md:text-xl font-normal font-['Inter'] leading-normal tracking-tight">
                             Integrity, Customer Focus,<br /> Innovation, and Excellence.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div className='relative z-[3] w-[80%] max-w-max mx-auto flex gap-[15px] '>
+            <div className='relative z-[3] md:w-[80%] max-w-max mx-auto flex flex-wrap lg:flex-nowrap gap-[15px] '>
                 <div
-                    className="w-[65%] relative h-96 pl-[59px] pr-[60px] py-[70px] rounded-[50px]  items-center gap-2.5 inline-flex"
+                    className="md:w-[65%] relative h-80 md:h-96 p-6 md:pl-[59px] md:pr-[60px] md:py-[70px] rounded-[50px]  items-center gap-2.5 inline-flex"
                     style={{ backgroundImage: 'url(/images/reassuringbg.png)' }}
                 >
                     <div className="">
                         {/* <img src="/images/medical.svg" alt="medical" className='absolute -top-[20px] -right-[165px] w-full max-w-[376px] ' /> */}
-                        <h2 className="mb-10 text-white text-5xl font-bold font-['Lato']">Different Insurance, <br /> to meet your needs.</h2>
+                        <h2 className="mb-10 text-white text-3xl md:text-5xl font-bold font-['Lato']">Reassuring,  knowledgeable, clear.</h2>
                         <div className='flex gap-1.5'>
                             <span className='inline-flex bg-[#666666] w-[143px] h-1.5'></span>
                             <span className='inline-flex bg-white w-[32px] h-1.5'></span>
                         </div>
                     </div>
                 </div>
-                <div className="w-[35%] h-96 bg-[#cc1517] rounded-[50px] flex flex-col gap-[60px] px-24 py-[100px]" >
+                <div className="md:w-[35%] w-full h-96 bg-[#cc1517] rounded-[50px] flex flex-col gap-[60px] px-6 md:px-24 py-20 md:py-[100px]" >
                     <p
                         className="w-[236px] text-[#fffefe] text-2xl font-normal font-['Albert Sans'] leading-[29.01px]"
                     >

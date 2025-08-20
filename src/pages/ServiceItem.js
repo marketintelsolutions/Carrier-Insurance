@@ -4,6 +4,7 @@ import ServiceItemDetails from '../components/Services/ServiceItemDetails'
 import { useParams } from 'react-router-dom'
 import { services } from '../utils/data'
 import AllServices from '../components/Services/AllServices'
+import SharedBanner from '../components/SharedBanner'
 
 const ServiceItem = () => {
     const { id } = useParams()
@@ -16,7 +17,12 @@ const ServiceItem = () => {
 
     return (
         <>
-            <ServiceItemBanner serviceItem={serviceItem} />
+            {/* <ServiceItemBanner serviceItem={serviceItem} /> */}
+            <SharedBanner
+                img={'nightcity.jpg'}
+                heading={serviceItem.heading}
+                page={'INSURANCE INDUSTRY'}
+            />
             <ServiceItemDetails serviceItem={serviceItem} />
             <AllServices />
         </>

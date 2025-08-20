@@ -55,13 +55,13 @@ const SectionThree = () => {
     return (
         <section className='bg-white py-[100px]'>
 
-            <div className='w-[80%] max-w-max mx-auto py-[40px] px-[60px]'>
-                <div className='relative flex justify-between items-end'>
+            <div className='px-6 lg:w-[80%] max-w-max mx-auto py-[40px] xl:px-[60px]'>
+                <div className='relative flex flex-col md:flex-row gap-10 justify-between md:items-end'>
                     <div className='flex flex-col gap-[27px] w-full max-w-[552px]'>
-                        <h3 className="h-[23px] text-[#cc1517] text-2xl font-bold font-['Lato'] tracking-tight">Services</h3>
-                        <p className="text-[#191a1c] text-2xl font-normal font-sans leading-7 tracking-wide">Explore our wide range of insurance products, designed to meet the diverse needs of individuals, families, and businesses.</p>
+                        <h3 className="h-[23px] text-[#cc1517] text-xl md:text-2xl font-bold font-['Lato'] tracking-tight">Services</h3>
+                        <p className="text-[#191a1c] text-xl md:text-2xl font-normal font-sans leading-7 tracking-wide">Explore our wide range of insurance products, designed to meet the diverse needs of individuals, families, and businesses.</p>
                     </div>
-                    <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] justify-start items-center inline-flex">
+                    <button className="w-[193px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] justify-start items-center inline-flex">
                         <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">View All Services</span>
                     </button>
                 </div>
@@ -71,7 +71,7 @@ const SectionThree = () => {
                         services.map((item, index) => (
                             <div
                                 key={index}
-                                className={`bg-[#D9D9D9] max-w-[30%] flex flex-col gap-[13px] rounded-[18px] pt-3 pb-[30px] px-[26px] ${activeIndex === index && 'border border-black'}`}>
+                                className={`bg-[#D9D9D9] md:max-w-[30%] flex flex-col gap-[13px] rounded-[18px] pt-3 pb-[30px] px-[26px] ${activeIndex === index && 'border-[3px] border-black'}`}>
                                 <div className='flex gap-[22px] items-center'>
                                     <img src="/images/life.svg" alt="life" />
                                     <h2 className=" text-[#060606] h-16 text-[22.19px] font-semibold font-['Lato']">{item.title}</h2>
@@ -85,7 +85,7 @@ const SectionThree = () => {
                         ))
                     }
 
-                    <div className='mt-[30px] max-w-[63%]  grid grid-cols-2 gap-5 '>
+                    <div className='mt-[30px] max-w-[63%]  grid grid-cols-1 md:grid-cols-2 gap-5 '>
                         {
                             services[activeIndex].items.map((item, index) => (
                                 <div key={index} className="w-max min-w-[180px] flex items-center gap-[13px] px-5 h-[47px] bg-[#D9D9D9] rounded-[30px]" >
