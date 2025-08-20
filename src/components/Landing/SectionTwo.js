@@ -43,23 +43,23 @@ const SectionTwo = () => {
 
             <div className='relative z-[3] w-[80%] max-w-max mx-auto flex gap-[15px] '>
                 <div
-                    className="w-[65%] relative h-96 pl-[59px] pr-[60px] py-[70px] rounded-[50px]  items-center gap-2.5 inline-flex"
+                    className="w-[55%] relative h-96 pl-[59px] pr-[60px] py-[70px] rounded-[50px]  items-center gap-2.5 inline-flex"
                     style={{ backgroundImage: 'url(/images/reassuringbg.png)' }}
                 >
                     <div className="">
                         {/* <img src="/images/medical.svg" alt="medical" className='absolute -top-[20px] -right-[165px] w-full max-w-[376px] ' /> */}
-                        <h2 className="mb-10 text-white text-5xl font-bold font-['Lato']">Reassuring, <br /> knowledgeable, clear.</h2>
+                        <h2 className="mb-10 text-white text-5xl font-bold font-['Lato']">Different Insurance, <br /> to meet your needs.</h2>
                         <div className='flex gap-1.5'>
                             <span className='inline-flex bg-[#666666] w-[143px] h-1.5'></span>
                             <span className='inline-flex bg-white w-[32px] h-1.5'></span>
                         </div>
                     </div>
                 </div>
-                <div className="w-[35%] h-96 border rounded-[50px] flex flex-col gap-[60px] px-24 py-[100px]" >
+                <div className="w-[55%] h-96 border rounded-[50px] flex flex-col gap-[60px] px-24 py-[40px]" >
                     <p
-                        className="w-[236px] text-black text-2xl font-normal font-['Albert Sans'] leading-[29.01px]"
+                        className="w-[296px] text-black text-2xl font-normal font-['Albert Sans'] leading-[29.01px]"
                     >
-                        Contact us today to learn more or get a free consultation.
+                        With Truebond, you can expect nothing short of total, comprehensive support for our different packages. Please Contact us today to learn more or get a free consultation.
                     </p>
                     <Link to={'/contact'} className="w-[173px] text-white hover:bg-primaryBlue h-[51px] px-[20px] py-[15px] bg-[#cc1517] rounded-[50px] border-2 border-[#fffefe] justify-start items-center inline-flex gap-6">
                         <span

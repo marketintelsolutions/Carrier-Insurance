@@ -7,7 +7,7 @@ const SectionTwo = () => {
         <section className='relative py-[190px] w-full flex flex-col gap-[100px] bg-[#EFEFEF]'>
             <div className='relative  w-[80%] max-w-max mx-auto flex gap-[40px] '>
                 {/* <div className="w-[30%] h-96 bg-[#cc1517] rounded-[50px]" /> */}
-                <img src="/images/nightcity.jpg" alt="night city" className='max-w-[40%] rounded-[20px]' />
+                <img src="/images/about.jpg" alt="about" className='max-w-[40%] rounded-[20px]' />
                 <div className="w-[55%] relative h-96 pl-[39px] pr-[60px] py-[70px]  border rounded-[50px] justify-end items-center gap-2.5 inline-flex">
                     <div className="">
 
@@ -49,7 +49,7 @@ const SectionTwo = () => {
                 >
                     <div className="">
                         {/* <img src="/images/medical.svg" alt="medical" className='absolute -top-[20px] -right-[165px] w-full max-w-[376px] ' /> */}
-                        <h2 className="mb-10 text-white text-5xl font-bold font-['Lato']">Reassuring, <br /> knowledgeable, clear.</h2>
+                        <h2 className="mb-10 text-white text-5xl font-bold font-['Lato']">Different Insurance, <br /> to meet your needs.</h2>
                         <div className='flex gap-1.5'>
                             <span className='inline-flex bg-[#666666] w-[143px] h-1.5'></span>
                             <span className='inline-flex bg-white w-[32px] h-1.5'></span>
