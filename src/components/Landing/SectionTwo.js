@@ -25,7 +25,7 @@ const SectionTwo = () => {
                     <p
                         className="w-[236px] text-black text-xl md:text-2xl font-normal font-['Albert Sans'] leading-[29.01px]"
                     >
-                        Contact us today to learn more or get a free consultation.
+                        With Truebond, you can expect nothing short of total, comprehensive support for our different packages. Please Contact us today to learn more or get a free consultation.
                     </p>
                     <Link to={'/contact'} className="w-[173px] text-white hover:bg-primaryBlue h-[51px] px-[20px] py-[15px] bg-[#cc1517] rounded-[50px] border-2 border-[#fffefe] justify-start items-center inline-flex gap-6">
                         <span
