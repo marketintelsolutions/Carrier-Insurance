@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ServiceItemDetails = ({ serviceItem }) => {
     return (
         <section className='md:w-[55%] px-6 xl:px-0 max-w-[896px] mx-auto pt-[100px] md:pt-[256px] pb-20 md:pb-[150px]'>
+            <Link to={-1}><button className='py-3 px-10 bg-primaryBlack text-white mb-10 rounded-[4px]'>Back</button></Link>
             <h1 className="text-[#666666] text-4xl md:text-6xl font-bold font-['Montserrat'] md:leading-[72px]">{serviceItem.heading}</h1>
             <div className='flex gap-1 mt-[15px]'>
                 <span className='inline-flex h-[6.6px] w-[143px] bg-primaryRed'></span>
@@ -11,11 +13,13 @@ const ServiceItemDetails = ({ serviceItem }) => {
 
             <div className="mt-10 opacity-40 [&>h2]:font-bold text-[#191a1c] text-xl md:text-2xl font-normal font-['Inter'] leading-[30px]" dangerouslySetInnerHTML={{ __html: serviceItem.details }}></div>
 
-            <button className="mt-[95px] h-[46px] px-[35px] py-2.5 bg-[#5a5a5a] justify-center items-start inline-flex">
-                <div className="text-center">
-                    <span className="text-[#fffefe] text-base font-medium font-['Inter'] leading-relaxed">Get Quote </span>
-                </div>
-            </button>
+            <Link to={'/claims'}>
+                <button className="mt-[95px] h-[46px] px-[35px] py-2.5 bg-[#5a5a5a] justify-center items-start inline-flex">
+                    <div className="text-center">
+                        <span className="text-[#fffefe] text-base font-medium font-['Inter'] leading-relaxed">Get Quote </span>
+                    </div>
+                </button>
+            </Link>
 
         </section>
     )
