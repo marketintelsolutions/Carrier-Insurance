@@ -139,7 +139,7 @@ export const services = [
     {
         icon: 'agriculture',
         heading: 'AGRICULTURAL SECTOR',
-        slug: 'manufacturing-sector',
+        slug: 'agricultural-sector',
         image: 'agriculturalsector',
         details: `
         <p>
@@ -150,7 +150,7 @@ export const services = [
     {
         icon: 'transportation',
         heading: 'TRANSPORTATION SECTOR',
-        slug: 'manufacturing-sector',
+        slug: 'transportation',
         image: 'transportsector',
         details: `
         <p>

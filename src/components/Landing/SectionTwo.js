@@ -22,9 +22,9 @@ const SectionTwo = () => {
                         </div>
                     </SlideIn>
                 </div>
-                <div className="w-full lg:w-[35%] h-96 border rounded-[50px] flex flex-col gap-[60px] px-6 md:px-24 py-[100px]" >
+                <div className="w-full lg:w-[35%] h-96 border rounded-[50px] flex flex-col gap-[60px] px-6 md:px-24 py-[20px]" >
                     <p
-                        className="w-[236px] text-black text-xl md:text-2xl font-normal font-['Albert Sans'] leading-[29.01px]"
+                        className="w-[286px] text-black text-xl md:text-2xl font-normal font-['Albert Sans'] leading-[29.01px]"
                     >
                         With Truebond, you can expect nothing short of total, comprehensive support for our different packages. Please Contact us today to learn more or get a free consultation.
                     </p>

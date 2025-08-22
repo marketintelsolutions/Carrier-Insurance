@@ -62,7 +62,7 @@ const ContactDetails = () => {
 
                 <div className=' py-0 md:px-[54px] w-full md:max-w-[55%] rounded-[50px] h-max'>
                     <SlideIn className='flex flex-col justify-between gap-5' duration={700} distance={50} direction="right" delay={700}>
-                        <p className="max-w-[356px] h-[78px] text-black text-sm md:text-base font-light font-['Inter'] leading-relaxed">Or fill out our online contact form, and our team will respond within 24 hours.</p>
+                        <p className="max-w-[356px] h-[78px] text-black text-sm md:text-base font-light font-['Inter'] leading-relaxed">Let us know further how we can be of help to you. Our team will get intouch with you, kindly fill the form and submit.</p>
 
                         <div className='w-full  bg-[#D9D5D5] py-8 px-[34px] rounded-[30px] flex flex-col gap-2.5 '>
                             <input type="text" name="" id="" className='bg-white p-[15px]' placeholder='Name' />
