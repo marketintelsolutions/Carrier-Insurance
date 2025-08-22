@@ -22,22 +22,19 @@ const SectionTwo = () => {
                         </div>
                     </SlideIn>
                 </div>
-
-                <div className="w-full lg:w-[45%] h-96 border rounded-[50px] flex flex-col gap-[60px] px-6 md:px-14 py-[50px]" >
-                    <SlideIn duration={800} distance={60} direction="right" delay={300}>
-                        <p
-                            className=" text-black text-xl md:text-2xl font-normal font-['Albert Sans'] leading-[29.01px]"
-                        >
-                            With Truebond, you can expect nothing short of total, comprehensive support for our different packages. Please Contact us today to learn more or get a free consultation.
-                        </p>
-                        <Link to={'/contact'} className="w-[173px] text-white hover:bg-primaryBlue h-[51px] px-[20px] py-[15px] bg-[#cc1517] rounded-[50px] border-2 border-[#fffefe] justify-start items-center inline-flex gap-6">
-                            <span
-                                className="text-center text-base font-normal font-sans leading-tight tracking-tight">
-                                Get Started
-                            </span>
-                            <span><FaArrowRightLong color='white' /></span>
-                        </Link>
-                    </SlideIn>
+                <div className="w-full lg:w-[35%] h-96 border rounded-[50px] flex flex-col gap-[60px] px-6 md:px-24 py-[100px]" >
+                    <p
+                        className="w-[236px] text-black text-xl md:text-2xl font-normal font-['Albert Sans'] leading-[29.01px]"
+                    >
+                        With Truebond, you can expect nothing short of total, comprehensive support for our different packages. Please Contact us today to learn more or get a free consultation.
+                    </p>
+                    <Link to={'/contact'} className="w-[173px] text-white hover:bg-primaryBlue h-[51px] px-[20px] py-[15px] bg-[#cc1517] rounded-[50px] border-2 border-[#fffefe] justify-start items-center inline-flex gap-6">
+                        <span
+                            className="text-center text-base font-normal font-sans leading-tight tracking-tight">
+                            Get Started
+                        </span>
+                        <span><FaArrowRightLong color='white' /></span>
+                    </Link>
                 </div>
             </div>
 

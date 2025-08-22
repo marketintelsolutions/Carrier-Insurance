@@ -6,25 +6,20 @@ import SlideIn from '../SlideIn'
 const SectionTwo = () => {
     return (
         <section className='relative py-20 md:py-[190px] px-6 xl:px-0 w-full flex flex-col gap-[100px] bg-[#EFEFEF]'>
-            <div className='relative md:w-[80%] max-w-max mx-auto flex flex-wrap lg:flex-nowrap gap-[40px] '>
-                <div className='md:max-w-[45%] w-full'>
-                    <SlideIn className='w-ful' duration={800} distance={60} direction="left" delay={100}>
-                        <img src="/images/nightcity.jpg" alt="night city" className='w-full rounded-[20px]' />
-                    </SlideIn>
-                </div>
+            <div className='relative  md:w-[80%] max-w-max mx-auto flex flex-wrap lg:flex-nowrap gap-[40px] '>
+                {/* <div className="w-[30%] h-96 bg-[#cc1517] rounded-[50px]" /> */}
+                <img src="/images/nightcity.jpg" alt="night city" className='md:max-w-[40%] rounded-[20px]' />
+                <div className="md:w-[55%] relative md:h-96 md:pl-[39px] md:pr-[60px] md:py-[70px]  md:border rounded-[50px] justify-end items-center gap-2.5 inline-flex">
+                    <div className="">
 
-                <div className="md:w-[55%] relative md:h-96 md:pl-[39px] md:pr-[60px] md:py-[70px] md:border rounded-[50px] justify-end items-center gap-2.5 inline-flex">
-                    <SlideIn duration={800} distance={60} direction="right" delay={300}>
-                        <div className="">
-                            <span className="text-black text-base md:text-xl font-normal font-sans leading-[37px] tracking-tight">At </span>
-                            <span className="text-black text-base md:text-xl font-bold font-sans leading-[37px] tracking-tight">
-                                Truebond Insurance Brokers Limited
-                            </span>
-                            <span className="text-black text-base md:text-xl font-normal font-sans leading-[37px] tracking-tight">
-                                , where we specialize in providing comprehensive insurance solutions tailored to meet the diverse needs of our clients. Our team is dedicated to ensuring individuals and businesses are protected against unforeseen risks by offering a wide range of life insurance and non-life insurance products
-                            </span>
-                        </div>
-                    </SlideIn>
+                        <span className="text-black text-base md:text-xl font-normal font-sans leading-[37px] tracking-tight">At </span>
+                        <span className="text-black text-base md:text-xl font-bold font-sans leading-[37px] tracking-tight">
+                            Truebond Insurance Brokers Limited
+                        </span>
+                        <span className="text-black text-base md:text-xl font-normal font-sans leading-[37px] tracking-tight">
+                            , where we specialize in providing comprehensive insurance solutions tailored to meet the diverse needs of our clients. Our team is dedicated to ensuring individuals and businesses are protected against unforeseen risks by offering a wide range of life insurance and non-life insurance products
+                        </span>
+                    </div>
                 </div>
             </div>
 
