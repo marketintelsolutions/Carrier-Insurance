@@ -5,7 +5,7 @@ const Links = () => {
     return (
         <div className='hidden md:flex fixed z-[99] top-0 right-0 h-[95%] flex-col justify-end items-end'>
             <div className='h-[147px] '>
-                <Link to={'/quote'} className='relative  w-[147px] h-[59px] bg-[#060606] px-[2px]  flex justify-center items-center rounded-b-[30px] rotate-[90deg] translate-x-[44px]'>
+                <Link to={'/claims'} className='relative  w-[147px] h-[59px] bg-[#060606] px-[2px]  flex justify-center items-center rounded-b-[30px] rotate-[90deg] translate-x-[44px]'>
                     <p className=' text-white '>Get Quote  </p>
                 </Link>
             </div>

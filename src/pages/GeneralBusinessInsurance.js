@@ -7,7 +7,7 @@ const GeneralBusinessInsurance = () => {
     return (
         <>
             <SharedBanner
-                img={'nightcity.jpg'}
+                img={'generalinsurance'}
                 heading={'Comprehensive protection for individuals and corporations'}
                 page={'General Business Insurance'}
             />

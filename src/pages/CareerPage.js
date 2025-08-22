@@ -139,7 +139,7 @@ const CareerPage = () => {
     return (
         <>
             <SharedBanner
-                img={'nightcity.jpg'}
+                img={'careerbanner'}
                 heading={"At Truebond Insurance Brokers, we believe in building more than just policies"}
                 page={'Grow With Truebond Insurance'}
             />

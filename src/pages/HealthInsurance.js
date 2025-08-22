@@ -2,6 +2,7 @@ import React from 'react';
 import { FaHeartbeat, FaHospital, FaAmbulance, FaPills, FaStethoscope, FaUserMd, FaShieldAlt, FaUsers, FaCheckCircle, FaStar } from 'react-icons/fa';
 import { FaUser } from 'react-icons/fa6';
 import SharedBanner from '../components/SharedBanner';
+import { Link } from 'react-router-dom';
 
 const HealthInsurance = () => {
     const coverageAreas = [
@@ -27,7 +28,7 @@ const HealthInsurance = () => {
     return (
         <>
             <SharedBanner
-                img={'nightcity.jpg'}
+                img={'healthInsurance'}
                 heading={'Comprehensive health coverage for individuals and corporate employees with wide range medical protection'}
                 page={'Health Insurance'}
             />
@@ -172,12 +173,16 @@ const HealthInsurance = () => {
                             plan that meets your specific needs and budget.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-red-700 transition-colors">
-                                Get a Quote
-                            </button>
-                            <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-700 transition-colors">
-                                Speak to Advisor
-                            </button>
+                            <Link to={'/claims'}>
+                                <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-red-700 transition-colors">
+                                    Get a Quote
+                                </button>
+                            </Link>
+                            <Link to={'/contact'}>
+                                <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-700 transition-colors">
+                                    Speak to Advisor
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

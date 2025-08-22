@@ -2,6 +2,7 @@ import React from 'react'
 import { FaChevronRight } from 'react-icons/fa'
 import { FaArrowRightLong } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
+import SlideIn from '../SlideIn'
 
 const services = [
     {
@@ -29,50 +30,63 @@ const services = [
 const SectionFive = () => {
     return (
         <section className='bg-[#F5F5F5] px-6 xl:px-0 pt-20 pb-40'>
-            <div className='md:w-[80%] max-w-max mx-auto'>
-                <h2 className="md:w-[264px] h-[72px] text-[#cc1517] text-3xl md:text-4xl lg:text-5xl font-bold font-['Lato']">Claims </h2>
-                <p className="max-w-[542px] h-[117px] text-[#5a5a5a] text-xl font-normal font-sans leading-normal">Our claims process is designed to make things simple, efficient, and supportive during times of need.</p>
-            </div>
+            <SlideIn duration={700} distance={50} direction="left" delay={100}>
+                <div className='md:w-[80%] max-w-max mx-auto'>
+                    <h2 className="md:w-[264px] h-[72px] text-[#cc1517] text-3xl md:text-4xl lg:text-5xl font-bold font-['Lato']">Claims </h2>
+                    <p className="max-w-[542px] h-[117px] text-[#5a5a5a] text-xl font-normal font-sans leading-normal">Our claims process is designed to make things simple, efficient, and supportive during times of need.</p>
+                </div>
+            </SlideIn>
 
             <div className='relative md:w-[80%] lg:h-[664px] max-w-max mx-auto flex flex-wrap lg:flex-nowrap gap-4'>
                 <div className=''>
                     <div className='flex flex-wrap lg:flex-nowrap gap-4'>
-                        <div className="w-full md:max-w-[468px] h-[297px] bg-[#666666] py-[54px] px-[33px] rounded-[30px]" >
-                            <h3 className="text-white text-2xl font-bold font-['Lato'] tracking-tight">How to File a Claim:</h3>
-                            <p className=" h-[82px] mt-[18px] mb-[25px] text-white text-lg font-normal font-sans leading-normal">Our claims process is designed to make things simple, efficient, and supportive during times of need.</p>
-                            <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] items-center inline-flex justify-between">
-                                <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">Read More </span>
-                                <span className='text-white'><FaArrowRightLong /></span>
-                            </button>
-                        </div>
-                        <div className="w-full md:max-w-[468px] h-[297px] bg-[#666666] py-[54px] px-6 md:px-[33px] rounded-[30px]" >
-                            <h3 className="text-white text-2xl font-bold font-['Lato'] tracking-tight">Documents Required:</h3>
-                            <p className=" h-[82px] mt-[18px] mb-[25px] text-white text-lg font-normal font-sans leading-normal">An outline of necessary documents and evidence needed to initiate a claim.</p>
-                            <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] items-center inline-flex justify-between">
-                                <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">Read More </span>
-                                <span className='text-white'><FaArrowRightLong /></span>
-                            </button>
-                        </div>
+                        <SlideIn duration={700} distance={60} direction="bottom" delay={200}>
+                            <div className="w-full md:max-w-[468px] h-[297px] bg-[#666666] py-[54px] px-[33px] rounded-[30px]" >
+                                <h3 className="text-white text-2xl font-bold font-['Lato'] tracking-tight">How to File a Claim:</h3>
+                                <p className=" h-[82px] mt-[18px] mb-[25px] text-white text-lg font-normal font-sans leading-normal">Our claims process is designed to make things simple, efficient, and supportive during times of need.</p>
+                                <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] items-center inline-flex justify-between">
+                                    <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">Read More </span>
+                                    <span className='text-white'><FaArrowRightLong /></span>
+                                </button>
+                            </div>
+                        </SlideIn>
+
+                        <SlideIn duration={700} distance={60} direction="bottom" delay={350}>
+                            <div className="w-full md:max-w-[468px] h-[297px] bg-[#666666] py-[54px] px-6 md:px-[33px] rounded-[30px]" >
+                                <h3 className="text-white text-2xl font-bold font-['Lato'] tracking-tight">Documents Required:</h3>
+                                <p className=" h-[82px] mt-[18px] mb-[25px] text-white text-lg font-normal font-sans leading-normal">An outline of necessary documents and evidence needed to initiate a claim.</p>
+                                <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] items-center inline-flex justify-between">
+                                    <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">Read More </span>
+                                    <span className='text-white'><FaArrowRightLong /></span>
+                                </button>
+                            </div>
+                        </SlideIn>
                     </div>
-                    <div className='w-full   h-full max-h-[351px] mt-4 rounded-[30px] overflow-hidden px-6 pr-6 md:pr-[33px] flex items-center justify-end' style={{ backgroundImage: `url(/images/assistance.png)`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-                        <p className="w-[331px] text-white text-xl font-normal font-sans leading-normal">
-                            For immediate assistance,
-                            <br />
-                            contact our Claims Support Line at
-                            <br />
-                            09062979787, 09062979786,
-                            <br />
-                            09062979782.
-                        </p>
+
+                    <div className='w-full h-full max-h-[351px] mt-4 rounded-[30px] overflow-hidden px-6 pr-6 md:pr-[33px] flex items-center justify-end' style={{ backgroundImage: `url(/images/assistance.png)`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+                        <SlideIn duration={800} distance={50} direction="left" delay={500}>
+                            <p className="w-[331px] text-white text-xl font-normal font-sans leading-normal">
+                                For immediate assistance,
+                                <br />
+                                contact our Claims Support Line at
+                                <br />
+                                09062979787, 09062979786,
+                                <br />
+                                09062979782.
+                            </p>
+                        </SlideIn>
                     </div>
                 </div>
+
                 <div className="md:w-[468px] w-full hidden lg:flex bg-[#cc1517] rounded-[30px] pb-[99px] gap-11 items-center justify-end flex-col " >
-                    <div className='flex flex-col gap-11'>
-                        <p className="w-[257px] h-[110px] text-white text-xl font-normal font-sans leading-normal">Our dedicated claims team is available to guide you through the entire process, from start to finish.</p>
-                        <Link to={'/contact'} className="w-[173px] h-[46px] px-[20px] py-[15px] bg-primaryRed rounded-[50px] border-2 border-white justify-center items-center inline-flex">
-                            <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">Visit help center</span>
-                        </Link>
-                    </div>
+                    <SlideIn duration={800} distance={80} direction="right" delay={300}>
+                        <div className='flex flex-col gap-11'>
+                            <p className="w-[257px] h-[110px] text-white text-xl font-normal font-sans leading-normal">Our dedicated claims team is available to guide you through the entire process, from start to finish.</p>
+                            <Link to={'/contact'} className="w-[173px] h-[46px] px-[20px] py-[15px] bg-primaryRed rounded-[50px] border-2 border-white justify-center items-center inline-flex">
+                                <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">Visit help center</span>
+                            </Link>
+                        </div>
+                    </SlideIn>
                 </div>
 
             </div>

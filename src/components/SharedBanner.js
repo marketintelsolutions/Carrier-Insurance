@@ -11,7 +11,7 @@ const SharedBanner = ({ img, heading, page }) => {
     }, []);
 
     return (
-        <section className='relative w-full  mx-auto h-[50vh] md:h-[80vh]   flex flex-col justify-center' style={{ backgroundImage: 'url(/images/nightcity.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+        <section className='relative w-full  mx-auto h-[50vh] md:h-[80vh]   flex flex-col justify-center' style={{ backgroundImage: `url(/images/${img}.jpg)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
 
             <div className='relative z-[2] flex  justify-between gap-[50px] items-center w-[90%] max-w-max mx-auto '>
                 <div className='hidden lg:flex'><BannerAnimation size={500} /></div>
