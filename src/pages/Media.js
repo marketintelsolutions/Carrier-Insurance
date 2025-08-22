@@ -11,7 +11,7 @@ const Media = () => {
     return (
         <>
             <SharedBanner
-                img={'nightcity.jpg'}
+                img={'mediabanner'}
                 heading={"Stay informed with the latest updates and insights"}
                 page={'Media'}
             />

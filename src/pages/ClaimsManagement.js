@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaClipboardCheck, FaClock, FaHandshake, FaUserTie, FaChartLine, FaFileAlt, FaPhone, FaShieldAlt, FaCheckCircle, FaUsers, FaGavel, FaCog } from 'react-icons/fa';
 import SharedBanner from '../components/SharedBanner';
+import { Link } from 'react-router-dom';
 
 const ClaimsManagement = () => {
     const processSteps = [
@@ -53,7 +54,7 @@ const ClaimsManagement = () => {
     return (
         <>
             <SharedBanner
-                img={'nightcity.jpg'}
+                img={'claimsmanagement'}
                 heading={'Quick, easy and efficient claim process to ensure help is provided when you need it most'}
                 page={'Claims Management'}
             />
@@ -214,12 +215,16 @@ const ClaimsManagement = () => {
                             and get the support you need.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-red-700 transition-colors">
-                                File a Claim
-                            </button>
-                            <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-700 transition-colors">
-                                Speak to Advisor
-                            </button>
+                            <Link to={'/claims'}>
+                                <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-red-700 transition-colors">
+                                    File a Claim
+                                </button>
+                            </Link>
+                            <Link to={'/contact'}>
+                                <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-700 transition-colors">
+                                    Speak to Advisor
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

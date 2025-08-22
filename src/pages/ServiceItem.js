@@ -19,7 +19,7 @@ const ServiceItem = () => {
         <>
             {/* <ServiceItemBanner serviceItem={serviceItem} /> */}
             <SharedBanner
-                img={'nightcity.jpg'}
+                img={serviceItem.image}
                 heading={serviceItem.heading}
                 page={'INSURANCE INDUSTRY'}
             />

@@ -85,7 +85,7 @@ export const services = [
         heading: 'AVIATION SECTOR',
         slug: 'aviation-sector',
         icon: 'aviation',
-        image: 'motorimage',
+        image: 'aviationsector',
         details: `
         <p>
              Aviation insurance is a sensitive insurance sector which includes so many insurance products such as: Aircraft Hull Insurance, Airport Owners’ and Operators’ Liability Insurance, Passenger Liability Insurance, Airport Owners’ and Operators’ Liability Insurance, Hangar Keeper’s Liability, Aviation Product Liability Insurance.
@@ -96,7 +96,7 @@ export const services = [
         icon: 'construction',
         heading: 'CONSTRUCTION SECTOR',
         slug: 'construction-sector',
-        image: 'fireimage',
+        image: 'constructionsector',
         details: `
         <p>
              This is well known as C.A.R it’s an insurance for ongoing construction against fortuitous loss or damage on the building. It covers Material Damage Section and Third-Party Liability Section.
@@ -107,7 +107,7 @@ export const services = [
         icon: 'healthcare',
         heading: 'HEALTHCARE SECTOR',
         slug: 'healthcare-pharmaceutical-sector',
-        image: 'lifeimage',
+        image: 'healthcaresector',
         details: `
         <p>
              This is well known as C.A.R it’s an insurance for ongoing construction against fortuitous loss or damage on the building. It covers Material Damage Section and Third-Party Liability Section.
@@ -118,7 +118,7 @@ export const services = [
         icon: 'gas',
         heading: 'OIL AND GAS',
         slug: 'oil-and-gas',
-        image: 'fidelityimage',
+        image: 'oil&gassector',
         details: `
         <p>
         This Insurance provides a wide range of coverage for exploration & production (E&P) risk exposures. 
@@ -129,7 +129,7 @@ export const services = [
         icon: 'manufacturing',
         heading: 'MANUFACTURING SECTOR',
         slug: 'manufacturing-sector',
-        image: 'householdimage',
+        image: 'manufacturingsector',
         details: `
         <p>
              This is well known as C.A.R it’s an insurance for ongoing construction against fortuitous loss or damage on the building. It covers Material Damage Section and Third-Party Liability Section.
@@ -140,7 +140,7 @@ export const services = [
         icon: 'agriculture',
         heading: 'AGRICULTURAL SECTOR',
         slug: 'manufacturing-sector',
-        image: 'householdimage',
+        image: 'agriculturalsector',
         details: `
         <p>
              This is well known as C.A.R it’s an insurance for ongoing construction against fortuitous loss or damage on the building. It covers Material Damage Section and Third-Party Liability Section.
@@ -151,7 +151,7 @@ export const services = [
         icon: 'transportation',
         heading: 'TRANSPORTATION SECTOR',
         slug: 'manufacturing-sector',
-        image: 'householdimage',
+        image: 'transportsector',
         details: `
         <p>
              This is well known as C.A.R it’s an insurance for ongoing construction against fortuitous loss or damage on the building. It covers Material Damage Section and Third-Party Liability Section.

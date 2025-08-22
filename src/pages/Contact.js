@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <>
             <SharedBanner
-                img={'nightcity.jpg'}
+                img={'contactbanner'}
                 heading={"Get in touch with Truebond Insurance Brokerage Limited for any inquiries, consultations, or support"}
                 page={'Contact us'}
             />

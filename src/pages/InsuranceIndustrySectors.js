@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
 import { FaIndustry, FaPlane, FaBuilding, FaHospital, FaOilCan, FaCog, FaSeedling, FaTruck, FaChevronDown, FaChevronUp, FaShieldAlt, FaUsers, FaMoneyBill } from 'react-icons/fa';
 import SharedBanner from '../components/SharedBanner';
+import { Link } from 'react-router-dom';
 
 const InsuranceIndustrySectors = () => {
-    const [expandedSector, setExpandedSector] = useState(null);
+    const [expandedSectors, setExpandedSectors] = useState(new Set(['aviation', 'construction', 'healthcare', 'oil-gas', 'manufacturing', 'agriculture', 'transportation']));
 
     const toggleSector = (sectorId) => {
-        setExpandedSector(expandedSector === sectorId ? null : sectorId);
+        const newExpandedSectors = new Set(expandedSectors);
+        if (newExpandedSectors.has(sectorId)) {
+            newExpandedSectors.delete(sectorId);
+        } else {
+            newExpandedSectors.add(sectorId);
+        }
+        setExpandedSectors(newExpandedSectors);
     };
 
     const sectors = [
@@ -115,7 +122,7 @@ const InsuranceIndustrySectors = () => {
     return (
         <>
             <SharedBanner
-                img={'nightcity.jpg'}
+                img={'insuranceindustry'}
                 heading={'Specialized insurance solutions across diverse industries with tailored coverage for specific sector risks'}
                 page={'Insurance Industry & Sectors'}
             />
@@ -136,7 +143,7 @@ const InsuranceIndustrySectors = () => {
                     <div className="space-y-6">
                         {sectors.map((sector, index) => {
                             const IconComponent = sector.icon;
-                            const isExpanded = expandedSector === sector.id;
+                            const isExpanded = expandedSectors.has(sector.id);
                             const isEven = index % 2 === 0;
 
                             return (
@@ -208,7 +215,7 @@ const InsuranceIndustrySectors = () => {
                     </div>
 
                     {/* Statistics Section */}
-                    <div className="mt-16 bg-gradient-to-r from-primaryRed to-primaryRed/80 rounded-xl shadow-lg p-8 text-white">
+                    <div className="mt-16 bg-primaryRed/30 rounded-xl shadow-lg p-8 text-black">
                         <div className="text-center mb-8">
                             <h2 className="text-3xl font-montserrat font-bold mb-4">
                                 Industry Coverage Statistics
@@ -282,12 +289,16 @@ const InsuranceIndustrySectors = () => {
                             tailored to your sector's unique requirements.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-red-700 transition-colors">
-                                Get Sector Quote
-                            </button>
-                            <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-700 transition-colors">
-                                Speak to Specialist
-                            </button>
+                            <Link to={'/claims'}>
+                                <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-red-700 transition-colors">
+                                    Get Sector Quote
+                                </button>
+                            </Link>
+                            <Link to={'/contact'}>
+                                <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-700 transition-colors">
+                                    Speak to Specialist
+                                </button>
+                            </Link >
                         </div>
                     </div>
 

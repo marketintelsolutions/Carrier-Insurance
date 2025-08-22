@@ -33,7 +33,7 @@ const ClaimsForm = () => {
                 </div>
 
                 <textarea name="message" id="message" className='py-3 px-5 text-base rounded-[5px] h-[200px] w-full' />
-
+                <button className='py-4 w-full text-white bg-primaryRed rounded-[5px]'>Submit</button>
             </form>
         </section>
     )

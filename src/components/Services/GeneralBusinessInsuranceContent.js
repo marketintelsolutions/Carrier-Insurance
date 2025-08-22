@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaShieldAlt, FaBuilding, FaUser, FaChevronDown, FaChevronUp, FaFire, FaCar, FaHome, FaPlane, FaShip, FaMoneyBill, FaUsers, FaCog, FaSeedling, FaHeart, FaGavel, FaLaptop } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const GeneralBusinessInsurance = () => {
     const [openSections, setOpenSections] = useState(['individual', 'corporate']);
@@ -263,12 +264,16 @@ const GeneralBusinessInsurance = () => {
                         tailored to your specific business needs and requirements.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-red-700 transition-colors">
-                            Get a Quote
-                        </button>
-                        <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-700 transition-colors">
-                            Speak to Advisor
-                        </button>
+                        <Link to={'/claims'}>
+                            <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-red-700 transition-colors">
+                                Get a Quote
+                            </button>
+                        </Link>
+                        <Link to={'/contact'}>
+                            <button className="bg-primaryBlack text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-gray-700 transition-colors">
+                                Speak to Advisor
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
