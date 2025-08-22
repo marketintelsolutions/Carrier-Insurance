@@ -8,7 +8,7 @@ const Claims = () => {
     return (
         <>
             <SharedBanner
-                img={'nightcity.jpg'}
+                img={'nightcity'}
                 heading={"Our dedicated claims team is available to guide you through the entire process, from start to finish"}
                 page={'claims'}
             />
