@@ -8,7 +8,7 @@ const SectionTwo = () => {
         <section className='relative py-20 md:py-[190px] px-6 xl:px-0 w-full flex flex-col gap-[100px] bg-[#EFEFEF]'>
             <div className='relative  md:w-[80%] max-w-max mx-auto flex flex-wrap lg:flex-nowrap gap-[40px] '>
                 {/* <div className="w-[30%] h-96 bg-[#cc1517] rounded-[50px]" /> */}
-                <img src="/images/nightcity.jpg" alt="night city" className='md:max-w-[40%] rounded-[20px]' />
+                <img src="/images/about.jpg" alt="night city" className='md:max-w-[40%] rounded-[20px]' />
                 <div className="md:w-[55%] relative md:h-96 md:pl-[39px] md:pr-[60px] md:py-[70px]  md:border rounded-[50px] justify-end items-center gap-2.5 inline-flex">
                     <div className="">
 

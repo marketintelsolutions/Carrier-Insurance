@@ -11,7 +11,7 @@ const About = () => {
         <>
             {/* <AboutBanner /> */}
             <SharedBanner
-                img={'nightcity.jpg'}
+                img={'nightcity'}
                 heading={'We specialize in providing comprehensive insurance solutions '}
                 page={'ABOUT'}
             />
