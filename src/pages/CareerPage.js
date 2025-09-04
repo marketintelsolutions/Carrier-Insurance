@@ -343,7 +343,7 @@ const CareerPage = () => {
 
                         <div className="mt-6 pt-6 border-t border-primaryGrey/30">
                             <p className="text-primaryGrey font-inter text-sm">
-                                Email your application to: <span className="font-semibold text-primaryBlack">info@carrierinsurancebrokers.com</span>
+                                Email your application to: <span className="font-semibold text-primaryBlack">info@truebondinsurancebrokers.com</span>
                             </p>
                         </div>
                     </div>

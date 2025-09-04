@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaArrowRight, FaChevronRight, FaFacebook, FaInstagram, FaLocationDot, FaTwitter } from 'react-icons/fa6'
+import { FaArrowRight, FaChevronRight, FaFacebook, FaInstagram, FaLinkedin, FaLocationDot, FaTwitter } from 'react-icons/fa6'
 import { IoMail } from 'react-icons/io5'
 import { PiPhoneCallFill } from 'react-icons/pi'
 import BannerAnimation from './BannerAnimation'
@@ -20,8 +20,12 @@ const Footer = () => {
                 <div className='flex flex-col gap-4 px-[50px]  items-center'>
                     <span className='text-[45px]  text-primaryRed'><IoMail /></span>
                     <p className="h-[45px] text-center text-black text-[14px] font-normal font-sans leading-tight tracking-tight">
-                        it-@carrierinsurancebrokers.com,
-                        <br />it-@carrierinsurancebrokers.com</p>
+                        enquiry@truebondinsurancebrokers.com,
+                        <br />
+                        info@truebondinsurancebrokers.com,
+                        <br />
+                        it@truebondinsurancebrokers.com
+                    </p>
                 </div>
 
                 <div className=' h-[139px] w-0.5  bg-[#666666]'></div>
@@ -120,9 +124,12 @@ const Footer = () => {
                 <div className='mt-[24px] border-t-4 border-primaryRed pt-[22px] flex flex-wrap lg:flex-nowrap gap-5 justify-between'>
                     <p className="text-[#fffefe] text-sm md:text-base font-normal font-sans leading-relaxed">© Truebond Insurance Brokers Limited {new Date().getFullYear()}. All Right Reserved.</p>
                     <div className='flex gap-[38px] text-white text-xl md:text-2xl'>
-                        <span><FaInstagram /></span>
-                        <span><FaTwitter /></span>
-                        <span><FaFacebook /></span>
+                        <a href='https://www.linkedin.com/posts/truebond-insurance-brokers-limited-13904a347_our-job-at-truebond-insurance-brokers-limited-activity-7359216834753052674-C9mC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFaueD0BQEPIu9GzjzmDM1V20qdiPMxKGGk' target='_blank'><FaLinkedin /></a>
+                        <a
+                            href='https://www.instagram.com/p/DMxeWN6seTw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' target='_blank'>
+                            <FaInstagram />
+                        </a>
+                        {/* <span><FaFacebook /></span> */}
                     </div>
                 </div>
             </div>
