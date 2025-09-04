@@ -5,17 +5,17 @@ export const team = [
     //     title: '',
     //     image: ''
     // },
-    {
-        slug: 'chief-edward-ohore',
-        name: 'Chief Edward Ohore',
-        title: 'Chairman',
-        image: 'teamperson',
-        details: [
-            'B.Sc. (Hons.) in Banking & Finance. Chartered Banker (ACIB) with over 22 years of banking experience.',
-            'Vice-President at First City Merchant Bank Limited.',
-            'Currently the Managing Consultant of Edward Consulting School of Banking.'
-        ]
-    },
+    // {
+    //     slug: 'chief-edward-ohore',
+    //     name: 'Chief Edward Ohore',
+    //     title: 'Chairman',
+    //     image: 'teamperson',
+    //     details: [
+    //         'B.Sc. (Hons.) in Banking & Finance. Chartered Banker (ACIB) with over 22 years of banking experience.',
+    //         'Vice-President at First City Merchant Bank Limited.',
+    //         'Currently the Managing Consultant of Edward Consulting School of Banking.'
+    //     ]
+    // },
     {
         slug: 'lola-oshiafi',
         name: 'Lola Oshiafi',
@@ -40,18 +40,18 @@ export const team = [
             'He is currently an oil/gas industry consultant and sits on the Board of various companies servicing Oil and Gas sector.'
         ]
     },
-    {
-        slug: 'james-olutayo-amore',
-        name: 'James Olutayo Amore',
-        title: 'Technical Adviser',
-        image: 'teamperson',
-        details: [
-            'HND, MSC, ACIIN. James Amore is the Technical Adviser of the Company.',
-            'He is an Associate of The Chartered Insurance Institute of Nigeria, a Masters degree holder in Managerial Psychology from the University of Ibadan.',
-            'An Insurance and Reinsurance practitioner with over 18 years of experience.',
-            'He has attended many courses, seminars and conferences in Reinsurance, Underwriting and claims both locally and abroad.'
-        ]
-    },
+    // {
+    //     slug: 'james-olutayo-amore',
+    //     name: 'James Olutayo Amore',
+    //     title: 'Technical Adviser',
+    //     image: 'teamperson',
+    //     details: [
+    //         'HND, MSC, ACIIN. James Amore is the Technical Adviser of the Company.',
+    //         'He is an Associate of The Chartered Insurance Institute of Nigeria, a Masters degree holder in Managerial Psychology from the University of Ibadan.',
+    //         'An Insurance and Reinsurance practitioner with over 18 years of experience.',
+    //         'He has attended many courses, seminars and conferences in Reinsurance, Underwriting and claims both locally and abroad.'
+    //     ]
+    // },
     {
         slug: 'dr-larry-osa-afiana',
         name: 'Dr. Larry O. Osa-Afiana',
@@ -234,7 +234,7 @@ export const accordion = [
 
 export const navData = [
     {
-        text: "Company",
+        text: "About Us",
         desc: "We provide tailored insurance solutions for individuals, businesses, and organizations, ensuring comprehensive coverage and peace of mind. ",
         items: [
             {
@@ -378,26 +378,47 @@ export const navData = [
         ],
     },
     {
-        text: "Media",
+        text: "Claims",
         desc:
-            "Stay informed with the latest updates and insights",
+            "We're always looking for passionate, motivated individuals who want to make a difference in people's lives.",
         items: [
             {
-                heading: "STAY INFORMED",
+                heading: "FILE YOUR CLAIMS",
                 subItems: [
                     {
-                        path: "/media",
-                        text: "News Insights",
+                        path: "/claims",
+                        text: "How to File",
                     },
                     {
-                        path: "/media",
-                        text: "Media",
+                        path: "/claims",
+                        text: "Documents Required",
                     },
+
                 ],
             },
-
         ],
     },
+    // {
+    //     text: "Media",
+    //     desc:
+    //         "Stay informed with the latest updates and insights",
+    //     items: [
+    //         {
+    //             heading: "STAY INFORMED",
+    //             subItems: [
+    //                 {
+    //                     path: "/media",
+    //                     text: "News Insights",
+    //                 },
+    //                 {
+    //                     path: "/media",
+    //                     text: "Media",
+    //                 },
+    //             ],
+    //         },
+
+    //     ],
+    // },
     {
         text: "Contact",
         desc:
