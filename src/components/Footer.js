@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='bg-[#D9D9D9] hidden lg:flex  py-6 px-[40px] justify-between items-center rounded-[30px] w-[75%] max-w-[1248px] translate-y-[50px] mx-auto '>
                 <div className='flex flex-col gap-4 px-[50px] items-center'>
                     <span className='text-[45px] text-primaryRed'><FaLocationDot /></span>
-                    <p className="h-[45px] text-center text-black text-[14px] font-normal font-sans leading-tight tracking-tight">Plot 22, Akiogun New Market Road, <br />Oniru Victoria Island, Lagos</p>
+                    <p className="h-[45px] text-center text-black text-[14px] font-normal font-sans leading-tight tracking-tight">Plot 22, Akiogun Road, New Market Road, <br />Oniru, Victoria Island, Lagos</p>
                 </div>
 
                 <div className=' h-[139px] w-0.5  bg-[#666666]'></div>
