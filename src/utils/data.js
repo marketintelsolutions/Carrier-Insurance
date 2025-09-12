@@ -1,31 +1,19 @@
 export const team = [
-    // {
-    //     slug: '',
-    //     name: '',
-    //     title: '',
-    //     image: ''
-    // },
-    // {
-    //     slug: 'chief-edward-ohore',
-    //     name: 'Chief Edward Ohore',
-    //     title: 'Chairman',
-    //     image: 'teamperson',
-    //     details: [
-    //         'B.Sc. (Hons.) in Banking & Finance. Chartered Banker (ACIB) with over 22 years of banking experience.',
-    //         'Vice-President at First City Merchant Bank Limited.',
-    //         'Currently the Managing Consultant of Edward Consulting School of Banking.'
-    //     ]
-    // },
+    //{
+      //   slug: '',
+        // name: '',
+         //title: '',
+         //image: ''
+     //},
+     
     {
         slug: 'lola-oshiafi',
         name: 'Lola Oshiafi',
         title: 'GMD',
         image: 'teamperson',
         details: [
-            'Lola holds a B.Sc. in Accounting from Ahmadu Bello University, Zaria, and is an alumnus of Lagos Business School. She is an Associate of the Institute of Chartered Accountants of Nigeria (ICAN) and holds an MBA.',
-            'With over 20 years of experience in the financial industry, she began her banking career at Nigerian American Merchant Bank (now First City Monument Bank) during her NYSC. She later held senior roles at Citizens International Bank (now Enterprise Bank) and FSB International Bank (now Fidelity Bank), where she rose to Senior Manager and Head of Corporate Banking.',
-            'Since 2002, Lola has served as Managing Director of Truebond Group Limited, overseeing operations across capital markets, private equity, oil and gas, insurance, publishing and engineering.',
-            'She has attended specialized training programs at Citicorp Institute in New York, INSEAD France, and Lagos Business School.'
+            'BOARD VALUE PROPOSITION',
+            'Strategic leader with 20+ years of cross-sector experience spanning law, banking, coaching, and counselling. Combines legal, financial, and human capital expertise to drive organizational performance, stakeholder engagement, and governance excellence. Skilled in leadership development, relationship management, and organizational transformation. Brings a unique blend of corporate discipline and emotional intelligence to board decision-making.',
         ]
     },
     {
@@ -52,6 +40,17 @@ export const team = [
     //         'He has attended many courses, seminars and conferences in Reinsurance, Underwriting and claims both locally and abroad.'
     //     ]
     // },
+    {
+        slug: 'TAIYE ALUKO',
+        name: 'TAIYE ALUKO',
+        title: 'Director',
+        image: 'teamperson',
+        details: [
+            'B.Sc. (Hons.) in Banking & Finance. Chartered Banker (ACIB) with over 22 years of banking experience.',
+            'Vice-President at First City Merchant Bank Limited.',
+            'Currently the Managing Consultant of Edward Consulting School of Banking.'
+        ]
+    },
     {
         slug: 'dr-larry-osa-afiana',
         name: 'Dr. Larry O. Osa-Afiana',
