@@ -2,6 +2,7 @@ import React from 'react'
 import { FaArrowRight, FaLocationDot, FaPhoneVolume } from 'react-icons/fa6'
 import { IoMailOpenOutline } from 'react-icons/io5'
 import SlideIn from '../SlideIn'
+import ContactForm from './ContactForm'
 
 const ContactDetails = () => {
     return (
@@ -64,21 +65,7 @@ const ContactDetails = () => {
                     <SlideIn className='flex flex-col justify-between gap-5' duration={700} distance={50} direction="right" delay={700}>
                         <p className="max-w-[356px] h-[78px] text-black text-sm md:text-base font-light font-['Inter'] leading-relaxed">Let us know further how we can be of help to you. Our team will get intouch with you, kindly fill the form and submit.</p>
 
-                        <div className='w-full  bg-[#D9D5D5] py-8 px-[34px] rounded-[30px] flex flex-col gap-2.5 '>
-                            <input type="text" name="" id="" className='bg-white p-[15px]' placeholder='Name' />
-                            <input type="email" name="email" id="email" className='bg-white p-[15px]' placeholder='Email' />
-                            <input type="text" name="subject" id="subject" className='bg-white p-[15px]' placeholder='Subject' />
-                            <select name="" id="" className='bg-white p-[15px]'>
-                                <option disabled selected >--Reason for contact--</option>
-                                <option value="Support">Support</option>
-                                <option value="Partnership">Partnership</option>
-                                <option value="Feedback">Feedback</option>
-                            </select>
-                            <textarea name="Message" id="Message" className='h-[150px]'></textarea>
-                            <button className="mt-[14px] w-[120px] h-14 relative rounded-[35px] bg-primaryRed border border-primaryRed hover:bg-white text-white hover:text-primaryRed ">
-                                <p className=" font-semibold text-lg font-['Sans'] leading-tight tracking-tight">Send</p>
-                            </button>
-                        </div>
+                        <ContactForm />
                     </SlideIn>
                 </div>
             </div>
