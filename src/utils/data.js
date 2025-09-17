@@ -10,41 +10,40 @@ export const team = [
         slug: 'lola-oshiafi',
         name: 'Lola Oshiafi',
         title: 'GMD',
-        image: 'teamperson',
+        image: 'lola',
         details: [
             'BOARD VALUE PROPOSITION',
             'Strategic leader with 20+ years of cross-sector experience spanning law, banking, coaching, and counselling. Combines legal, financial, and human capital expertise to drive organizational performance, stakeholder engagement, and governance excellence. Skilled in leadership development, relationship management, and organizational transformation. Brings a unique blend of corporate discipline and emotional intelligence to board decision-making.',
         ]
     },
-    {
-        slug: 'dr-femi-lalude',
-        name: 'Dr. Femi Lalude',
-        title: 'Director',
-        image: 'teamperson',
-        details: [
-            'He retired as Director and General Manager for Shell Nigeria Exploration Production Company, SNEPCO a Shell in deep offshore and fair inland oil and gas exploration.',
-            'He was one-time General Manager of Shell\'s Western Division in Warri, and prior to that the Engineering Manager for Shell Nigeria.',
-            'He also had international exposure with Shell in Holland and USA in earlier years. He was a Senior Designer (Mechanical) Engineer for Nuclear Power plants at Bechtel Corporation of US.',
-            'He is currently an oil/gas industry consultant and sits on the Board of various companies servicing Oil and Gas sector.'
-        ]
-    },
     // {
-    //     slug: 'james-olutayo-amore',
-    //     name: 'James Olutayo Amore',
-    //     title: 'Technical Adviser',
+    //     slug: 'dr-femi-lalude',
+    //     name: 'Dr. Femi Lalude',
+    //     title: 'Director',
     //     image: 'teamperson',
     //     details: [
-    //         'HND, MSC, ACIIN. James Amore is the Technical Adviser of the Company.',
-    //         'He is an Associate of The Chartered Insurance Institute of Nigeria, a Masters degree holder in Managerial Psychology from the University of Ibadan.',
-    //         'An Insurance and Reinsurance practitioner with over 18 years of experience.',
-    //         'He has attended many courses, seminars and conferences in Reinsurance, Underwriting and claims both locally and abroad.'
+    //         'He retired as Director and General Manager for Shell Nigeria Exploration Production Company, SNEPCO a Shell in deep offshore and fair inland oil and gas exploration.',
+    //         'He was one-time General Manager of Shell\'s Western Division in Warri, and prior to that the Engineering Manager for Shell Nigeria.',
+    //         'He also had international exposure with Shell in Holland and USA in earlier years. He was a Senior Designer (Mechanical) Engineer for Nuclear Power plants at Bechtel Corporation of US.',
+    //         'He is currently an oil/gas industry consultant and sits on the Board of various companies servicing Oil and Gas sector.'
     //     ]
     // },
+    {
+        slug: 'chris-oshiafi',
+        name: 'Chris Oshiafi',
+        title: 'Director',
+        image: 'chris',
+        details: [
+            'He was the Pioneer Managing Director/CEO of Truebond Investments & Capital Limited, a Company with diverse interests in Oil & Gas, Telecommunications, Power and the Capital Markets. He has also worked with the firm of Damitop Consulting Limited as Managing Partner where he worked on a number of World Bank projects for the Federal and several State Governments. He served as Executive Director (Investment Banking) of Citizens International Bank (now Heritage Bank Limited) until his appointment as the pioneer Chief Executive Officer of PanAfrican Capital Holdings Limited.',
+            'He is a Fellow of the Institute of Chartered Accountants of Nigeria (ICAN), an Associate of the Chartered Insurance Institute of London, (ACII) UK and Chartered Institute of Taxation of Nigeria (ACIT). He also attended various programs at the prestigious Columbia Business School, New York, United States and INSEAD Business School, Fontainebleau, France, the IESE Business School in Barcelona, Spain and the Chief Executive Programme (CEP 17) Class of the Lagos Business School.',
+            'He was the Pioneer Managing Director/CEO of Truebond Investments & Capital Limited, a Company with diverse interests in Oil & Gas, Telecommunications, Power and the Capital Markets. He has also worked with the firm of Damitop Consulting Limited as Managing Partner where he worked on a number of World Bank projects for the Federal and several State Governments. He served as Executive Director (Investment Banking) of Citizens International Bank (now Heritage Bank Limited) until his appointment as the pioneer Chief Executive Officer of PanAfrican Capital Holdings Limited.',
+        ]
+    },
     {
         slug: 'TAIYE ALUKO',
         name: 'TAIYE ALUKO',
         title: 'Director',
-        image: 'teamperson',
+        image: 'taiye',
         details: [
             'B.Sc. (Hons.) in Banking & Finance. Chartered Banker (ACIB) with over 22 years of banking experience.',
             'Vice-President at First City Merchant Bank Limited.',
@@ -55,7 +54,7 @@ export const team = [
         slug: 'dr-larry-osa-afiana',
         name: 'Dr. Larry O. Osa-Afiana',
         title: 'Director',
-        image: 'teamperson',
+        image: 'larry',
         details: [
             'Dr. Larry Osa-Afiana has over 25 years of experience in merchant, commercial, and development banking, with expertise in corporate banking and credit risk management.',
             'He held leadership roles at the Bank of America, Citibank N.A, and was the pioneer Managing Director/CEO of Citizens International Bank and Bank of Industry.',
@@ -67,7 +66,7 @@ export const team = [
         slug: 'dr-deborah-elue',
         name: 'Dr. Deborah Elue',
         title: 'Director',
-        image: 'teamperson',
+        image: 'deborah',
         details: [
             'Deborah is a seasoned finance professional with over 20 years of experience in assurance, tax, and advisory services.',
             'As an Associate Director at Ernst & Young Nigeria, she led engagements across diverse sectors, including oil and gas, managing audits for global companies such as Seplat Energy, Mobil Oil, and Saipem.',

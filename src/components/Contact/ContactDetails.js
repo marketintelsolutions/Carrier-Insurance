@@ -28,7 +28,7 @@ const ContactDetails = () => {
                             <div className='flex gap-[30px]'>
                                 <span className='inline-flex h-fit px-3 py-2 bg-[#666] text-white text-[24px]'><IoMailOpenOutline /></span>
                                 <p className="text-[#666666] text-sm md:text-base font-normal font-['Sans'] leading-tight tracking-wide">info@carrierinsurancebrokers.com, <br />
-                                    it-@carrierinsurancebrokers.com</p>
+                                    it@truebondinsurancebrokers.com</p>
                             </div>
                             <div className='flex gap-[30px]'>
                                 <span className='inline-flex h-fit px-3 py-2 bg-[#666] text-white text-[24px]'><FaPhoneVolume /></span>
