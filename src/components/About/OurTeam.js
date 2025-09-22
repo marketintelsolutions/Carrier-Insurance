@@ -29,7 +29,7 @@ const OurTeam = () => {
                                     >
                                         <div className='w-full relative'>
                                             <div className="absolute bottom-0 right-0 w-[529px] h-[397px] bg-[#cc1517] rounded-[50px]" >
-                                                <img src="/images/hr.svg" alt="hr" />
+                                                <img src="/images/hr.svg" alt="hr" className='' />
                                             </div>
                                         </div>
                                     </SlideIn>
@@ -44,7 +44,7 @@ const OurTeam = () => {
                                     delay={300 + (index * 150)}
                                 >
                                     <div className=' shadow-[3px_6px_15px_0px_rgba(0,0,0,0.25)] rounded-[50px]'>
-                                        <img src={`/images/${item.image}.png`} alt={item.name} className='object-cover ' />
+                                        <img src={`/images/${item.image}.png`} alt={item.name} className='object-cover rounded-t-[50px]' />
 
                                         <div className="w-full px-[35px] py-[25px] bg-[#d9d9d9] rounded-bl-[50px] rounded-br-[50px] flex-col justify-start items-start gap-2.5 inline-flex">
                                             <div className="min-h-[100px] w-full flex-col justify-start items-start gap-3 flex">

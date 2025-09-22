@@ -7,7 +7,7 @@ const MemberDetails = ({ teammember }) => {
         <section className='bg-[#FFFEFE] pt-[170px] pb-[100px]'>
             <div className='w-[70%] max-w-[1234px] mx-auto grid grid-cols-[35%_60%] justify-between gap-[47px]'>
                 <div className='py-[126px]  bg-primaryRed rounded-[30px]'>
-                    <img src="/images/teampersonbig.png" alt="teampersonbig" />
+                    <img src={`/images/${teammember.image}.png`} alt="teampersonbig" />
                 </div>
                 <div className=' py-[138px] px-[53px] bg-[#D9D9D9] rounded-[30px]'>
                     <h2 className=" text-[#1e1f21] text-4xl font-semibold font-['Lato']">{teammember.name}</h2>
