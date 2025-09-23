@@ -273,7 +273,7 @@ const CareerPage = () => {
                                                 </div>
 
                                                 {/* Apply Button */}
-                                                <a href={`mailto:info@carrierinsurancebrokers.com?subject=Application for ${job.title}`} className="mt-6 inline-flex pt-6 border-t border-primaryGrey/20">
+                                                <a href={`mailto:info@truebondinsurancebrokers.com?subject=Application for ${job.title}`} className="mt-6 inline-flex pt-6 border-t border-primaryGrey/20">
                                                     <button className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-primaryRed/90 transition-colors flex items-center">
                                                         <FaEnvelope className="mr-2" />
                                                         Apply Now
@@ -329,7 +329,7 @@ const CareerPage = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
-                                href="mailto:info@carrierinsurancebrokers.com?subject=I want to join the team"
+                                href="mailto:info@truebondinsurancebrokers.com?subject=I want to join the team"
 
                                 className="bg-primaryRed text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-primaryRed/90 transition-colors inline-flex items-center justify-center"
                             >
