@@ -9,18 +9,6 @@ import React, { useEffect, useState, useRef } from "react";
 
 const carousel = [
   {
-    heading: "Protection Against Unforeseen Risks",
-    // video: "videoone",
-    video: "videoone",
-    items: [
-      "General Business Insurance",
-      "Life Business Insurance",
-      "Health Insurance",
-      "Claims Management",
-    ],
-    highlight: "We provide comprehensive insurance brokerage services that safeguard businesses and individuals",
-  },
-  {
     heading: "Trusted leader in insurance brokerage",
     // video: "videotwo",
     video: "videotwo",
@@ -31,6 +19,18 @@ const carousel = [
       "OIL AND GAS",
     ],
     highlight: "Established in 1994, we have always put our customers first, knowing that customers satisfaction is our ultimate goal.",
+  },
+  {
+    heading: "Protection Against Unforeseen Risks",
+    // video: "videoone",
+    video: "videoone",
+    items: [
+      "General Business Insurance",
+      "Life Business Insurance",
+      "Health Insurance",
+      "Claims Management",
+    ],
+    highlight: "We provide comprehensive insurance brokerage services that safeguard businesses and individuals",
   },
   {
     heading: "A professional insurance brokerage company",
