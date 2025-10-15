@@ -14,7 +14,10 @@ const SectionTwo = () => {
                 >
                     <SlideIn duration={800} distance={60} direction="left" delay={100}>
                         <div className="">
-                            <h2 className="mb-10 text-white text-4xl md:text-5xl font-bold font-['Lato']">Reassuring, knowledgeable, clear.</h2>
+                            <h2 className="mb-10 text-white text-2xl md:text-3xl font-bold font-['Lato']">We are Truthful</h2>
+                            <h2 className="mb-10 text-white text-2xl md:text-3xl font-bold font-['Lato']">We are Reliable</h2>
+                            <h2 className="mb-10 text-white text-2xl md:text-3xl font-bold font-['Lato']">We are Dependable</h2>
+                            <h2 className="mb-10 text-white text-2xl md:text-3xl font-bold font-['Lato']">We are Reassuring</h2>
                             <div className='flex gap-1.5'>
                                 <span className='inline-flex bg-[#666666] w-[143px] h-1.5'></span>
                                 <span className='inline-flex bg-white w-[32px] h-1.5'></span>

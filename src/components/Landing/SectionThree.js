@@ -4,37 +4,50 @@ import SlideIn from '../SlideIn'
 
 const services = [
     {
-        title: 'General Business Insurance',
+        title: 'Oil and Gas',
         items: [
-            'Individual Insurance',
-            'Corporate Insurance',
+            'Physical Damage / Property All Risk',
+            'Business Interruption / Loss of Production',
+            'Third-Party Liability',
         ]
     },
     {
-        title: 'Life Business Insurance',
+        title: 'Transportation',
         items: [
-            'Group Life Insurance',
-            'Individual life Insurance',
-            'Group Personal Accident Insurance',
+            'Aviation Insurance',
+            'Motor Insurance',
+            'Goods-in-Transit (GIT) Insurance',
+            'Marine Cargo Insurance',
+            'Carriers Liability Insurance',
+            'Fleet Insurance',
         ]
     },
     {
-        title: 'Health Insurance',
+        title: 'Manufacturing',
         items: [
-            'Private Individuals',
-            'Corporate Employees',
+            'Industrial All Risk (IAR) Insurance',
+            'Fire and Special Perils Insurance',
+            'Burglary/Theft Insurance',
+            'Machinery Breakdown Insurance',
+            'Business Interruption Insurance',
+            'Product Liability Insurance',
+            'Public Liability Insurance',
         ]
     },
     {
-        title: 'Claims Management',
+        title: 'Construction',
         items: [
-            'Aviation Sector',
-            'Construction Sector',
-            'Construction Sector',
-            'Oil and Gas',
-            'Manufacturing Sector',
-            'Agricultural Sector',
-            'Transportation Sector',
+            'Material Damage Section',
+            'Third-Party Liability Section',
+            'Construction Equipment Coverage',
+            'Workmanship Insurance',
+            'Project Delay Coverage',
+        ]
+    },
+    {
+        title: 'Financial services',
+        items: [
+            'General Financial Insurance',
         ]
     },
 ]
@@ -89,7 +102,7 @@ const SectionThree = () => {
                                         <img src="/images/life.svg" alt="life" />
                                         <h2 className=" text-[#060606] h-16 text-[22.19px] font-semibold font-['Lato']">{item.title}</h2>
                                     </div>
-                                    <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-sans leading-[14.90px]">Life insurance provides financial security for loved ones in the event of the policyholder's death. It ensures dependents are protected from financial hardships and can also serve as a savings or investment tool.</p>
+                                    <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-sans leading-[14.90px]">Comprehensive coverage for exploration & production (E&P) risk exposures in the oil and gas industry.</p>
                                     <button className="w-[106.65px] self-end h-[31.44px] px-[18.49px] py-[9.25px] bg-[#cc1517] rounded-[30.82px] items-center inline-flex justify-between">
                                         <span className="text-center text-white text-[9.86px] font-normal font-sans leading-3 tracking-tight">Get Started </span>
                                         <span className='text-[10px] text-white'><FaArrowRightLong /></span>

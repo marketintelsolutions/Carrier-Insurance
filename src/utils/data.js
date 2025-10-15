@@ -73,6 +73,18 @@ export const team = [
             'A fellow of ICAN with a B.Sc. in Accounting from the University of Benin, she has extensive expertise in audit strategy, IFRS compliance, financial investigations, and due diligence.',
             'Deborah has attended international training, including the Senior Managers Program in Copenhagen, and gained global experience during her secondment to EY South Africa.'
         ]
+    },
+    {
+        slug: 'yahaya-yunusa',
+        name: 'Yahaya Yunusa',
+        title: 'Director',
+        image: 'yahaya',
+        details: [
+            'Yahaya has over 23 years’ experience in the mid and downstream oil and gas sector, and has consistently driven growth, operational efficiency, and innovation in various executive capacities.',
+            'Up-till April 2025, Yahaya was engaged as a (Management Consultant and C.E.O) at AP Oil & Gas Ghana ltd. Within the past one year (2024), Yahaya directly led and coached the AP Oil and Gas team to relaunch the company that had been dormant, into full operations, with a new look, in the Retail and B2B sectors of the Ghana downstream Market.',
+            'Prior to this, Yahaya spent a period of 3 years in the Telecoms Industry where he served as CEO at American Tower Corporation, Ghana, where he led the charge in the provision of telecoms infrastructure and energy solutions to mobile network operators. Yahaya led the successful Change Management and the Post-Merger consolidation of Eaton Towers and American Tower Corporation in Ghana. The company grew to achieve a significant annual EBITDA growth of ~$100 million in 2021, reaffirming its industry leadership. Yahaya was awarded the Ghana Telecoms Tower CEO of the year 2022 by the Ghana Information Technology & Telecom Awards (GITTA)',
+            'Yahaya’s noteworthy efforts and ground breaking achievements have significantly contributed to the profitability of various businesses and market share expansions within his career in Nigeria and Internationally. This has earned Yahaya various recognitions and the reputation of a seasoned and transformational executive leader in the Oil and Gas Industry.'
+        ]
     }
 ]
 
