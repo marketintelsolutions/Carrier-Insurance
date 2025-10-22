@@ -1,11 +1,11 @@
 export const team = [
     //{
-      //   slug: '',
-        // name: '',
-         //title: '',
-         //image: ''
-     //},
-     
+    //   slug: '',
+    // name: '',
+    //title: '',
+    //image: ''
+    //},
+
     {
         slug: 'lola-oshiafi',
         name: 'Lola Oshiafi',
@@ -109,7 +109,7 @@ export const services = [
         image: 'constructionsector',
         details: `
         <p>
-             This is well known as C.A.R it’s an insurance for ongoing construction against fortuitous loss or damage on the building. It covers Material Damage Section and Third-Party Liability Section.
+            CONSTRUCTION/ALL RISK (C.A.R) insurance policy is a type of property and liability insurance designed for construction projects. It protects against physical loss or damage to contract works, materials, and equipment on the project site, as well as the legal liability of the insured for third-party bodily injury or property damage. This comprehensive policy is typically taken out by contractors and project owners to cover various construction and civil engineering projects. 
         </p>
         `
     },
@@ -120,7 +120,7 @@ export const services = [
         image: 'healthcaresector',
         details: `
         <p>
-             This is well known as C.A.R it’s an insurance for ongoing construction against fortuitous loss or damage on the building. It covers Material Damage Section and Third-Party Liability Section.
+            Health Insurance is an agreement where a company pays for some or all of a person's medical expenses in exchange for a regular premium payment. It provides financial protection against high medical costs for things like doctor visits, hospital stays, medications, and surgeries. Health insurance helps manage both routine and emergency healthcare costs, making treatment more accessible and financially predictable for the policyholder. 
         </p>
         `
     },
@@ -131,7 +131,8 @@ export const services = [
         image: 'oil&gassector',
         details: `
         <p>
-        This Insurance provides a wide range of coverage for exploration & production (E&P) risk exposures. 
+        This policy covers all risks of physical loss and destruction to the insured properties, including legal liability arising from damage to the insured's properties or resulting from the insured's operations, which may involve their agents.
+
         </p>
         `
     },
@@ -142,7 +143,7 @@ export const services = [
         image: 'manufacturingsector',
         details: `
         <p>
-             This is well known as C.A.R it’s an insurance for ongoing construction against fortuitous loss or damage on the building. It covers Material Damage Section and Third-Party Liability Section.
+            Manufacturing Insurance is specifically designed to protect businesses involved in the manufacturing industry. It provides coverage for a wide range of risks and liabilities that are unique to the manufacturing sector. It provides coverage for a wide range of risks and liabilities that are unique to the manufacturing sector.
         </p>
         `
     },
@@ -153,7 +154,7 @@ export const services = [
         image: 'agriculturalsector',
         details: `
         <p>
-             This is well known as C.A.R it’s an insurance for ongoing construction against fortuitous loss or damage on the building. It covers Material Damage Section and Third-Party Liability Section.
+         Agricultural Insurance is a policy that protects farmers against financial loss from crop and livestock damage due to specific perils like fire, flood, drought, or pests. Farmers pay a premium to an insurer, which promises to indemnify them by paying the value of the loss if a covered event occurs. This can cover a wide range of assets including crops, livestock, farm equipment, and produce
         </p>
         `
     },
@@ -164,8 +165,16 @@ export const services = [
         image: 'transportsector',
         details: `
         <p>
-             This is well known as C.A.R it’s an insurance for ongoing construction against fortuitous loss or damage on the building. It covers Material Damage Section and Third-Party Liability Section.
+            Transport Insurance is insurance whereby an insurance company undertakes to pay certain indemnities as a result of damage occurring during the transport of goods. This damage can affect the transporting object (hull insurance) or the transported goods themselves (goods insurance).
         </p>
+        <br/>
+        <h3>There are three main types of policy.</h3>
+        <br/>
+        <ul>
+        <li>• Third party. This is the minimum legal requirement and covers you for damage to someone else's vehicle or property or injury to someone else in an accident.</li>
+        <li>• Third party, fire and theft.</li>
+        <li>• Comprehensive cover.</li>
+        </ul>
         `
     },
 ]

@@ -9,8 +9,8 @@ const SectionTwo = () => {
 
             <div className='relative z-[3] px-6 xl:px-0 lg:w-[80%] max-w-max mx-auto flex flex-wrap lg:flex-nowrap gap-[15px] '>
                 <div
-                    className="lg:w-[65%] relative md:h-96 pl-6 md:pl-[59px] pr-6 md:pr-[60px] py-20 md:py-10 lg:py-[70px] rounded-[50px]  items-center gap-2.5 inline-flex"
-                    style={{ backgroundImage: 'url(/images/reassuringbg.png)' }}
+                    className="w-full  lg:w-[65%] relative md:h-96 pl-6 md:pl-[59px] pr-6 md:pr-[60px] py-20 md:py-10 lg:py-[70px] rounded-[50px]  items-center gap-2.5 inline-flex"
+                    style={{ backgroundImage: 'url(/images/reassuringbg.png)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
                 >
                     <SlideIn duration={800} distance={60} direction="left" delay={100}>
                         <div className="">
