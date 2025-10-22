@@ -49,7 +49,7 @@ const MainLayout = ({ children }) => {
             {showScrollButton && (
                 <button
                     onClick={scrollToTop}
-                    className='z-[999999] p-3 rounded-full text-2xl text-white fixed bottom-20 right-20 bg-primaryRed transition-opacity duration-300 hover:bg-opacity-90'
+                    className='z-[999999] p-3 rounded-full text-2xl text-white fixed bottom-10 md:bottom-20 right-6 md:right-20 bg-primaryRed transition-opacity duration-300 hover:bg-opacity-90'
                 >
                     <FaChevronUp />
                 </button>

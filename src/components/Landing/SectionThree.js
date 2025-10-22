@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import { FaArrowRightLong, FaChevronRight } from 'react-icons/fa6'
 import SlideIn from '../SlideIn'
+import { Link } from 'react-router-dom'
 
 const services = [
     {
         title: 'Oil and Gas',
+        slug: 'oil-and-gas',
+        icon: 'oil-red',
         items: [
             'Physical Damage / Property All Risk',
             'Business Interruption / Loss of Production',
             'Third-Party Liability',
-        ]
+        ],
+        desc: "This policy covers all risks of physical loss and destruction to the insured properties, including legal liability arising from damage to the insured's properties or resulting from the insured's operations, which may involve their agents."
     },
     {
         title: 'Transportation',
+        slug: 'transportation',
+        icon: 'transport-red',
         items: [
             'Aviation Insurance',
             'Motor Insurance',
@@ -20,10 +26,13 @@ const services = [
             'Marine Cargo Insurance',
             'Carriers Liability Insurance',
             'Fleet Insurance',
-        ]
+        ],
+        desc: 'Transport Insurance is insurance whereby an insurance company undertakes to pay certain indemnities as a result of damage occurring during the transport of goods. This damage can affect the transporting object (hull insurance) or the transported goods themselves (goods insurance)'
     },
     {
         title: 'Manufacturing',
+        icon: 'manufacture-red',
+        slug: 'manufacturing-sector',
         items: [
             'Industrial All Risk (IAR) Insurance',
             'Fire and Special Perils Insurance',
@@ -32,24 +41,29 @@ const services = [
             'Business Interruption Insurance',
             'Product Liability Insurance',
             'Public Liability Insurance',
-        ]
+        ],
+        desc: 'Manufacturing insurance is specifically designed to protect businesses involved in the manufacturing industry. It provides coverage for a wide range of risks and liabilities that are unique to the manufacturing sector. It provides coverage for a wide range of risks and liabilities that are unique to the manufacturing sector.'
     },
     {
         title: 'Construction',
+        icon: 'construction-red',
+        slug: 'construction-sector',
         items: [
             'Material Damage Section',
             'Third-Party Liability Section',
             'Construction Equipment Coverage',
             'Workmanship Insurance',
             'Project Delay Coverage',
-        ]
+        ],
+        desc: 'Construction/All Risk insurance policy is a type of property and liability insurance designed for construction projects. It protects against physical loss or damage to contract works, materials, and equipment on the project site, as well as the legal liability of the insured for third-party bodily injury or property damage. This comprehensive policy is typically taken out by contractors and project owners to cover various construction and civil engineering projects.'
     },
-    {
-        title: 'Financial services',
-        items: [
-            'General Financial Insurance',
-        ]
-    },
+    // {
+    //     title: 'Financial services',
+    //     items: [
+    //         'General Financial Insurance',
+    //     ],
+    //     desc: ''
+    // },
 ]
 
 const SectionThree = () => {
@@ -70,7 +84,7 @@ const SectionThree = () => {
     return (
         <section className='bg-white py-[100px]'>
 
-            <div className='px-6 lg:w-[80%] max-w-max mx-auto py-[40px] xl:px-[60px]'>
+            <div className='px-6 lg:w-[85%] max-w-max mx-auto py-[40px] xl:px-[0px]'>
                 <div className='relative flex flex-col md:flex-row gap-10 justify-between md:items-end'>
                     <SlideIn duration={700} distance={50} direction="left" delay={100}>
                         <div className='flex flex-col gap-[27px] w-full max-w-[552px]'>
@@ -86,33 +100,36 @@ const SectionThree = () => {
                     </SlideIn>
                 </div>
 
-                <div className='mt-[72px] flex flex-wrap gap-[30px]'>
+                <div className='w-full mt-[72px] flex flex-wrap gap-5  lg:gap-y-[30px]'>
                     {
                         services.map((item, index) => (
                             <div
-                                className={`bg-[#D9D9D9] md:max-w-[30%] flex flex-col gap-[13px] rounded-[18px] pt-3 pb-[30px] px-[26px] ${activeIndex === index && 'border-[3px] border-black'}`}>
+                                className={`bg-[#D9D9D9] h-auto w-full md:w-[48%] xl:w-[32%]  rounded-[18px] pt-3 pb-[30px] px-[26px] ${activeIndex === index && 'border-[3px] border-black'}`}>
                                 <SlideIn
                                     key={index}
                                     duration={600}
                                     distance={40}
                                     direction="bottom"
                                     delay={400 + (index * 150)}
+                                    className='flex flex-col gap-[13px]'
                                 >
-                                    <div className='flex gap-[22px] items-center'>
-                                        <img src="/images/life.svg" alt="life" />
-                                        <h2 className=" text-[#060606] h-16 text-[22.19px] font-semibold font-['Lato']">{item.title}</h2>
+                                    <div className='flex flex-wrap lg:flex-nowrap gap-[22px] items-center'>
+                                        <img src={`/images/${item.icon}.png`} alt="life" className='max-w-[40px]' />
+                                        <h2 className=" text-[#060606] text-[22.19px] font-semibold font-['Lato']">{item.title}</h2>
                                     </div>
-                                    <p className=" h-[98.63px] text-[#666666] text-xs font-normal font-sans leading-[14.90px]">Comprehensive coverage for exploration & production (E&P) risk exposures in the oil and gas industry.</p>
-                                    <button className="w-[106.65px] self-end h-[31.44px] px-[18.49px] py-[9.25px] bg-[#cc1517] rounded-[30.82px] items-center inline-flex justify-between">
-                                        <span className="text-center text-white text-[9.86px] font-normal font-sans leading-3 tracking-tight">Get Started </span>
-                                        <span className='text-[10px] text-white'><FaArrowRightLong /></span>
-                                    </button>
+                                    <p className="  text-[#666666] text-sm font-normal font-sans leading-[24.90px]">{item.desc.slice(0, 180)}...</p>
+                                    <Link to={`/services/${item.slug}`}>
+                                        <button className="w-[106.65px] self-end h-[31.44px] px-[18.49px] py-[9.25px] bg-[#cc1517] rounded-[30.82px] items-center inline-flex justify-between">
+                                            <span className="text-center text-white text-[9.86px] font-normal font-sans leading-3 tracking-tight">Learn more</span>
+                                            <span className='text-[10px] text-white'><FaArrowRightLong /></span>
+                                        </button>
+                                    </Link>
                                 </SlideIn>
                             </div>
                         ))
                     }
 
-                    <div className='mt-[30px] max-w-[63%] grid grid-cols-1 md:grid-cols-2 gap-5'>
+                    <div className='mt-[0px] max-w-[65%] grid grid-cols-1 xl:grid-cols-2   gap-5'>
                         {
                             services[activeIndex].items.map((item, index) => (
                                 <SlideIn duration={800} distance={50} direction="bottom" delay={1000}>

@@ -26,8 +26,9 @@ const SectionFour = () => {
                                 distance={40}
                                 direction="bottom"
                                 delay={200 + (index * 100)}
+                                className='md:w-[268px] w-full'
                             >
-                                <div className={`md:w-[268px] w-full flex flex-col bg-[#F5F5F5] rounded-[15px] pt-[50px] px-[30px] pb-5 ${item.slug === id && 'opacity-60'}`} >
+                                <div className={`flex flex-col bg-[#F5F5F5] rounded-[15px] pt-[50px] px-[30px] pb-5 ${item.slug === id && 'opacity-60'}`} >
                                     <div className='relative'>
                                         <div className='h-[90px] w-[90px] absolute -top-5 -left-5 rounded-full bg-[#EBEBEB]'></div>
                                         <img src={`/images/${item.icon}.png`} alt={item.icon} className='w-full max-w-[72px] h-[65px] object-contain relative z-1' />
