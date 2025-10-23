@@ -57,14 +57,18 @@ const services = [
         ],
         desc: 'Construction/All Risk insurance policy is a type of property and liability insurance designed for construction projects. It protects against physical loss or damage to contract works, materials, and equipment on the project site, as well as the legal liability of the insured for third-party bodily injury or property damage. This comprehensive policy is typically taken out by contractors and project owners to cover various construction and civil engineering projects.'
     },
-    // {
-    //     title: 'Financial services',
-    //     items: [
-    //         'General Financial Insurance',
-    //     ],
-    //     desc: ''
-    // },
+    {
+        title: 'Financial services',
+        icon: 'money-red',
+        slug: 'finance-sector',
+        items: [
+            'General Financial Insurance',
+        ],
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum perspiciatis in assumenda reiciendis, placeat quod quasi magni amet provident voluptate fuga hic possimus! Quasi nisi perferendis dicta dolore commodi, molestias velit animi dignissimos dolorem. Debitis voluptate, reiciendis aspernatur dicta recusandae minus, nam ab, mollitia doloribus laboriosam facere magnam ex non. Provident vitae velit, adipisci enim omnis deleniti facilis itaque pariatur!'
+    },
 ]
+
+
 
 const SectionThree = () => {
     const [activeIndex, setActiveIndex] = useState(0)

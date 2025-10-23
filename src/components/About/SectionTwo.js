@@ -67,7 +67,7 @@ const SectionTwo = () => {
                     </SlideIn>
                 </div>
 
-                <div className="md:w-[35%] w-full h-96 bg-[#cc1517] rounded-[50px] flex flex-col  px-6 md:px-24 py-20 md:py-[100px]" >
+                <div className="lg:w-[35%] w-full h-96 bg-[#cc1517] rounded-[50px] flex flex-col  px-6 md:px-24 py-20 md:py-[100px]" >
                     <SlideIn duration={800} distance={60} direction="right" delay={1100}>
                         <p
                             className="w-[236px] text-[#fffefe] text-2xl font-normal font-['Albert Sans'] leading-[29.01px]"
