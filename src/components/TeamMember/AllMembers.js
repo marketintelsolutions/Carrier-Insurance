@@ -6,16 +6,16 @@ import { team } from '../../utils/data'
 const AllMembers = ({ teammember }) => {
 
     return (
-        <section className='bg-[#FFFEFE] pb-[300px]'>
-            <div className='bg-[#E6E4E4] py-[65px] px-[105px] w-[80%] max-w-max mx-auto rounded-[30px]'>
-                <div className='flex gap-x-[30px] '>
+        <section className='bg-[#FFFEFE] px-6 xl:px-0 pb-[100px] md:pb-[300px]'>
+            <div className='bg-[#E6E4E4] py-[65px] px-6 lg:px-[55px] w-full overflow-x-scroll md:w-[80%] max-w-max mx-auto rounded-[30px]'>
+                <div className='flex gap-[30px] '>
                     {
                         team.map((item) => {
                             if (!item.slug) {
                                 return
                             }
                             return (
-                                <div className={`shadow-[3px_6px_15px_0px_rgba(0,0,0,0.25)] rounded-[30px] ${teammember.slug === item.slug && 'opacity-30'}`}>
+                                <div className={`shadow-[3px_6px_15px_0px_rgba(0,0,0,0.25)] overflow-hidden min-w-[250px] md:min-w-[300px] rounded-[30px] ${teammember.slug === item.slug && 'opacity-30'}`}>
                                     <img src={`/images/${item.image}.png`} alt={item.name} className='object-cover ' />
 
                                     <div className="w-full px-[25px] py-[25px] bg-[#d9d9d9] rounded-bl-[30px] rounded-br-[30px] flex-col justify-start items-start gap-2.5 inline-flex">

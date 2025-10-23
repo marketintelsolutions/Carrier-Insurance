@@ -177,6 +177,25 @@ export const services = [
         </ul>
         `
     },
+    {
+        icon: 'money',
+        heading: 'FINANCE SECTOR',
+        slug: 'finance-sector',
+        image: 'transportsector',
+        details: `
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum perspiciatis in assumenda reiciendis, placeat quod quasi magni amet provident voluptate fuga hic possimus! Quasi nisi perferendis dicta dolore commodi, molestias velit animi dignissimos dolorem. Debitis voluptate, reiciendis aspernatur dicta recusandae minus, nam ab, mollitia doloribus laboriosam facere magnam ex non. Provident vitae velit, adipisci enim omnis deleniti facilis itaque pariatur!
+        </p>
+        <br/>
+        <h3>There are three main types of policy.</h3>
+        <br/>
+        <ul>
+        <li>• Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum perspiciatis in assumenda reiciendis, placeat quod quasi magni amet</li>
+        <li>•  provident voluptate fuga hic possimus! Quasi nisi perferendis dicta dolore commodi, molestias velit animi dignissimos dolorem.</li>
+        <li>•  Debitis voluptate, reiciendis aspernatur dicta recusandae minus, nam ab, mollitia doloribus laboriosam facere magnam ex non. Provident vitae velit, adipisci enim omnis deleniti facilis itaque pariatur!</li>
+        </ul>
+        `
+    },
 ]
 
 export const products = [

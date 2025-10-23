@@ -10,9 +10,9 @@ const TeamMemberBanner = () => {
             }}
         >
             <div className='flex justify-between gap-[50px] items-end w-[80%] max-w-max mx-auto '>
-                <div className='w-[372px]'><img src="/images/tick.svg" alt="tick" className='w-full' /></div>
+                <div className='md:w-[372px]'><img src="/images/tick.svg" alt="tick" className='w-full' /></div>
 
-                <div className=''><BannerAnimation size={500} /></div>
+                <div className='w-[250px] md:w-[500px]'><BannerAnimation /></div>
             </div>
 
         </section>
