@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 const MemberDetails = ({ teammember }) => {
     return (
         <section className='bg-[#FFFEFE] px-6 xl:px-0 pt-20 lg:pt-[170px] pb-[100px]'>
-            <div className='w-full  lg:w-[70%] max-w-[1234px] mx-auto grid grid-cols-1 lg:grid-cols-[35%_60%] justify-between gap-[47px]'>
-                <div className='py-[126px] w-full h-[500px] lg:h-full bg-primaryRed rounded-[30px]'>
+            <div className='w-full  lg:w-[80%] max-w-[1334px] mx-auto grid grid-cols-1 lg:grid-cols-[35%_60%] justify-between gap-[47px]'>
+                <div className='py-[126px] w-full h-[500px] lg:h-[600px] bg-primaryRed rounded-[30px]'>
                     <img src={`/images/${teammember.image}.png`} alt="teampersonbig" className='w-full h-full object-cover' />
                 </div>
                 <div className='py-20 lg:py-[138px] px-6 lg:px-[53px] bg-[#D9D9D9] rounded-[30px]'>
