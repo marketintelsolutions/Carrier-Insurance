@@ -28,17 +28,7 @@ export const team = [
     //         'He is currently an oil/gas industry consultant and sits on the Board of various companies servicing Oil and Gas sector.'
     //     ]
     // },
-    {
-        slug: 'chris-oshiafi',
-        name: 'Chris Oshiafi',
-        title: 'Director',
-        image: 'chris',
-        details: [
-            'He was the Pioneer Managing Director/CEO of Truebond Investments & Capital Limited, a Company with diverse interests in Oil & Gas, Telecommunications, Power and the Capital Markets. He has also worked with the firm of Damitop Consulting Limited as Managing Partner where he worked on a number of World Bank projects for the Federal and several State Governments. He served as Executive Director (Investment Banking) of Citizens International Bank (now Heritage Bank Limited) until his appointment as the pioneer Chief Executive Officer of PanAfrican Capital Holdings Limited.',
-            'He is a Fellow of the Institute of Chartered Accountants of Nigeria (ICAN), an Associate of the Chartered Insurance Institute of London, (ACII) UK and Chartered Institute of Taxation of Nigeria (ACIT). He also attended various programs at the prestigious Columbia Business School, New York, United States and INSEAD Business School, Fontainebleau, France, the IESE Business School in Barcelona, Spain and the Chief Executive Programme (CEP 17) Class of the Lagos Business School.',
-            'He was the Pioneer Managing Director/CEO of Truebond Investments & Capital Limited, a Company with diverse interests in Oil & Gas, Telecommunications, Power and the Capital Markets. He has also worked with the firm of Damitop Consulting Limited as Managing Partner where he worked on a number of World Bank projects for the Federal and several State Governments. He served as Executive Director (Investment Banking) of Citizens International Bank (now Heritage Bank Limited) until his appointment as the pioneer Chief Executive Officer of PanAfrican Capital Holdings Limited.',
-        ]
-    },
+    
     {
         slug: 'TAIYE ALUKO',
         name: 'TAIYE ALUKO',
@@ -62,6 +52,7 @@ export const team = [
             'Dr. Osa-Afiana holds a B.Sc. in Agriculture (First Class) from Ahmadu Bello University and advanced degrees (M.Sc and Ph.D) in Soil Science from Cornell University, USA.'
         ]
     },
+
     {
         slug: 'dr-deborah-elue',
         name: 'Dr. Deborah Elue',
@@ -74,18 +65,31 @@ export const team = [
             'Deborah has attended international training, including the Senior Managers Program in Copenhagen, and gained global experience during her secondment to EY South Africa.'
         ]
     },
+
     {
-        slug: 'yahaya-yunusa',
-        name: 'Yahaya Yunusa',
+        slug: 'mohammed-edewor',
+        name: 'Mohammed Edewor',
         title: 'Director',
-        image: 'yahaya',
+        image: 'mohammed',
         details: [
-            'Yahaya has over 23 years’ experience in the mid and downstream oil and gas sector, and has consistently driven growth, operational efficiency, and innovation in various executive capacities.',
-            'Up-till April 2025, Yahaya was engaged as a (Management Consultant and C.E.O) at AP Oil & Gas Ghana ltd. Within the past one year (2024), Yahaya directly led and coached the AP Oil and Gas team to relaunch the company that had been dormant, into full operations, with a new look, in the Retail and B2B sectors of the Ghana downstream Market.',
-            'Prior to this, Yahaya spent a period of 3 years in the Telecoms Industry where he served as CEO at American Tower Corporation, Ghana, where he led the charge in the provision of telecoms infrastructure and energy solutions to mobile network operators. Yahaya led the successful Change Management and the Post-Merger consolidation of Eaton Towers and American Tower Corporation in Ghana. The company grew to achieve a significant annual EBITDA growth of ~$100 million in 2021, reaffirming its industry leadership. Yahaya was awarded the Ghana Telecoms Tower CEO of the year 2022 by the Ghana Information Technology & Telecom Awards (GITTA)',
-            'Yahaya’s noteworthy efforts and ground breaking achievements have significantly contributed to the profitability of various businesses and market share expansions within his career in Nigeria and Internationally. This has earned Yahaya various recognitions and the reputation of a seasoned and transformational executive leader in the Oil and Gas Industry.'
+            'Mohammed is a seasoned legal practitioner with over 20 years of experience in oil and gas, real estate, telecoms, marine amongst others.',
+            'Mohammed graduated from the University of Buckingham, UK. He is the principal partner of Edewor and company.',
+            'He is executive chairman, Aquafront Limited. Director, Multigrated Resources Nigeria Limited. Chairman, Alfacrest realtors. Chairman, Flamingo airlines limited(charter only). Chairman, Sky brewery limited.',
         ]
-    }
+    },
+    
+    // {
+    //     slug: 'yahaya-yunusa',
+    //     name: 'Yahaya Yunusa',
+    //     title: 'Director',
+    //     image: 'yahaya',
+    //     details: [
+    //         'Yahaya has over 23 years’ experience in the mid and downstream oil and gas sector, and has consistently driven growth, operational efficiency, and innovation in various executive capacities.',
+    //         'Up-till April 2025, Yahaya was engaged as a (Management Consultant and C.E.O) at AP Oil & Gas Ghana ltd. Within the past one year (2024), Yahaya directly led and coached the AP Oil and Gas team to relaunch the company that had been dormant, into full operations, with a new look, in the Retail and B2B sectors of the Ghana downstream Market.',
+    //         'Prior to this, Yahaya spent a period of 3 years in the Telecoms Industry where he served as CEO at American Tower Corporation, Ghana, where he led the charge in the provision of telecoms infrastructure and energy solutions to mobile network operators. Yahaya led the successful Change Management and the Post-Merger consolidation of Eaton Towers and American Tower Corporation in Ghana. The company grew to achieve a significant annual EBITDA growth of ~$100 million in 2021, reaffirming its industry leadership. Yahaya was awarded the Ghana Telecoms Tower CEO of the year 2022 by the Ghana Information Technology & Telecom Awards (GITTA)',
+    //         'Yahaya’s noteworthy efforts and ground breaking achievements have significantly contributed to the profitability of various businesses and market share expansions within his career in Nigeria and Internationally. This has earned Yahaya various recognitions and the reputation of a seasoned and transformational executive leader in the Oil and Gas Industry.'
+    //     ]
+    // }
 ]
 
 
