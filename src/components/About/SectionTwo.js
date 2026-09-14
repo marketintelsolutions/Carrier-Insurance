@@ -7,7 +7,7 @@ const SectionTwo = () => {
     return (
         <section className='relative py-20 md:py-[190px] px-6 xl:px-0 w-full flex flex-col gap-[100px] bg-[#EFEFEF]'>
             <div className='relative  md:w-[80%] max-w-max mx-auto flex flex-wrap lg:flex-nowrap gap-[40px] '>
-                {/* <div className="w-[30%] h-96 bg-[#cc1517] rounded-[50px]" /> */}
+                {/* <div className="w-[30%] h-96 bg-[rgb(193,42,18)] rounded-[50px]" /> */}
                 <img src="/images/about.jpg" alt="night city" className='md:max-w-[40%] rounded-[20px]' />
                 <div className="md:w-[55%] relative md:h-96 md:pl-[39px] md:pr-[60px] md:py-[70px]  md:border rounded-[50px] justify-end items-center gap-2.5 inline-flex">
                     <div className="">
@@ -28,7 +28,7 @@ const SectionTwo = () => {
                     <div className='flex flex-wrap lg:flex-nowrap items-start gap-[48px]'>
                         <img src="/images/vision.png" alt="vision" className='w-[91px] object-contain' />
                         <div className='flex flex-col gap-[14px]'>
-                            <h2 className="text-[#cc1517] text-4xl font-semibold font-['Lato']">Our Vision</h2>
+                            <h2 className="text-[rgb(193,42,18)] text-4xl font-semibold font-['Lato']">Our Vision</h2>
                             <p className=" text-[#666666] text-base md:text-xl font-normal font-['Inter'] leading-normal tracking-tight">
                                 To be the foremost choice for <br /> insurance, trusted by individuals,<br /> families, and businesses alike.</p>
                         </div>
@@ -39,7 +39,7 @@ const SectionTwo = () => {
                     <div className='flex flex-wrap lg:flex-nowrap items-start gap-[48px]'>
                         <img src="/images/value.png" alt="value" className='w-[91px] object-contain' />
                         <div className='flex flex-col gap-[14px]'>
-                            <h2 className="text-[#cc1517] text-4xl font-semibold font-['Lato']">Our Values</h2>
+                            <h2 className="text-[rgb(193,42,18)] text-4xl font-semibold font-['Lato']">Our Values</h2>
                             <p className=" text-[#666666] text-base md:text-xl font-normal font-['Inter'] leading-normal tracking-tight">
                                 Integrity, Customer Focus,<br /> Innovation, and Excellence.
                             </p>
@@ -67,14 +67,14 @@ const SectionTwo = () => {
                     </SlideIn>
                 </div>
 
-                <div className="lg:w-[35%] w-full h-96 bg-[#cc1517] rounded-[50px] flex flex-col  px-6 md:px-24 py-20 md:py-[100px]" >
+                <div className="lg:w-[35%] w-full h-96 bg-[rgb(193,42,18)] rounded-[50px] flex flex-col  px-6 md:px-24 py-20 md:py-[100px]" >
                     <SlideIn duration={800} distance={60} direction="right" delay={1100}>
                         <p
                             className="w-[236px] text-[#fffefe] text-2xl font-normal font-['Albert Sans'] leading-[29.01px]"
                         >
                             Contact us today to learn more or get a free consultation.
                         </p>
-                        <Link to={'/contact'} className="w-[173px] mt-[60px] text-white hover:bg-primaryBlue h-[51px] px-[20px] py-[15px] bg-[#cc1517] rounded-[50px] border-2 border-[#fffefe] justify-start items-center inline-flex gap-6">
+                        <Link to={'/contact'} className="w-[173px] mt-[60px] text-white hover:bg-primaryBlue h-[51px] px-[20px] py-[15px] bg-[rgb(193,42,18)] rounded-[50px] border-2 border-[#fffefe] justify-start items-center inline-flex gap-6">
                             <span
                                 className="text-center text-base font-normal font-sans leading-tight tracking-tight">
                                 Get Started

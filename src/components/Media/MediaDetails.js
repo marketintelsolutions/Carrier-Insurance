@@ -5,7 +5,7 @@ import MediaItem from './MediaItem'
 const MediaDetails = () => {
     return (
         <section className='md:w-[80%] px-6 xl:px-0 max-w-[1200px] mx-auto mt-[150px] flex flex-col items-center pb-[40px]'>
-            <h3 className="text-center text-[#cc1517] text-[22px] font-normal font-['Inter'] leading-snug">Media</h3>
+            <h3 className="text-center text-[rgb(193,42,18)] text-[22px] font-normal font-['Inter'] leading-snug">Media</h3>
             <h1 className="mt-4 w-full max-w-[1082px] text-center text-[#282828] text-2xl md:text-4xl font-extrabold font-['Inter'] md:leading-[42px]">Stay informed with the latest updates and insights from Carrier Insurance Brokerage.</h1>
 
             <div className='mt-20 w-full flex flex-wrap lg:flex-nowrap gap-[60px]'>

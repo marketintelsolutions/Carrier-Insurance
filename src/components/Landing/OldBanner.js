@@ -33,7 +33,7 @@ const Banner = () => {
                 <h1 className="w-">
                     <span className="text-[#999999] text-[45px] font-bold font-sans leading-[72px]">Protection</span>
                     <span className="text-white text-[45px] font-normal font-sans leading-[72px]"> </span>
-                    <span className="text-[#cc1517] text-[45px] font-normal font-sans leading-[72px]">Against Unforeseen Risks</span>
+                    <span className="text-[rgb(193,42,18)] text-[45px] font-normal font-sans leading-[72px]">Against Unforeseen Risks</span>
                 </h1>
                 <div><BannerAnimation size={500} /></div>
             </div>

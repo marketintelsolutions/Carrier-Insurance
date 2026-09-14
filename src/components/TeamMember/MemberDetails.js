@@ -11,7 +11,7 @@ const MemberDetails = ({ teammember }) => {
                 </div>
                 <div className='py-20 lg:py-[138px] px-6 lg:px-[53px] bg-[#D9D9D9] rounded-[30px]'>
                     <h2 className=" text-[#1e1f21] text-2xl md:text-4xl font-semibold font-['Lato']">{teammember.name}</h2>
-                    <p className="mt-5 mb-10 text-[#cc1517] text-xl md:text-2xl font-normal font-sans tracking-tight">{teammember.title}</p>
+                    <p className="mt-5 mb-10 text-[rgb(193,42,18)] text-xl md:text-2xl font-normal font-sans tracking-tight">{teammember.title}</p>
                     <div className="flex flex-col gap-5">
                         {
                             teammember.details.map((item) => (

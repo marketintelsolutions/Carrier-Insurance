@@ -10,7 +10,7 @@ const ContactDetails = () => {
             <div className='px-[37px] mx-auto justify-center flex flex-wrap lg:flex-nowrap gap-[30px]'>
                 <SlideIn duration={700} distance={60} direction="left" delay={100}>
                     <div>
-                        <h2 className="text-[#cc1517] text-4xl md:text-5xl font-extrabold font-['Inter'] leading-[57.60px]">Contact Us</h2>
+                        <h2 className="text-[rgb(193,42,18)] text-4xl md:text-5xl font-extrabold font-['Inter'] leading-[57.60px]">Contact Us</h2>
                         <p className="mt-10 md:w-[455px]">
                             <span className="text-[#060606] text-sm md:text-base font-light font-['Inter'] leading-relaxed">Get in touch with  </span>
                             <span className="text-[#060606] text-sm md:text-base font-bold font-['Inter'] leading-relaxed">

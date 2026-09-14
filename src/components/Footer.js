@@ -106,7 +106,7 @@ const Footer = () => {
             <div className='md:w-[90%] max-w-max mx-auto  gap-[60px] bg-black px-6 md:px-[46px] pt-[130px] pb-12 md:rounded-[30px]'>
                 <div className='flex flex-wrap lg:justify-between gap-[50px]'>
                     <div className='flex flex-col justify-between'>
-                        <img src="/images/whitelogo.svg" alt="logo" className='max-w-[200px]' />
+                        <img src="/images/whitelogo.png" alt="logo" className='max-w-[200px]' />
                         <BannerAnimation size={294} />
                     </div>
                     <div>

@@ -40,7 +40,7 @@ const Navbar = () => {
             <nav
                 className={`bg-[#F8F8F8] translate-y-[0%]  w-full  mx-auto max-w-sub flex items-center justify-between  h-[96px] z-[999] ${isNavDropdown ? 'rounded-t-[40px] px-6 lg:px-0' : 'lg:rounded-full px-6 lg:px-10'}`}>
                 <Link to={'/'} className='w-[35%] flex  justify-start  '>
-                    <img src="/images/logo.svg" alt="logos" className='w-full max-w-[240px]' />
+                    <img src="/images/logo.png" alt="logos" className='w-full max-w-[240px]' />
                 </Link>
                 <div
                     className={`absolute left-0 top-full bg-[#F8F8F8] flex-col lg:static lg:flex-row py-10 lg:py-0 px-6 lg:px-0 lg:h-[43px] w-full lg:w-[65%] gap-10 lg:gap-[20px] lg:items-center justify-between lg:max-w-[50%] ${isMenu ? 'flex' : 'hidden lg:flex'}`}>

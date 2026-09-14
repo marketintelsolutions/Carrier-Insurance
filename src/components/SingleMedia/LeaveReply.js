@@ -27,7 +27,7 @@ const LeaveReply = () => {
                     <input type="checkbox" name="save" id="save" />
                     <p className="w-[593.35px] h-[26px] text-[#161616] text-base font-normal font-['Inter'] leading-relaxed">Save my name, email, and website in this browser for the next time I comment.</p>
                 </div>
-                <button className="w-[158.61px] h-[39px] px-5 py-3 text-white hover:bg-primaryBlue bg-[#cc1517] rounded-[5px] justify-center items-center inline-flex overflow-hidden">
+                <button className="w-[158.61px] h-[39px] px-5 py-3 text-white hover:bg-primaryBlue bg-[rgb(193,42,18)] rounded-[5px] justify-center items-center inline-flex overflow-hidden">
                     <span className=" text-center text-[13.20px] font-normal font-['Inter'] uppercase">Post Comment</span>
                 </button>
 

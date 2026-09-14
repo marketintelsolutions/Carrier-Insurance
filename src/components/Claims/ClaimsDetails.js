@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const ClaimsDetails = () => {
     return (
         <section className='px-6 xl:px-0 py-[120px] max-w-[1200px] mx-auto'>
-            <h1 className="max-w-[291.73px] h-[72px] text-[#cc1517] text-6xl font-bold font-['Montserrat'] leading-[72px]">Claims </h1>
+            <h1 className="max-w-[291.73px] h-[72px] text-[rgb(193,42,18)] text-6xl font-bold font-['Montserrat'] leading-[72px]">Claims </h1>
             <p className="mt-9 max-w-[626px]  text-[#5a5a5a] text-2xl font-normal font-['Inter'] leading-[34px]">Our claims process is designed to make things simple, efficient, and supportive during times of need.</p>
 
             <div className='flex flex-wrap lg:flex-nowrap gap-[120px]'>
@@ -13,7 +13,7 @@ const ClaimsDetails = () => {
                     <div className="w-full max-w-[468px] h-[297px] bg-[#D9D5D5] py-[54px] px-[33px] rounded-[30px]" >
                         <h3 className="text-[#060606] text-2xl font-bold font-['Lato'] tracking-tight">How to File a Claim:</h3>
                         <p className=" h-[82px] mt-[18px] mb-[25px] text-[#060606] text-xl font-normal font-['Sans'] leading-normal">Our claims process is designed to make things simple, efficient, and supportive during times of need.</p>
-                        {/* <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] items-center inline-flex justify-between">
+                        {/* <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[rgb(193,42,18)] rounded-[50px] items-center inline-flex justify-between">
                             <span className="text-center text-white text-base font-normal font-['Sans'] leading-tight tracking-tight">Read More </span>
                             <span className='text-white'><FaArrowRightLong /></span>
                         </button> */}
@@ -29,7 +29,7 @@ const ClaimsDetails = () => {
                         <h3 className="text-[#060606] text-2xl font-bold font-['Lato'] tracking-tight">Support Team</h3>
                         <p className=" h-[82px] mt-[18px] mb-[25px] text-[#060606] text-lg md:text-xl font-normal font-['Sans'] leading-normal">Our dedicated claims team is available to guide you through the entire process, from start to finish.</p>
                         <Link to={'/contact'}>
-                            <button className="w-[143px] text-center h-[51px] px-[0px] py-[15px] border border-[#cc1517] rounded-[50px] items-center inline-flex justify-center text-primaryRed text-base ">
+                            <button className="w-[143px] text-center h-[51px] px-[0px] py-[15px] border border-[rgb(193,42,18)] rounded-[50px] items-center inline-flex justify-center text-primaryRed text-base ">
                                 <span className="text-center  font-normal font-['Sans'] leading-tight tracking-tight">Visit help center </span>
                             </button>
                         </Link>
