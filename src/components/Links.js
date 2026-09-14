@@ -16,7 +16,7 @@ const Links = () => {
             </div>
             */}
             <div className='h-[147px] '>
-                <Link to={'/claims'} className='absolute right-0 bottom-0   w-[147px] h-[59px] bg-[#CC1517] px-[2px]  flex justify-center items-center rounded-b-[30px] rotate-[90deg] translate-x-[44px]'>
+                <Link to={'/claims'} className='absolute right-0 bottom-0   w-[147px] h-[59px] bg-[rgb(193,42,18)] px-[2px]  flex justify-center items-center rounded-b-[30px] rotate-[90deg] translate-x-[44px]'>
                     <p className=' text-white '>Report Claims</p>
                 </Link>
             </div>

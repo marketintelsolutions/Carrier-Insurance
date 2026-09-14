@@ -17,7 +17,7 @@ const MediaItem = ({ id }) => {
                 </div>
                 <p className="mt-[14px] mb-[17px] max-w-[450.60px] md:h-[46px] text-[#484f5e] text-lg md:text-xl font-semibold font-['Inter'] underline leading-snug">Recently with desktop publishing software like<br />Aldus Page</p>
                 <p className="max-w-[405.68px] md:h-[46px] text-[#161616] text-sm md:text-base font-normal font-['Inter'] md:leading-relaxed">Lorem Ipsum is simply dummy text of the printing and<br />typesetting industry. Lorem Ipsum…</p>
-                <Link to={`/media/${id}`} className="mt-[18px] max-w-[123.55px] h-10 pl-5 pr-[19.67px] py-2.5 bg-[#cc1517] rounded-[5px] justify-center items-center inline-flex">
+                <Link to={`/media/${id}`} className="mt-[18px] max-w-[123.55px] h-10 pl-5 pr-[19.67px] py-2.5 bg-[rgb(193,42,18)] rounded-[5px] justify-center items-center inline-flex">
                     <span className="max-w-[83.88px]  text-white text-base font-bold font-['Inter'] leading-relaxed">Read More</span>
                 </Link>
             </div>

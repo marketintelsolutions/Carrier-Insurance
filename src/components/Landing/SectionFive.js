@@ -32,7 +32,7 @@ const SectionFive = () => {
         <section className='bg-[#F5F5F5] px-6 xl:px-0 pt-20 pb-40'>
             <SlideIn duration={700} distance={50} direction="left" delay={100}>
                 <div className='md:w-[80%] max-w-max mx-auto'>
-                    <h2 className="md:w-[264px] h-[72px] text-[#cc1517] text-3xl md:text-4xl lg:text-5xl font-bold font-['Lato']">Claims </h2>
+                    <h2 className="md:w-[264px] h-[72px] text-[rgb(193,42,18)] text-3xl md:text-4xl lg:text-5xl font-bold font-['Lato']">Claims </h2>
                     <p className="max-w-[542px] h-[117px] text-[#5a5a5a] text-xl font-normal font-sans leading-normal">Our claims process is designed to make things simple, efficient, and supportive during times of need.</p>
                 </div>
             </SlideIn>
@@ -44,7 +44,7 @@ const SectionFive = () => {
                             <div className="w-full md:max-w-[468px] h-[297px] bg-[#666666] py-[54px] px-[33px] rounded-[30px]" >
                                 <h3 className="text-white text-2xl font-bold font-['Lato'] tracking-tight">How to File a Claim:</h3>
                                 <p className=" h-[82px] mt-[18px] mb-[25px] text-white text-lg font-normal font-sans leading-normal">Our claims process is designed to make things simple, efficient, and supportive during times of need.</p>
-                                <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] items-center inline-flex justify-between">
+                                <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[rgb(193,42,18)] rounded-[50px] items-center inline-flex justify-between">
                                     <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">Read More </span>
                                     <span className='text-white'><FaArrowRightLong /></span>
                                 </button>
@@ -55,7 +55,7 @@ const SectionFive = () => {
                             <div className="w-full md:max-w-[468px] h-[297px] bg-[#666666] py-[54px] px-6 md:px-[33px] rounded-[30px]" >
                                 <h3 className="text-white text-2xl font-bold font-['Lato'] tracking-tight">Documents Required:</h3>
                                 <p className=" h-[82px] mt-[18px] mb-[25px] text-white text-lg font-normal font-sans leading-normal">An outline of necessary documents and evidence needed to initiate a claim.</p>
-                                <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] items-center inline-flex justify-between">
+                                <button className="w-[173px] h-[51px] px-[30px] py-[15px] bg-[rgb(193,42,18)] rounded-[50px] items-center inline-flex justify-between">
                                     <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">Read More </span>
                                     <span className='text-white'><FaArrowRightLong /></span>
                                 </button>
@@ -78,7 +78,7 @@ const SectionFive = () => {
                     </div>
                 </div>
 
-                <div className="md:w-[468px] w-full hidden lg:flex bg-[#cc1517] rounded-[30px] pb-[99px] gap-11 items-center justify-end flex-col " >
+                <div className="md:w-[468px] w-full hidden lg:flex bg-[rgb(193,42,18)] rounded-[30px] pb-[99px] gap-11 items-center justify-end flex-col " >
                     <SlideIn duration={800} distance={80} direction="right" delay={300}>
                         <div className='flex flex-col gap-11'>
                             <p className="w-[257px] h-[110px] text-white text-xl font-normal font-sans leading-normal">Our dedicated claims team is available to guide you through the entire process, from start to finish.</p>

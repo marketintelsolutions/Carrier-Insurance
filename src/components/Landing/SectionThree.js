@@ -92,13 +92,13 @@ const SectionThree = () => {
                 <div className='relative flex flex-col md:flex-row gap-10 justify-between md:items-end'>
                     <SlideIn duration={700} distance={50} direction="left" delay={100}>
                         <div className='flex flex-col gap-[27px] w-full max-w-[552px]'>
-                            <h3 className="h-[23px] text-[#cc1517] text-xl md:text-2xl font-bold font-['Lato'] tracking-tight">Services</h3>
+                            <h3 className="h-[23px] text-[rgb(193,42,18)] text-xl md:text-2xl font-bold font-['Lato'] tracking-tight">Services</h3>
                             <p className="text-[#191a1c] text-xl md:text-2xl font-normal font-sans leading-7 tracking-wide">Explore our wide range of insurance products, designed to meet the diverse needs of individuals, families, and businesses.</p>
                         </div>
                     </SlideIn>
 
                     <SlideIn duration={700} distance={50} direction="right" delay={300}>
-                        <button className="w-[193px] h-[51px] px-[30px] py-[15px] bg-[#cc1517] rounded-[50px] justify-start items-center inline-flex">
+                        <button className="w-[193px] h-[51px] px-[30px] py-[15px] bg-[rgb(193,42,18)] rounded-[50px] justify-start items-center inline-flex">
                             <span className="text-center text-white text-base font-normal font-sans leading-tight tracking-tight">View All Services</span>
                         </button>
                     </SlideIn>
@@ -123,7 +123,7 @@ const SectionThree = () => {
                                     </div>
                                     <p className="  text-[#666666] text-sm font-normal font-sans leading-[24.90px]">{item.desc.slice(0, 180)}...</p>
                                     <Link to={`/services/${item.slug}`}>
-                                        <button className="w-[106.65px] self-end h-[31.44px] px-[18.49px] py-[9.25px] bg-[#cc1517] rounded-[30.82px] items-center inline-flex justify-between">
+                                        <button className="w-[106.65px] self-end h-[31.44px] px-[18.49px] py-[9.25px] bg-[rgb(193,42,18)] rounded-[30.82px] items-center inline-flex justify-between">
                                             <span className="text-center text-white text-[9.86px] font-normal font-sans leading-3 tracking-tight">Learn more</span>
                                             <span className='text-[10px] text-white'><FaArrowRightLong /></span>
                                         </button>

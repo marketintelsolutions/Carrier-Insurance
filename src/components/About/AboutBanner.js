@@ -10,7 +10,7 @@ const AboutBanner = () => {
                 <h1 className="w-">
                     <span class="text-white text-[55px] font-bold font-['Sans'] leading-[72px]">Protection</span>
                     <span class="text-white text-[55px] font-normal font-['Sans'] leading-[72px]"> </span>
-                    <span class="text-[#cc1517] text-[55px] font-normal font-['Sans'] leading-[72px]">Against Unforeseen Risks</span>
+                    <span class="text-[rgb(193,42,18)] text-[55px] font-normal font-['Sans'] leading-[72px]">Against Unforeseen Risks</span>
                 </h1>
                 <div className=''><BannerAnimation size={500} /></div>
             </div>

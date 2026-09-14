@@ -7,7 +7,7 @@ const SectionSeven = () => {
         <section className='bg-white py-[120px] px-6 xl:px-0'>
             <div className='bg-[#E6E4E4] rounded-[30px] md:w-[80%] max-w-max mx-auto pt-20 md:pt-[130px] pb-[63px] px-4 flex flex-col gap-5 items-center'>
                 <SlideIn duration={700} distance={50} direction="top" delay={100}>
-                    <h3 className="max-w-[136.92px] h-[22px] text-center text-[#cc1517] text-[18px] md:text-[22px] font-normal font-['Inter'] leading-snug">News</h3>
+                    <h3 className="max-w-[136.92px] h-[22px] text-center text-[rgb(193,42,18)] text-[18px] md:text-[22px] font-normal font-['Inter'] leading-snug">News</h3>
                 </SlideIn>
 
                 <SlideIn duration={700} distance={50} direction="top" delay={250}>
@@ -43,7 +43,7 @@ const SectionSeven = () => {
                 <SlideIn duration={600} distance={30} direction="bottom" delay={850}>
                     <div className='flex gap-2.5 mt-10'>
                         <div className="w-3 h-3 relative bg-white rounded-xl" />
-                        <div className="w-3 h-3 relative bg-[#cc1517] rounded-xl" />
+                        <div className="w-3 h-3 relative bg-[rgb(193,42,18)] rounded-xl" />
                         <div className="w-3 h-3 relative bg-white rounded-xl" />
                     </div>
                 </SlideIn>

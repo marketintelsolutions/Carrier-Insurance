@@ -5,7 +5,7 @@ const Portfolio = () => {
         <section className='bg-[#FFFEFE]'>
             <div className='w-[70%] max-w-[1200px] mx-auto py-[110px] flex'>
                 <div className='w-[50%]'>
-                    <h2 className="w-[175.23px] h-5 text-[#cc1517] text-xl font-semibold font-['Inter'] leading-tight">Portfolio</h2>
+                    <h2 className="w-[175.23px] h-5 text-[rgb(193,42,18)] text-xl font-semibold font-['Inter'] leading-tight">Portfolio</h2>
                     <p className="mt-[35px] text-[#282828] text-[28px] font-extrabold font-['Inter'] leading-[33px]">Explore some of our successful insurance solutions and case studies, demonstrating our commitment to meeting client needs across different sectors.</p>
                     <div className='mt-[53px] flex flex-col'>
                         <div className='flex gap-5 px-5 py-[45px]'>
@@ -34,7 +34,7 @@ const Portfolio = () => {
                 <div className='w-[50%]  flex flex-col justify-center'>
                     <div className='relative w-fit'>
                         <img src="/images/portfolioone.png" alt="portfolioone" className='relative z-[1] w-full max-w-[345px]' />
-                        <div className="absolute z-[2] top-[-75px] -right-[95px] w-[170px] h-[170px]  bg-[#cc1517] rounded-[100px]">
+                        <div className="absolute z-[2] top-[-75px] -right-[95px] w-[170px] h-[170px]  bg-[rgb(193,42,18)] rounded-[100px]">
                             <div className="w-[150px] h-[150px] flex flex-col justify-center items-center left-[10px] top-[10px] absolute rounded-[150px] border border-white" >
                                 <p className="h-[37px] text-center text-white text-[37px] font-semibold font-['Inter'] leading-[37px]">79%</p>
                                 <p className="w-[117.85px] text-center text-white text-lg font-semibold font-['Inter'] leading-[45px]">Success</p>

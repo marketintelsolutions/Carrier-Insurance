@@ -38,7 +38,7 @@ const SectionEight = () => {
         <section className='py-20 md:py-[120px] bg-[#666] px-6 xl:px-0 '>
             <SlideIn duration={800} distance={60} direction="bottom" delay={100}>
                 <div className='md:w-[80%] max-w-max mx-auto rounded-[30px] bg-white py-[60px] flex flex-col items-center gap-[18px]'>
-                    <h2 className="text-[#cc1517] text-2xl md:text-5xl font-bold font-['Lato']">Our Clients:</h2>
+                    <h2 className="text-[rgb(193,42,18)] text-2xl md:text-5xl font-bold font-['Lato']">Our Clients:</h2>
                     <p className="text-center text-sm md:text-base text-[#666666] font-normal font-sans leading-tight tracking-tight">
                         A look at some of the individuals and businesses we're proud to serve.
                     </p>

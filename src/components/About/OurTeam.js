@@ -28,7 +28,7 @@ const OurTeam = () => {
                                         delay={300 + (index * 150)}
                                     >
                                         <div className='w-full relative'>
-                                            <div className="absolute bottom-0 right-0 w-[529px] h-[397px] bg-[#cc1517] rounded-[50px]" >
+                                            <div className="absolute bottom-0 right-0 w-[529px] h-[397px] bg-[rgb(193,42,18)] rounded-[50px]" >
                                                 <img src="/images/hr.svg" alt="hr" className='' />
                                             </div>
                                         </div>
@@ -51,7 +51,7 @@ const OurTeam = () => {
                                                 <h3 className=" text-[#1e1f21] text-2xl font-bold font-['Lato'] tracking-tight">{item.name}</h3>
                                                 <div className='h-[30px] w-full flex justify-between items-center' >
                                                     <p className=" text-[#666666] text-base font-normal font-['Sans']">{item.title}</p>
-                                                    <Link to={`/about/team/${item.slug}`} className="w-[30px] h-[30px] pl-[15.63px] pr-[15.62px] py-[13px] bg-[#cc1517] rounded-[20px] justify-center items-center flex text-white">
+                                                    <Link to={`/about/team/${item.slug}`} className="w-[30px] h-[30px] pl-[15.63px] pr-[15.62px] py-[13px] bg-[rgb(193,42,18)] rounded-[20px] justify-center items-center flex text-white">
                                                         <span><FaChevronRight /></span>
                                                     </Link>
                                                 </div>
@@ -76,7 +76,7 @@ const OurTeam = () => {
                         <p className=" md:h-[47px] text-black/80 text-lg md:text-2xl font-normal font-['Montserrat'] md:leading-[50px]">Infinite possibilities. Endless opportunities.</p>
                     </div>
                     <div className='flex flex-wrap md:flex-wrap gap-[15px]'>
-                        <Link to={'/claims'} className="w-full md:w-48 h-[52px] flex justify-center items-center relative text-[#cc1517] hover:text-white hover:bg-primaryRed border border-white bg-[#fffefe] rounded-md">
+                        <Link to={'/claims'} className="w-full md:w-48 h-[52px] flex justify-center items-center relative text-[rgb(193,42,18)] hover:text-white hover:bg-primaryRed border border-white bg-[#fffefe] rounded-md">
                             <span className=" text-center  text-[17px] font-medium font-['Montserrat']">Join Today</span>
                         </Link>
                         <Link to={'/contact'} className="w-full md:w-48 h-[52px] flex justify-center items-center text-white  hover:bg-primaryBlue relative border rounded-md">

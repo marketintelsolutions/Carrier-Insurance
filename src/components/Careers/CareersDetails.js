@@ -5,7 +5,7 @@ const CareersDetails = () => {
     return (
         <section className='w-[70%] max-w-[1200px] mx-auto pt-[90px] pb-[140px] flex gap-[60px] justify-between'>
             <div className='flex max-w-[633px] justify-end flex-col'>
-                <h2 className=" text-[#cc1517] text-[32px] font-bold font-['Montserrat'] leading-[30px]">Careers</h2>
+                <h2 className=" text-[rgb(193,42,18)] text-[32px] font-bold font-['Montserrat'] leading-[30px]">Careers</h2>
                 <p className="mt-10 ">
                     <span className="text-black text-2xl font-normal font-['Montserrat'] leading-[30px] tracking-wide">Join </span>
                     <span className="text-black text-2xl font-bold font-['Montserrat'] leading-[30px] tracking-wide">
@@ -34,7 +34,7 @@ const CareersDetails = () => {
                 </div>
             </div>
 
-            <div className="max-w-[50%] h-[789px] px-[50px] pb-[48px] flex justify-end flex-col bg-[#cc1517] rounded-[30px]" >
+            <div className="max-w-[50%] h-[789px] px-[50px] pb-[48px] flex justify-end flex-col bg-[rgb(193,42,18)] rounded-[30px]" >
                 <h1 className="w-[369px] text-[#fffefe] text-[64px] font-bold font-['Montserrat'] leading-[84px]">Why Work With Us?</h1>
                 <p className="w-[369px] text-black text-2xl font-normal font-['Montserrat'] leading-loose">Become part of a company that values growth, teamwork, and professional development.</p>
 

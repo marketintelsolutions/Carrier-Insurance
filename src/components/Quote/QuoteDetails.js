@@ -3,7 +3,7 @@ import React from 'react'
 const QuoteDetails = () => {
     return (
         <section className='w-[80%] max-w-max mx-auto py-[120px] flex flex-col items-center'>
-            <h3 className="w-[102px] h-[53px] text-center text-[#cc1517] text-[22px] font-normal font-['Inter'] leading-snug">Quote</h3>
+            <h3 className="w-[102px] h-[53px] text-center text-[rgb(193,42,18)] text-[22px] font-normal font-['Inter'] leading-snug">Quote</h3>
             <h2 className="h-[74px] text-center text-[#282828] text-[32px] font-extrabold font-['Inter'] leading-[39px]">Kindly fill the form below</h2>
             <div className='py-[124px] px-[140px] w-full bg-[#E6E4E4] rounded-[30px]'>
                 <form >
@@ -46,7 +46,7 @@ const QuoteDetails = () => {
                         <textarea id='description' type="text" className='h-[165px] resize-none rounded-[5px] px-6 py-4 bg-white' />
                     </div>
                     <div className='flex justify-center'>
-                        <button className="mx-auto mt-[100px] text-white hover:text-primaryRed border border-primaryRed hover:bg-white rounded-[10px] w-[275px] h-[69px]  bg-[#cc1517] justify-center items-center gap-2.5 inline-flex">
+                        <button className="mx-auto mt-[100px] text-white hover:text-primaryRed border border-primaryRed hover:bg-white rounded-[10px] w-[275px] h-[69px]  bg-[rgb(193,42,18)] justify-center items-center gap-2.5 inline-flex">
                             <span className="text-xl font-normal font-sans tracking-tight">Submit Form</span>
                         </button>
                     </div>
